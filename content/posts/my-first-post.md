@@ -1,7 +1,7 @@
 ---
 title: '用 Hugo 建立一個靜態網頁搭建在 Github Pages'
 date: 2022-05-22T14:54:21+08:00
-draft: true
+draft: false
 ---
 
 ## 在 Hugo 資料夾模板下寫好網頁內容
