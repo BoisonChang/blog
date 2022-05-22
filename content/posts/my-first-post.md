@@ -1,5 +1,5 @@
 ---
-title: '用 Hugo 建立一個靜態網頁搭建在 Github Pages'
+title: 'Hugo 建立靜態網站搭建在 Github Pages'
 date: 2022-05-22T14:54:21+08:00
 draft: false
 ---
