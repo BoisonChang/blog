@@ -1,7 +1,7 @@
 ---
 title: "百日轉職前端工程師：前端工程師知識地圖 《Day 1》"
 slug: Transfer-FrontEnd-100-1
-date: 2021-06-08T11:36:21+08:00
+date: 2020-06-08T11:36:21+08:00
 draft: false
 tags: ["FrontEnd", "transfer"]
 author: "Boison"
