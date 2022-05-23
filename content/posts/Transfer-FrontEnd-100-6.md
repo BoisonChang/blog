@@ -58,7 +58,7 @@ ShowPostNavLinks: true
    - 當程式在工作目錄 (Working Directory) 修改到一個階段，也把更改的檔案放到暫存區(Stage)
    - 此時便可以將資料提交 commit 到儲存庫建立新的版本
 
-！[](https://dotblogsfile.blob.core.windows.net/user/jackeir/1506/201563016550438.png)
+![](https://dotblogsfile.blob.core.windows.net/user/jackeir/1506/201563016550438.png)
 
 > 資料來源：[Git 筆記 Ch2 上](https://dotblogs.com.tw/jackeir/2015/06/30/151690)
 
@@ -145,4 +145,8 @@ ShowPostNavLinks: true
 
 #### git reset
 
->
+> 將暫存區恢復到工作區
+
+- git reset : 預設為 HEAD^ --mixed 這個模式會把暫存區的檔案丟掉，但不會動到工作區的檔案
+- git reset HEAD^ --hard : 完全當作沒發生過
+- git reset HEAD^ --soft : 工作區跟暫存區的檔案都不會被丟掉
