@@ -3,7 +3,7 @@ title: "百日轉職前端工程師：第三週JS 常用內建函式《DAY 9》"
 slug: Transfer-FrontEnd-100-9
 date: 2020-07-20T16:11:21+08:00
 draft: false
-tags: ["FrontEnd", "transfer", "JavaScript"]
+tags: ["FrontEnd", "Transfer", "JavaScript"]
 author: "Boison"
 showToc: false
 TocOpen: false
@@ -96,3 +96,5 @@ ShowPostNavLinks: true
 ---
 
 ## 三、總結：瞭解函式的原理，才好用
+
+以上的函式其實都能自己寫出來，所以在直接套用函式前記得先瞭解原理，當你遇到你需要的功能沒有現有的內建函式符合的時候，不要忘了其實你都可以自己寫出來。

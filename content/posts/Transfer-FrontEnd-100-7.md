@@ -3,7 +3,7 @@ title: "百日轉職前端工程師：第四週前端後端怎麼合作開餐廳
 slug: Transfer-FrontEnd-100-7
 date: 2020-06-17T16:05:21+08:00
 draft: false
-tags: ["FrontEnd", "transfer", "BackEnd", "API"]
+tags: ["FrontEnd", "Transfer", "BackEnd", "API"]
 author: "Boison"
 showToc: false
 TocOpen: false

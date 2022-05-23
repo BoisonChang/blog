@@ -3,7 +3,7 @@ title: "百日轉職前端工程師：第四週秒懂網路基礎《DAY 8》"
 slug: Transfer-FrontEnd-100-8
 date: 2020-06-18T13:36:21+08:00
 draft: false
-tags: ["FrontEnd", "transfer"]
+tags: ["FrontEnd", "Transfer"]
 author: "Boison"
 showToc: false
 TocOpen: false

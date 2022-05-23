@@ -3,7 +3,7 @@ title: "百日轉職前端工程師：第零週時間管理的技巧 《Day 2》
 slug: Transfer-FrontEnd-100-2
 date: 2020-06-10T23:41:21+08:00
 draft: false
-tags: ["FrontEnd", "transfer"]
+tags: ["FrontEnd", "Transfer"]
 author: "Boison"
 showToc: false
 TocOpen: false
@@ -46,7 +46,7 @@ ShowPostNavLinks: true
 
 第三點也是最關鍵的點，為什麼時間管理不佳，其實是因為分心和散漫，而造成這兩者的就是因為沒有明確的目標，沒有緊張感，也沒有目標達成正向循環的成就感。
 
-我每天睡前應該要設定明天的目標，比方說我明天就應該完成到 Codeacdemy 上面 JavaScript 50%，才能在開課前具備基本的 JavaScript 水平，行有餘力我應該看完基礎課程[初心者的計概與coding 火球術](https://lidemy.com/p/cs101-coding)。
+我每天睡前應該要設定明天的目標，比方說我明天就應該完成到 Codeacdemy 上面 JavaScript 50%，才能在開課前具備基本的 JavaScript 水平，行有餘力我應該看完基礎課程[初心者的計概與 coding 火球術](https://lidemy.com/p/cs101-coding)。
 
 ---
 

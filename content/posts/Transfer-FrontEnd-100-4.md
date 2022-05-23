@@ -3,7 +3,7 @@ title: "百日轉職前端工程師： 第一週高效率的最高休息法《DA
 slug:  Transfer-FrontEnd-100-4
 date: 2020-06-14T19:16:21+08:00
 draft: false
-tags: ["FrontEnd", "transfer"]
+tags: ["FrontEnd", "Transfer"]
 author: "Boison"
 showToc: false
 TocOpen: false
@@ -43,7 +43,7 @@ ShowPostNavLinks: true
 
 因此不是說不能睡覺，可是你需要先做些事情讓你的大腦伸展伸展， 讓大腦放鬆後再去睡覺才是最有效率的休息方式，以下提供幾種方式：
 
-### 1. 去做些新鮮的事情   
+### 1. 去做些新鮮的事情
 
 以我自己為例，我喜歡去做些平常不會做的新鮮事情，這會讓我好奇心的大開，能夠關掉我工作大腦，然後心無旁鶩的進入一種探索模式。
 
