@@ -138,11 +138,11 @@ Mac 上叫做終端機 (Terminal)，Windows 系統上叫做命令提示字元（
 ## 三、CLI 應用實例
 
 假設你想要完全不透過圖形介面，建立一個叫做 wifi 的資料夾，並且在裡面建立一個叫 afu.js 的檔案，該怎麼做？
-1. 跳到桌面：cd Desktop
-2. 建立資料夾 wifi： mkdir wifi
-3. 跳到資料夾 wifi：cd wifi
-4. 建立檔案 afu.js：touch afu.ja
-5. 查看所有位置所有檔案：ls
+1. 跳到桌面：**cd Desktop**
+2. 建立資料夾 wifi： **mkdir wifi**
+3. 跳到資料夾 wifi：**cd wifi**
+4. 建立檔案 afu.js：**touch afu.ja**
+5. 查看所有位置所有檔案：**ls**
 
 ---
 
