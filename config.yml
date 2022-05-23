@@ -119,14 +119,10 @@ menu:
     - name: Search
       url:  search/
       weight: 7
-    - identifier: posts
-      name: Post
-      url:  posts/
-      weight: 10
     - identifier: tags
       name: Tag
       url:  tags/
-      weight: 20
+      weight: 10
 
 # Search Configs
 outputs:
