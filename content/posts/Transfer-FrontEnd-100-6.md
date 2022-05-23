@@ -58,9 +58,9 @@ ShowPostNavLinks: true
    - 當程式在工作目錄 (Working Directory) 修改到一個階段，也把更改的檔案放到暫存區(Stage)
    - 此時便可以將資料提交 commit 到儲存庫建立新的版本
 
-![](https://dotblogsfile.blob.core.windows.net/user/jackeir/1506/201563016550438.png)
+![](https://static.coderbridge.com/img/techbridge/images/kdchang/cs101/git-workflow.png)
 
-> 資料來源：[Git 筆記 Ch2 上](https://dotblogs.com.tw/jackeir/2015/06/30/151690)
+> 資料來源：[Git 與 Github 版本控制基本指令與操作入門教學](https://blog.techbridge.cc/2018/01/17/learning-programming-and-coding-with-python-git-and-github-tutorial/)
 
 ---
 
@@ -150,3 +150,152 @@ ShowPostNavLinks: true
 - git reset : 預設為 HEAD^ --mixed 這個模式會把暫存區的檔案丟掉，但不會動到工作區的檔案
 - git reset HEAD^ --hard : 完全當作沒發生過
 - git reset HEAD^ --soft : 工作區跟暫存區的檔案都不會被丟掉
+
+#### git commit --amend
+
+> 改寫最後一次 commit 的 訊息
+
+- git commit --amend
+
+#### .gitignore
+
+> 不想被控制的檔案就寫進去
+
+- touch .gitignore
+- vim .gitignore
+- secret.yml : 忽略 secret.yml 檔案
+- /db/\*.sqlite3 : 忽略所有 db 目錄下附檔名是 .sqlite3 的檔案
+
+---
+
+### 2. Git Branch 相關指令
+
+分支（Branch） 只是一個指向某個 Commit 的指標，所謂的分支，其實就只是一個有 40 個字元的檔案而已。
+
+#### git branch
+
+> 開新分支
+
+- git branch week1
+
+#### git branch -v
+
+> 檢視現有分支
+
+- git branch -v
+
+#### git branch -d
+
+> 刪除分支
+
+- git branch -d week1
+
+#### git checkout
+
+> 回到某個指定版本（branch）
+
+- git checkout week1
+- get checkout -- . : 全部回覆到上一個 commit 狀態
+
+#### git merge
+
+> 將分支合併回 master
+
+- git merge week1
+
+> HEAD 是一個指向某一個分支的指標，在分支切換 (checkout) 的時候，HEAD 會跟著指向切換過去的那個分支。
+> 在 .git 目錄裡有一個名為  HEAD  的檔案，它會記錄目前是在哪個分支的資訊
+
+---
+
+## 四、Git 從本地連上遠端
+
+Github  則是一個支援 Git 程式碼存取和遠端管理的平台服務，有許多的開放原始碼的專案都是使用 Github 進行程式碼的管理。
+
+> Git 可以分為 Local (本地) 和 Remote (遠端) 兩個環境
+> 由於 Git 屬於分散式的版本控制系統，所以開發者可以在離線 local 環境下開發，等到有網路時再將自己的程式推到 Remote 環境或 pull 下其他開發者程式碼進行整合。
+
+### 常見問題 1：要用 clone 還是 pull？
+
+如果已經有之前的版本想要更新可以直接 git pull url 網址，而如果是想要把整個資料夾拉下來則使用 git clone url。
+
+### 常見問題 2：git push 後面要加名稱嗎？
+
+如果沒加上名稱，你現在在哪個分支就會 push 哪個分支上去。
+
+> 而如果有加上名稱則會以你要 push 的分支為主
+
+- 舉例來說你現在位於 branch week4
+- 但你 git push -u origin master 則會推送分支 master 上遠端。（遠端會自動辨識要同步哪個分支）
+
+### 常見問題 3：為何 pull 和 push 都會加上 origin？
+
+一般情況下遠端只會有一個倉儲（repository），就叫做 origin。
+
+若是 push/ pull 不加 origin 則默認為 origin，若是有多重倉儲想要同步到不同的就要加上倉儲的版本號。ex: version USA
+
+#### git remote
+
+> 與遠端檔案庫操作有關的指令
+
+- git remote add origin url
+- git remote remove origin
+
+#### git push
+
+> 把本地端檔案庫推上遠端檔案庫
+
+- git push -u origin week1
+
+#### git pull
+
+> 將遠端分支資料拉回並合併本地分支
+
+- git pull origin master
+
+#### git clone
+
+> 複製其他人 Github 上的專案
+
+- git clone URL
+
+---
+
+## 五、Git 操作實例
+
+> 如何使用 add 、 commit、 push ，以及 pull 去管理我的文字作品？
+
+先在本地開一個 branch 寫作品，然後 merge 到 master，接著推到 GitHub，經過別人在 GitHub 上做些更改再同步回我的本機。
+
+1. 創建資料夾 HW4joke：mkdir HW4joke
+2. 跳到資料夾 HW4joke： cd HW4joke
+3. 版本化控制資料夾 HW4joke：git init
+4. 創建初始文件 joke：touch joke
+5. 編輯 joke：vim joke
+6. 將 joke 加入暫存區：git add joke
+7. 將 joke commit，建立 master 分支：git commit -m "firstVersion"
+8. 創建第一個分支：git branch week1hw4
+9. 創建文件 joke2：touch joke2
+10. 編輯 joke2：vim joke2
+11. 將 joke2 加入暫存區：git add joke2
+12. 將 joke2 commit：git commit -m "兩個笑話笑呵呵"
+13. 切換回 master：git branch master
+14. 將 branch week1hw4 合併到 master：git merge week1hw4
+15. 在 GitHub 上按右上角 + 新增 Repositories （記得不要勾 read.me
+16. 在 GitHub Clone with HTTPS 複製網址
+17. 本地加入一個遠端 Repositories：git remote add origin https://github.com/BoisonChang/WEEK1HW4.git
+18. 把本地版本推上遠端 Repositories：git push -u origin master
+19. 遠端做些小更動： create new file "attention"
+20. 遠端同步回本地端：git pull origin master
+
+---
+
+## 六、總結：學好 Git，人生沒煩惱
+
+總之呢，Git 的威力在專案越大，人數越多協作時更能發揮出來，永遠可以回復到上一個版本，也能夠快速找到戰犯是誰（咦），要學好 Git 建議去讀高見龍一書，本文為概述基本會用到之功能。
+
+> 資料來源
+
+- [為你自己學 Git](https://gitbook.tw/)
+- [《為你自己學 Git》 閱讀筆記](https://medium.com/@leokao0726/%E7%82%BA%E4%BD%A0%E8%87%AA%E5%B7%B1%E5%AD%B8-git-%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98-f76e4026dbce)
+- [電子書 kingofamani 的 GIT 教學]()
