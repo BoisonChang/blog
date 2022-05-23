@@ -61,7 +61,7 @@ params:
       - name: Tags
         url: tags
   homeInfoParams:
-    Title: "Hi! I'm Boison \U0001F44B"
+    Title: "Hi! I am Boison \U0001F44B"
     Content: 我關注生產力、網頁技術，行銷相關議題。目前在企業軟體公司擔任前端工程師
   socialIcons:
     - name: twitter
