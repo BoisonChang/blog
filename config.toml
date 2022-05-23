@@ -1,5 +1,4 @@
 baseURL = "https://boison.netlify.app/"
-title = "Boison"
 paginate = 5
 defaultContentLanguage = "zh-tw"
 theme = "PaperMod"
@@ -18,7 +17,7 @@ minifyOutput = true
 
 [params]
 env = "production"
-title = "its demo blog"
+title = "Boison"
 description = "its demo blog description"
 keywords = [ "Blog", "Portfolio", "PaperMod" ]
 author = "Me"
@@ -68,20 +67,20 @@ tocopen = false
     url = "tags"
 
   [params.homeInfoParams]
-  Title = "嗨 大家 👋"
-  Content = "歡迎來到我的部落格。"
+  Title = "Hi! I'm Boison 👋"
+  Content = "我關注生產力、網頁技術，行銷相關議題。目前在新創公司擔任前端工程師"
 
   [[params.socialIcons]]
   name = "twitter"
-  url = "https://twitter.com/"
+  url = "https://twitter.com/Boison0720"
 
   [[params.socialIcons]]
   name = "stackoverflow"
-  url = "https://stackoverflow.com"
+  url = "https://stackoverflow.com/users/19157742/boison"
 
   [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/"
+  url = "https://github.com/BoisonChang"
 
 [params.analytics.google]
 SiteVerificationTag = "XYZabc"
