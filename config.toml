@@ -7,7 +7,7 @@ enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
-googleAnalytics = "UA-123-45"
+# googleAnalytics = "UA-123-45"
 
 [permalinks]
 posts = "/:year/:month/:title/"
@@ -108,18 +108,18 @@ SiteVerificationTag = "XYZabc"
 
 [[menu.main]]
 identifier = "posts"
-name = "文章"
+name = "Post"
 url = "/posts/"
 weight = 1
 
-[[menu.main]]
-identifier = "categories"
-name = "分類"
-url = "/categories/"
-weight = 2
+# [[menu.main]]
+# identifier = "categories"
+# name = "分類"
+# url = "/categories/"
+# weight = 2
 
 [[menu.main]]
 identifier = "tags"
-name = "標籤"
+name = "TAG"
 url = "/tags/"
 weight = 3
