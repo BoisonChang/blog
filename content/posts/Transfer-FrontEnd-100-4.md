@@ -1,5 +1,5 @@
 ---
-title: "百日轉職前端工程師： 第一週高效率的最高休息法《DAY 4》"
+title: "百日轉職前端工程師：第一週高效率的最高休息法《DAY 4》"
 slug:  Transfer-FrontEnd-100-4
 date: 2020-06-14T19:16:21+08:00
 draft: false
