@@ -1,4 +1,4 @@
-baseURL = "https://boison.netlify.app/"
+baseURL = "https://boison.tw"
 title = "Boison"
 paginate = 5
 defaultContentLanguage = "zh-tw"
