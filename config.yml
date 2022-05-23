@@ -83,8 +83,6 @@ params:
   socialIcons:
     - name: twitter
       url: 'https://twitter.com/Boison0720'
-    - name: stackoverflow
-      url: 'https://stackoverflow.com/users/19157742/boison'
     - name: github
       url: 'https://github.com/BoisonChang'
   analytics:
