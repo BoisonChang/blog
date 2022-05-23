@@ -1,5 +1,6 @@
 ---
 title: "用 Hugo 寫 Blog 部署在 Github Pages"
+slug: Hugo-Blog-Nelify-deploy-Github
 date: 2022-05-22T14:54:21+08:00
 draft: false
 # weight: 1
