@@ -103,9 +103,7 @@ Test-driven Development，中文為測試驅動開發，就是把一般測試的
 
 此處運用 Jest 這個框架來寫 unit test。
 
-Jest 是前端測試框架（Test runner）的一種，會使用是因為它與 React 的整合度較佳（同為 Facebook 開發的）。
-
-其他框架例如：Jasmine（茉莉花）、 Mocha（摩卡咖啡）、和 AVA 等。
+Jest 是前端測試框架（Test runner）的一種，會使用是因為它與 React 的整合度較佳（同為 Facebook 開發的）。其他框架例如：Jasmine（茉莉花）、 Mocha（摩卡咖啡）、和 AVA 等。
 
 ## 六、如何測試一個 function
 
