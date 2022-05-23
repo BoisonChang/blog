@@ -1,7 +1,9 @@
 ---
 title: '用 Hugo 寫 Blog 部署在 Github Pages'
 date: 2022-05-22T14:54:21+08:00
-draft: false
+  - Hugo
+  - Github
+  - Nelify
 ---
 
 ## 一、在 Hugo 資料夾模板下寫好網頁內容
@@ -21,7 +23,7 @@ draft: false
 - 此處模板選擇 PaperMod 如果想選擇其他主題至此 [Hugo Themes](https://themes.gohugo.io/) 並替換掉步驟 6 和 7
 - 若是沒有 Github 帳號需要先去註冊，repo 為專案意思 (可以想成是再 google drive 開新資料夾)
 - 此處安裝環境為 mac，預設已經安裝好 brew (若未安裝 brew 可見 [如何在 Mac 上安裝套件管理工具 Homebrew](https://redox-ccy.medium.com/%E7%AD%86%E8%A8%98-%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E5%AE%89%E8%A3%9Dhomebrew-87f127c6ebcf) 一文安裝)
-- 本地端的意思是網站只在你電腦上可訪問，localhost:1313 就是打開你電腦中資料夾的位置
+- 「本地端」的意思是網站只在你電腦上可訪問，localhost:1313 就是打開你電腦中資料夾的位置
 
 ---
 ##  二、用 Nelify 將網頁部署在 Github Pages
@@ -38,4 +40,4 @@ draft: false
 - 在  Github 新建 repo 後點擊進入右上角點 Code/Https 可以取得 URL
 - 在 Nelify 設定中輸入此 URL，往後每次你更新 repo 內容時 Nelify 會自動讀取內容並重新部署 
 - 網站實際上是放在 Github 的空間，Nelify 是協助簡化將網站部屬到 Github 步驟跟調整設定
-- 部屬的意思是將網站內容放入遠端空間，並且註冊取得一組網址讓所有人都能訪問此空間存放之內容
+- 「部屬」的意思是將網站內容放入遠端空間，並且註冊取得一組網址讓所有人都能訪問此空間存放之內容
