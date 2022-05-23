@@ -124,7 +124,11 @@ Sass 是一種基於 CSS 所產生的高階語言，他將一般程式語言所�
 
 根據 W3C DOM規範（http://www.w3.org/DOM/），DOM 是一種與瀏覽器，平台，語言的接口，使得你可以訪問頁面其他的標準組件。簡單理解， DOM 解決了 Netscaped 的 Javascript 和 Microsoft 的 Jscript 之間的衝突，給予 web 設計師和開發者一個標準的方法，讓他們來訪問他們站點中的數據、腳本和表現層對像。
 
-文件物件模型（Document Object Model，DOM）是給 HTML 與 XML 文件使用的一組 API。它提供了文件的結構表述（representation），讓你可以更動其中的內容及可見物。其本質是建立網頁與 Script 或程式語言溝通的橋樑。所有網頁設計師可操作及建立文件的屬性、方法及事件都以物件來展現（例如，document 就代表「文件本身」這個物件，table 物件則代表 HTML 的表格物件等等）。這些物件可以由當今大多數的瀏覽器以 Script 來取用。
+> 文件物件模型（Document Object Model，DOM）是給 HTML 與 XML 文件使用的一組 API。
+
+它提供了文件的結構表述（representation），讓你可以更動其中的內容及可見物，其本質是建立網頁與 Script 或程式語言溝通的橋樑。
+
+所有網頁設計師可操作及建立文件的屬性、方法及事件都以物件來展現（例如，document 就代表「文件本身」這個物件，table 物件則代表 HTML 的表格物件等等）。這些物件可以由當今大多數的瀏覽器以 Script 來取用。
 
 DOM 最常被用以與 JavaScript 溝通，也就是說雖然程式以 JavaScript 寫成，但使用 DOM 來存取頁面及其元素。無論如何，DOM 本身是設計為一種獨立的程式語言，以一致的 API 存取文件的結構表述；是以雖然焦點放在 JavaScript 上，但 DOM 其實可以與任何程式語言共同運作。
 
@@ -167,6 +171,7 @@ jQuery 是一個快速又簡潔的 JavaScript 程式庫 (library)，簡化了在
 ES 就是 JavaScript 的版本，基本上 ES6, ES7 是比較大改變，所以要熟悉！最新已經出到 E11，但是不是所有公司的環境都更新到這，不要只會用 E11 不然去到不能用的公司等於武功廢一大半， ES11 很多好用功能都不能直接用。
 
 ---
+![](https://i.pinimg.com/736x/61/85/50/618550199389f841a1b51392be0339bf.jpg)
 
 ## 八、JavaScript 預處理
 
@@ -189,9 +194,14 @@ JavaScript 預處理，就是為了更好寫程式之類開發的一個環境，
 2. Angular（Google 開發的框架）
 3. Vue （中國開發的框架，但很多人在用好用）
 
-React 和 Web Component 是為了解決不同的問題所建立的。Web Component 為了可重複使用的 component 提供了強大的封裝，而 React 提供了一個宣告式函式庫 (library)，使 DOM 與你的資料保持同步。這兩個目標是相輔相成的。作為開發人員，你可以自由地在 Web Component 中使用 React，或在 React 中使用 Web Component，或兩者都是。
+> **React 和 Web Component 是為了解決不同的問題所建立的**
+- Web Component 為了可重複使用的 component 提供了強大的封裝
+- React 提供了一個宣告式函式庫 (library)，使 DOM 與你的資料保持同步。
+- 這兩個目標是相輔相成的，你可以自由地在 Web Component 中使用 React，或在 React 中使用 Web Component，或兩者都是。
 
-React 以一種維持狀態 (state) 的方式，保持資料的同步。實際上前端三大框架 Angular、React 和 Vue 的設計理念在這塊都有些像，基本上已經跳脫過去 JS 直接去操控網頁的 DOM 的範圍，所以跟 jQuery/JavaScript 的使用方式基本上已經不太能去比較，其他的由於理解不深，會再花完整篇幅闡述。
+React 以一種維持狀態 (state) 的方式，保持資料的同步。
+
+實際上前端三大框架 Angular、React 和 Vue 的設計理念在這塊都有些像，基本上已經跳脫過去 JS 直接去操控網頁的 DOM 的範圍，所以跟 jQuery/JavaScript 的使用方式基本上已經不太能去比較，其他的由於理解不深，會再花完整篇幅闡述。
 
 ---
 ## 十、任務管理工具
