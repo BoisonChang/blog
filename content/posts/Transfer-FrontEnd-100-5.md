@@ -41,6 +41,9 @@ CLI 是用來命令你的電腦執行動作的語言，早期還沒有圖形化�
 
 Mac 上叫做終端機 (Terminal)，Windows 系統上叫做命令提示字元（command），就是打開後一個小小的黑盒子黑壓壓一片的東西就是了。
 
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F114b5c67-c532-4e77-9ac0-733e8cbaacac_1460x1364.png)
+> 資料來源: [Windows CMD 與 MacOS / Linux 終端機指令列對照表](https://happycoder.substack.com/p/windows-cmd-macos-linux-?s=r)
+
 ### 1. CLI 的常用基本指令
 
 #### pwd (print working directory):  印出目前路徑位置
@@ -94,8 +97,7 @@ Mac 上叫做終端機 (Terminal)，Windows 系統上叫做命令提示字元（
 - open test.txt
 - open .. : 打開資料夾)
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F114b5c67-c532-4e77-9ac0-733e8cbaacac_1460x1364.png)
-> 資料來源: [Windows CMD 與 MacOS / Linux 終端機指令列對照表](https://happycoder.substack.com/p/windows-cmd-macos-linux-?s=r)
+
 
 
 ### 3. CLI 的常用其他指令
