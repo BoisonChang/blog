@@ -12,7 +12,7 @@ showToc: false
 TocOpen: false
 hidemeta: false
 comments: true
-#description: "Hello World"
+description: "在 Hugo 資料夾模板下寫好網頁內容，並用 Nelify 將網頁部署在 Github Pages 的步驟分解。"
 #canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
