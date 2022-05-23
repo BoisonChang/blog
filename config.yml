@@ -96,6 +96,8 @@ params:
     hiddenInList: true
     hiddenInSingle: true
 
+  # for search
+  # https://fusejs.io/api/options.html
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
