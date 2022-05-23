@@ -36,15 +36,17 @@ ShowPostNavLinks: true
 
 這篇文章說明如何在 5 分鐘架設一個靜態網站。首先你可以利用 Hugo 這套工具產生你的網站架構，接著利用 Nelify 將網頁部署在 Github Pages。
 
-本文假設你是在 Mac 的環境下操作，若你的環境是 Windows 則雖概念相同但步驟會略有差異；若是過去完全沒有寫程式的經驗，你會需要根據注意事項花額外的時間準備好一些基礎建設並適度了解其原理，當然你也可以不要花太多時間在搞懂這些鬼東西，只要依照現有的安裝教學讓其能夠成功運作出你要的結果就好，若是過程中卡住很歡迎你聯繫我，我很願意提供幫助。
+本文假設你是在 Mac 的環境下操作，若你的環境是 Windows 則雖概念相同但步驟會略有差異；若是過去完全沒有寫程式的經驗，你會需要根據注意事項花額外的時間準備好一些基礎建設並適度了解其原理。
 
-> 名詞解釋:
-- Hugo:  靜態網站生成器
-- Homebrew: 套件管理工具 
-- Github:  程式碼代管平台 
-- Netlify 靜態網站託管平台
-- Visual Studio Code (VS Code): 原始碼編輯器
-- Terminal: 終端機
+※ 當然你也可以不要花太多時間搞懂這些鬼東西，只要簡單依照現有的安裝教學指引讓網站成功運行，若是過程中卡住，很歡迎你聯繫我，我很願意提供幫助。
+
+> **名詞解釋**:
+- [Hugo](https://gohugo.io/):  靜態網站生成器
+- [Homebrew](https://brew.sh/index_zh-tw): 套件管理工具 
+- [Github](https://github.com/):  程式碼代管平台 
+- [Netlify](https://www.netlify.com/): 靜態網站託管平台
+- [Visual Studio Code (VS Code)](https://code.visualstudio.com/): 原始碼編輯器
+- [Terminal](https://zh.wikipedia.org/zh-tw/%E7%B5%82%E7%AB%AF): 終端機
 
 ---
 ## 一、在 Hugo 資料夾模板下寫好網頁內容
