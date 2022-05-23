@@ -23,7 +23,7 @@ draft: false
 - 此處安裝環境為 mac，預設已經安裝好 brew (若未安裝 brew 可見 [如何在 Mac 上安裝套件管理工具 Homebrew](https://redox-ccy.medium.com/%E7%AD%86%E8%A8%98-%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E5%AE%89%E8%A3%9Dhomebrew-87f127c6ebcf) 一文安裝)
 
 
-## 用 Nelify 部署在 Github Pages
+## 用 Nelify 將網頁部署在 Github Pages
 
 1. 在 [github](https://github.com/) 開一個新 repo 取得 URL
 2. 回到 VS Code
@@ -31,3 +31,9 @@ draft: false
 4. git push -u origin master
 5. 打開 [Nelify](https://www.netlify.com/) 註冊會協助你連上 github 建立的 repo
 6. Nelify 幫你把網站部署完成（到 Github Pages）：[https://boison.netlify.app/](https://boison.netlify.app/)
+
+
+**注意事項**:
+- 在  Github 新建 repo 後點擊進入右上角點 Code/Https 可以取得 URL
+- 在 Nelify 設定中輸入此 URL，往後每次你更新 repo 內容時 Nelify 會自動讀取內容並重新部署 
+- 網站實際上是放在 Github 的空間，Nelify 是協助簡化將網站部屬到 Github 步驟跟調整設定
