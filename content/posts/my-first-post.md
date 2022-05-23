@@ -3,17 +3,14 @@ title: "用 Hugo 寫 Blog 部署在 Github Pages"
 slug: Hugo-Blog-Nelify-deploy-Github
 date: 2022-05-22T14:54:21+08:00
 draft: false
-# weight: 1
-# aliases: ["/AirTag"]
 tags: ["Hugo", "Github", "Nelify"]
-author: "Me"
-# author: ["Me", "You"] # multiple authors
+author: "Boison"
 showToc: false
 TocOpen: false
 hidemeta: false
 comments: true
-description: "在 Hugo 資料夾模板下寫好網頁內容，並用 Nelify 將網頁部署在 Github Pages 的步驟分解。"
-#canonicalURL: "https://canonical.url/to/page"
+description: "在 Hugo 資料夾模板下寫好網頁內容，並用 Nelify 將網頁部署在 Github Pages"
+
 disableHLJS: true # to disable highlightjs
 disableShare: true
 disableHLJS: false
@@ -22,6 +19,10 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
+# author: ["Me", "You"] # multiple authors
+#canonicalURL: "https://canonical.url/to/page"
+# weight: 1
+# aliases: ["/AirTag"]
 #cover:
 #    image: "<image path/url>" # image path/url
 #    alt: "<alt text>" # alt text
