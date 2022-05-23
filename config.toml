@@ -1,0 +1,3 @@
+baseURL = "https://boison.netlify.app/"
+title = "Boison"
+theme = "PaperMod"
