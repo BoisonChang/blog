@@ -12,12 +12,7 @@ permalinks:
 minify:
   disableXML: true
   minifyOutput: true
-# Search Configs
-outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON # is necessary
+
 params:
   env: production
   title: Boison
@@ -111,14 +106,21 @@ params:
       - content
 menu:
   main:
-    - name: SEARCH
+    - name: Search
       url: search/
       weight: 5
     - identifier: posts
-      name: POST
+      name: Post
       url: /posts/
       weight: 7
     - identifier: tags
-      name: TAG
+      name: Tag
       url: /tags/
       weight: 10
+      
+# Search Configs
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
