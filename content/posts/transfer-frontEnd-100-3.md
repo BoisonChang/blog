@@ -47,12 +47,12 @@ div 標籤基本上就是用來包裹「文章區塊」，我一度很懷疑都�
 
 ## 三、Semantic HTML 中各大標籤
 
-### <header>
+### `<header>`
 
 > **標題元素：預設為區塊元素，為文章或區塊定義標題。**
 - 一個頁面中可以有多個 header
-- <header> 是一容器，但裡面裝的東西應該只有區塊的標題或者摘要
-- 另外 w3.org 中有提到  <header> 不能放在 <footer>、<address> 或另一個  <header> 裡面
+- `<header>` 是一容器，但裡面裝的東西應該只有區塊的標題或者摘要
+- 另外 w3.org 中有提到  `<header>` 不能放在 `<footer>`、`<address>` 或另一個  `<header>` 裡面
 
 
 ### <nav>
