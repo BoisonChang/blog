@@ -1,4 +1,5 @@
 baseURL = "https://boison.netlify.app/"
+title = "Boison"
 paginate = 5
 defaultContentLanguage = "zh-tw"
 theme = "PaperMod"
