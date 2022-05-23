@@ -23,9 +23,11 @@ ShowPostNavLinks: true
 開始先弄懂一下前端工程師可能要懂的知識點，之後有看到什麼查什麼，昨日阿斌密我說他也有參加過胡立的計畫，問了阿斌請他幫我講解一下六角學院的這張圖，以下自己補充完紀錄之，以下內容為個人用麻瓜的語言理解後的翻譯，可能有誤歡迎留言指點。
 
 
-註：如果你想要學習如何在百日內「高效學習」上路實戰，非常推薦閱讀《超速學習》一書。
+※ 如果你想要學習如何在百日內「高效學習」上路實戰，非常推薦閱讀《超速學習》一書。
 
 ---
+![](https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F04%2F%E6%8A%80%E8%83%BD%E6%A8%B9_web-1.png?alt=media&token=f2e4391d-ff1a-4d67-82b2-33e8851cff64)
+
 ## 一、必備技能
 
 ### 1. Git
@@ -62,7 +64,7 @@ Sass 是一種基於 CSS 所產生的高階語言，他將一般程式語言所�
 - Sass 的撰寫方式是用 Ruby 的撰寫方式，沒有分號、括號那些東西，都是用分段的方式來表示
 - Scss 而是在 CSS3 推出，撰寫方式與 CSS 相同，比起 Sass，對於寫習慣的 CSS 的人，Scss 相對會比較好上手
 
-> HTML、CSS、JS  的預處理
+> **HTML、CSS、JS  的預處理**
 - HTML、CSS、JS 都可以做模組化，而「預處理器」常是模組化的手段之一
 - 例如 pug 是 HTML 的預處理、Sass/Scss 是 CSS 的預處理、Babel 是 JS 的預處理
 
@@ -89,7 +91,6 @@ Sass 是一種基於 CSS 所產生的高階語言，他將一般程式語言所�
 - 每一個 Block 都會有自己的資料夾路徑，並且裡面有這個 Block 的專屬 CSS 及 JS
 - 裡面還會有這個 Block 下方 Element 的資料夾，並且開頭為 __ 
 
-
 > 資料來源 
 1. [談談CSS模組化](https://medium.com/@zehung860486/css-notes-css%E6%A8%A1%E7%B5%84%E5%8C%96-3bb03e72523e)
 2. [Scalable CSS - 介紹OOCSS/SMACSS/BEM](http://sj82516-blog.logdown.com/posts/1077348/finish-css-intro-oocss-smacss-bem)
@@ -106,10 +107,12 @@ Sass 是一種基於 CSS 所產生的高階語言，他將一般程式語言所�
 - Tailwind（近年崛起，更能客製化切版需求的 Utility-First CSS  framework）
 
 > **Component-First CSS  和  Utility-First CSS 比較**
-- Component-First CSS 就是已有現成的功能組件像是 Button，Form 等幫你寫好
-- Component-First CSS 由於已經寫好了整套若是想要根據需求調整，會比較麻煩而且容易遇到衝突
-- Utility-First CSS 則是只針對 CSS 樣式去做處理
-- Utility-First CSS 讓你有 CSS 切版的彈性，又能夠直接使用定義好的 class 渲染出樣式
+- Component-First CSS 
+    - 已有現成的功能組件像是 Button，Form 等幫你寫好
+    - 由於已經寫好了整套若是想要根據需求調整，會比較麻煩而且容易遇到衝突
+- Utility-First CSS 
+    - 只針對 CSS 樣式去做處理
+    - 讓你保留原生 CSS 切版的彈性，又能夠直接使用定義好的 class 渲染出樣式
 
 
 --- 
@@ -117,7 +120,7 @@ Sass 是一種基於 CSS 所產生的高階語言，他將一般程式語言所�
 
 ### 1. DOM
 
-檔案物件模型（Document Object Model，簡稱 DOM），是 W3C 組織推薦的處理可擴充套件置標語言的標準程式介面。
+> 檔案物件模型（Document Object Model，簡稱 DOM），是 W3C 組織推薦的處理可擴充套件置標語言的標準程式介面。
 
 根據 W3C DOM規範（http://www.w3.org/DOM/），DOM 是一種與瀏覽器，平台，語言的接口，使得你可以訪問頁面其他的標準組件。簡單理解， DOM 解決了 Netscaped 的 Javascript 和 Microsoft 的 Jscript 之間的衝突，給予 web 設計師和開發者一個標準的方法，讓他們來訪問他們站點中的數據、腳本和表現層對像。
 
@@ -125,7 +128,9 @@ Sass 是一種基於 CSS 所產生的高階語言，他將一般程式語言所�
 
 DOM 最常被用以與 JavaScript 溝通，也就是說雖然程式以 JavaScript 寫成，但使用 DOM 來存取頁面及其元素。無論如何，DOM 本身是設計為一種獨立的程式語言，以一致的 API 存取文件的結構表述；是以雖然焦點放在 JavaScript 上，但 DOM 其實可以與任何程式語言共同運作。
 
-簡單來說，在DOM的標準下，一份文件中所有的標籤定義，包括文字，都是一個物件，這些物件以文件定義的結構，形成了一個樹狀結構。例如：
+簡單來說，在DOM的標準下，一份文件中所有的標籤定義，包括文字，都是一個物件。
+
+> 這些物件以文件定義的結構，形成了一個樹狀結構。例如：
 
 ```
 <html>
@@ -149,7 +154,6 @@ jQuery 是一個快速又簡潔的 JavaScript 程式庫 (library)，簡化了在
 
 與框架並行使用，早期框架的工作是 jQuery 在做的，如果同個事件綁定多個處理器，甚至連執行先後順序也不一樣。而透過 jQuery 處理事件只需要一個 $(…).bind() 或 $(…).on() 就足夠，除了解決跨瀏覽器的問題之外，也能解決對 DOM 控制的問題。
 
-
 ---
 
 ## 六、其他
@@ -161,6 +165,8 @@ jQuery 是一個快速又簡潔的 JavaScript 程式庫 (library)，簡化了在
 ## 七、JavaScript 技巧
 
 ES 就是 JavaScript 的版本，基本上 ES6, ES7 是比較大改變，所以要熟悉！最新已經出到 E11，但是不是所有公司的環境都更新到這，不要只會用 E11 不然去到不能用的公司等於武功廢一大半， ES11 很多好用功能都不能直接用。
+
+---
 
 ## 八、JavaScript 預處理
 
@@ -192,12 +198,10 @@ React 以一種維持狀態 (state) 的方式，保持資料的同步。實際�
 
 將一些處理「動作」寫好，以後就能自動化去跑完。例如像是 gulp ，可以寫好執行腳本（第一步執行 Babel，第二步壓縮圖片.....）
 
-
 ---
 ## 十一、套件管理工具
 
 我的理解任務管理工具，是能裝一些套件。就像是 Window10 不是裝任何軟體都要到內建的一個區域，那邊可以搜尋到很多套件，統一在那邊下載：
-
 - NPM （Google開發的，比較老的套件管理工具）
 - YARN （Facebook 開發的）
 
@@ -215,7 +219,6 @@ React 以一種維持狀態 (state) 的方式，保持資料的同步。實際�
 ---
 
 ## 十四、其他
-
 ### 1. Firebase - 前端要自幹的工具
 
 Firebase 是一個同時支援 Android、iOS 及網頁的 app 雲端開發平台，協助 app 開發者在雲端快速建置後端服務，提供即時資料庫，有效縮短 app開發時間，並幫助開發者更專注在前端的優化。 
