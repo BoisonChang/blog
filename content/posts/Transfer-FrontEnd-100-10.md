@@ -214,7 +214,7 @@ const other = [ 1, 2, ...params ] // [ 1, 2, "hello", true, 7 ]
 
 ### 8. Babel
 
-> 是一種 JavaScript 轉譯器，可將 ES6 轉換 ES5
+> **是一種 JavaScript 轉譯器，可將 ES6 轉換 ES5**
 
 比如當你想要用上述 7.Import & Export 屬於 ES6 新增的語法的話就需要用到 Babel，此時你就不用擔心執行環境版本問題，Babel 基本上都會幫你搞定。（實際在做網頁時也不用擔心瀏覽器的支援度的問題）
 
