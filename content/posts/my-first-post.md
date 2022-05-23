@@ -4,7 +4,7 @@ date: 2022-05-22T14:54:21+08:00
 draft: false
 ---
 
-## 在 Hugo 資料夾模板下寫好網頁內容
+## 一、在 Hugo 資料夾模板下寫好網頁內容
 
 1. 打開 VS Code 切到桌面
 2. brew install hugo
@@ -23,7 +23,8 @@ draft: false
 - 此處安裝環境為 mac，預設已經安裝好 brew (若未安裝 brew 可見 [如何在 Mac 上安裝套件管理工具 Homebrew](https://redox-ccy.medium.com/%E7%AD%86%E8%A8%98-%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E5%AE%89%E8%A3%9Dhomebrew-87f127c6ebcf) 一文安裝)
 
 
-## 用 Nelify 將網頁部署在 Github Pages
+---
+##  二、用 Nelify 將網頁部署在 Github Pages
 
 1. 在 [github](https://github.com/) 開一個新 repo 取得 URL
 2. 回到 VS Code
