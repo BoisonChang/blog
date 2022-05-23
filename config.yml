@@ -58,7 +58,7 @@ params:
     favicon32x32: <link / abs url>
     apple_touch_icon: <link / abs url>
     safari_pinned_tab: <link / abs url>
-    
+
   label:
     text: Boison
     iconHeight: 35
@@ -111,15 +111,14 @@ params:
       - content
 menu:
   main:
+    - name: Search
+      url: search/
+      weight: 5
     - identifier: posts
       name: POST
       url: /posts/
-      weight: 1
-    - identifier: search
-      name: SEARCH
-      url: /posts/
-      weight: 1
+      weight: 7
     - identifier: tags
       name: TAG
       url: /tags/
-      weight: 3
+      weight: 10
