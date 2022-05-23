@@ -43,9 +43,9 @@ Mac 上叫做終端機 (Terminal)，Windows 系統上叫做命令提示字元（
 
 ### 1. CLI 的常用基本指令
 
-指令 (Mac OS / Linux)           | 用途  | 例子      
--------------------------------|-------|------
+指令 (Mac OS / Linux)           | 用途                                          | 例子      |
+-------------------------------|-----------------------------------|----------|
 pwd 
-(print working directory)      | 印出目前路徑位置 | pwd 
+(print working directory)      | 印出目前路徑位置                     | pwd       | 
 ls 
-(List Segment)                        | 列出檔案清單 |    <ul><li>ls</li><li>ls -a(列出隱藏的檔案)</li><li>ls -l(列出檔案相關資訊)</li><li>ls -al(列出隱藏+資訊)</li></ul>
+(List Segment)                        | 列出檔案清單                           |    <ul><li>ls</li><li>ls -a(列出隱藏的檔案)</li><li>ls -l(列出檔案相關資訊)</li><li>ls -al(列出隱藏+資訊)</li></ul> |
