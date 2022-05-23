@@ -3,12 +3,15 @@ title: Boison
 paginate: 5
 defaultContentLanguage: zh-tw
 theme: PaperMod
+
 enableRobotsTXT: true
-buildDrafts: false
+buildDrafts: true
 buildFuture: false
 buildExpired: false
+
 permalinks:
   posts: '/:year/:month/:slug/'
+
 minify:
   disableXML: true
   minifyOutput: true
@@ -110,15 +113,15 @@ params:
 menu:
   main:
     - name: Search
-      url:  /search/
+      url:  search/
       weight: 5
     - identifier: posts
       name: Post
-      url: /posts/
+      url:  posts/
       weight: 7
     - identifier: tags
       name: Tag
-      url: /tags/
+      url:  tags/
       weight: 10
 
 # Search Configs
