@@ -48,15 +48,4 @@ Mac 上叫做終端機 (Terminal)，Windows 系統上叫做命令提示字元（
 pwd 
 (print working directory)      | 印出目前路徑位置 | pwd 
 ls 
-(List Segment)    | 列出檔案清單 |  ls<br>ls -a
-(列出隱藏的檔案)<br>ls -l
-(列出檔案相關資訊)<br>ls -al
-(列出隱藏+資訊)
-cd 
-(change directory)  | 切換資料夾 | cd Desktop
-(到桌面資料夾)<br>cd ~
-(回到使用者層)<br>cd /
-(回到根目錄)
-man 
-(manual)      | 指令使用說明書 | man la
-clear      | 清空畫面 | clear
+(List Segment)                        | 列出檔案清單 |    <ul><li>ls</li><li>ls -a(列出隱藏的檔案)</li><li>ls -l(列出檔案相關資訊)</li><li>ls -al(列出隱藏+資訊)</li></ul>
