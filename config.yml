@@ -111,7 +111,7 @@ params:
       - content
 menu:
   main:
-    - name: Search
+    - name: SEARCH
       url: search/
       weight: 5
     - identifier: posts
