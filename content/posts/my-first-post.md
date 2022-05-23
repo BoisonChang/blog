@@ -1,5 +1,5 @@
 ---
-title: '用 Hugo 建 Blog 部署在 Github Pages'
+title: '用 Hugo 寫 Blog 部署在 Github Pages'
 date: 2022-05-22T14:54:21+08:00
 draft: false
 ---
