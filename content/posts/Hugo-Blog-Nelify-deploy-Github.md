@@ -36,7 +36,15 @@ ShowPostNavLinks: true
 
 這篇文章說明如何在 5 分鐘架設一個靜態網站。首先你可以利用 Hugo 這套工具產生你的網站架構，接著利用 Nelify 將網頁部署在 Github Pages。
 
-若是過去完全沒有寫程式的經驗，你會需要根據注意事項花額外的時間準備好一些基礎建設並適度了解其原理 (套件管理工具 Homebrew、程式碼代管平台 GitHub、Netlify 靜態網站託管平台)。
+本文假設你是在 Mac 的環境下操作，若你的環境是 Windows 則雖概念相同但步驟會略有差異；若是過去完全沒有寫程式的經驗，你會需要根據注意事項花額外的時間準備好一些基礎建設並適度了解其原理，當然你也可以不要花太多時間在搞懂這些鬼東西，只要依照現有的安裝教學讓其能夠成功運作出你要的結果就好，若是過程中卡住很歡迎你聯繫我，我很願意提供幫助。
+
+> 名詞解釋:
+- Hugo:  靜態網站生成器
+- Homebrew: 套件管理工具 
+- Github:  程式碼代管平台 
+- Netlify 靜態網站託管平台
+- Visual Studio Code (VS Code): 原始碼編輯器
+- Terminal: 終端機
 
 ---
 ## 一、在 Hugo 資料夾模板下寫好網頁內容
@@ -53,8 +61,9 @@ ShowPostNavLinks: true
 10. 打開本地端網址：[http://localhost:1313/](http://localhost:1313/) 確認本地端是否可以開啟
 
 **注意事項**:
+- 你可以選擇不使用 VS Code，只要用本機的 Terminal 介面即可
 - 此處模板選擇 PaperMod 如果想選擇其他主題至此 [Hugo Themes](https://themes.gohugo.io/) 並替換掉步驟 6 和 7
-- 若是沒有 Github 帳號需要先去註冊，repo 為專案意思 (可以想成是再 google drive 開新資料夾)
+- 若是沒有 Github 帳號需要先去註冊，repo 為專案意思 (開 repo 可以想成是在 google drive 開新資料夾)
 - 此處安裝環境為 mac，預設已經安裝好 brew (若未安裝 brew 可見 [如何在 Mac 上安裝套件管理工具 Homebrew](https://redox-ccy.medium.com/%E7%AD%86%E8%A8%98-%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E5%AE%89%E8%A3%9Dhomebrew-87f127c6ebcf) 一文安裝)
 - 「本地端」的意思是網站只在你電腦上可訪問，localhost:1313 就是打開你電腦中資料夾的位置
 
