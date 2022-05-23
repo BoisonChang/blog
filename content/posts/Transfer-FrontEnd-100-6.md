@@ -296,6 +296,6 @@ Github  則是一個支援 Git 程式碼存取和遠端管理的平台服務，
 
 > 資料來源
 
-- [為你自己學 Git](https://gitbook.tw/)
-- [《為你自己學 Git》 閱讀筆記](https://medium.com/@leokao0726/%E7%82%BA%E4%BD%A0%E8%87%AA%E5%B7%B1%E5%AD%B8-git-%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98-f76e4026dbce)
-- [電子書 kingofamani 的 GIT 教學](https://kingofamani.gitbooks.io/git-teach/content/chapter_2/repo.html)
+1. [為你自己學 Git](https://gitbook.tw/)
+2. [《為你自己學 Git》 閱讀筆記](https://medium.com/@leokao0726/%E7%82%BA%E4%BD%A0%E8%87%AA%E5%B7%B1%E5%AD%B8-git-%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98-f76e4026dbce)
+3. [電子書 kingofamani 的 GIT 教學](https://kingofamani.gitbooks.io/git-teach/content/chapter_2/repo.html)
