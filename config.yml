@@ -12,6 +12,12 @@ permalinks:
 minify:
   disableXML: true
   minifyOutput: true
+# Search Configs
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
 params:
   env: production
   title: Boison
@@ -34,16 +40,25 @@ params:
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
+  # Post
   hidemeta: false
-  hideSummary: false
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  comments: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
   showtoc: false
   tocopen: false
+  ShowShareButtons: true
+
   assets:
     favicon: <link / abs url>
     favicon16x16: <link / abs url>
     favicon32x32: <link / abs url>
     apple_touch_icon: <link / abs url>
     safari_pinned_tab: <link / abs url>
+    
   label:
     text: Boison
     iconHeight: 35
@@ -81,6 +96,7 @@ params:
     hidden: true
     hiddenInList: true
     hiddenInSingle: true
+
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -97,6 +113,10 @@ menu:
   main:
     - identifier: posts
       name: POST
+      url: /posts/
+      weight: 1
+    - identifier: search
+      name: SEARCH
       url: /posts/
       weight: 1
     - identifier: tags
