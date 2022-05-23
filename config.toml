@@ -108,7 +108,7 @@ SiteVerificationTag = "XYZabc"
 
 [[menu.main]]
 identifier = "posts"
-name = "Post"
+name = "POST"
 url = "/posts/"
 weight = 1
 
