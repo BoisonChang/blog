@@ -1,6 +1,6 @@
 ---
 title: "百日轉職前端工程師：網頁的普通常識 HTML《DAY 3》"
-slug:  transfer-frontEnd-100-3
+slug:  Transfer-FrontEnd-100-3
 date: 2021-06-12T00:07:21+08:00
 draft: false
 tags: ["FrontEnd", "transfer"]

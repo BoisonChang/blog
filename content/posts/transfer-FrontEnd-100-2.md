@@ -1,7 +1,7 @@
 ---
 title: "百日轉職前端工程師：第零週時間管理的技巧 《Day 2》"
-slug: Transfer FE 100 2
-date: 2021-06-10 T23:41:00+08:00
+slug:  Transfer-FrontEnd-100-2
+date: 2021-06-10T23:41:21+08:00
 draft: false
 tags: ["FrontEnd", "transfer"]
 author: "Boison"
