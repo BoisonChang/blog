@@ -1,5 +1,5 @@
 ---
-title: "百日轉職前端工程師：第三週JS 常用內建函式《DAY 9》"
+title: "百日轉職前端工程師：第三週 JS 常用內建函式《DAY 9》"
 slug: Transfer-FrontEnd-100-9
 date: 2020-07-20T16:11:21+08:00
 draft: false
