@@ -62,7 +62,7 @@ ShowPostNavLinks: true
 9. hugo server -D
 10. 打開本地端網址：[http://localhost:1313/](http://localhost:1313/) 確認本地端是否可以開啟
 
-**注意事項**:
+> **注意事項**:
 - 你可以選擇不使用 VS Code，只要用本機的 Terminal 介面即可
 - 此處模板選擇 PaperMod 如果想選擇其他主題至此 [Hugo Themes](https://themes.gohugo.io/) 並替換掉步驟 6 和 7
 - 若是沒有 Github 帳號需要先去註冊，repo 為專案意思 (開 repo 可以想成是在 google drive 開新資料夾)
@@ -80,7 +80,7 @@ ShowPostNavLinks: true
 6. Nelify 幫你把網站部署完成（到 Github Pages）：[https://boison.netlify.app/](https://boison.netlify.app/) 確認遠端是否可以開啟
 
 
-**注意事項**:
+> **注意事項**:
 - 在  Github 新建 repo 後點擊進入右上角點 Code/Https 可以取得 URL
 - 在 Nelify 設定中輸入此 URL，往後每次你更新 repo 內容時 Nelify 會自動讀取內容並重新部署 
 - 網站實際上是放在 Github 的空間，Nelify 是協助簡化將網站部屬到 Github 步驟跟調整設定
