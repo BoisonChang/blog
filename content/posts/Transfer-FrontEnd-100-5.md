@@ -64,6 +64,8 @@ Mac 上叫做終端機 (Terminal)，Windows 系統上叫做命令提示字元（
 
 #### clear: 清空畫面
 
+***
+
 ### 2. CLI 的常用檔案相關指令
 
 #### touch: 建立檔案 / 更改時間
@@ -97,7 +99,7 @@ Mac 上叫做終端機 (Terminal)，Windows 系統上叫做命令提示字元（
 - open test.txt
 - open .. : 打開資料夾)
 
-
+***
 
 
 ### 3. CLI 的常用其他指令
