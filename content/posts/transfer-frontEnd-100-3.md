@@ -55,36 +55,36 @@ div 標籤基本上就是用來包裹「文章區塊」，我一度很懷疑都�
 - 另外 w3.org 中有提到  `<header>` 不能放在 `<footer>`、`<address>` 或另一個  `<header>` 裡面
 
 
-### <nav>
+### `<nav>`
 - 導覽列
 - 裡面裝的東西應該只有主要的 navigation links，用來連結到網站其他頁面，或者連結到網站外的網頁
 - 不要把各種 link 都丟到裡面
-- <nav> 不可以放到 <address> 裡面
+- `<nav>` 不可以放到 `<address>` 裡面
 
-### <main>
+### `<main>`
 - 網頁的主要內容，一頁 HTML 只能出現一次。
 
-### <section>
+### `<section>`
 - 文件中的一個群組或區塊
 - 一般來說，section 裡面的應該是有意義且附帶標題的一段內容，裡面都會包含 title 或 heading
 - 不要把 當作 div 來使用，他們的使用目的不同
-- <section>不可以放到 <address>  裡面
+- `<section>`不可以放到 `<address>`  裡面
 
-### <article>
+### `<article>`
 - article 是獨立的區塊包含完整的內容，也必須帶有 heading
 - article 跟 section 的區分是，article 有更高的獨立性及完整性
 - article 是可以獨立存在、具有完整內容、可獨立於網站其他部分的區塊；而section 雖然也具有獨立表達內容的能力，但是對外層有一定的相依性
 - 例如：雜誌、部落格的文章、報紙文章等
 
-### <aside>
+### `<aside>`
 - aside 元素定義了除了內容之外的其他內容，aside 的內容應該與周圍的內容有相關性
 - 例如：側邊欄
 
-### <figure>
+### `<figure>`
 - figure 是一個有完整內容的區塊，是主要內容的一部分，可以任意移動位置而不影響整體內容的表達
 - 例如：圖片與標題可以組合在 figure 元素裡
 
-### <footer>
+### `<footer>`
 - footer 代表一個區塊的結尾訊息。footer內通常會包含作者、版權等資訊
 
 > 資料來源: [小事之 HTML 語意化標籤 上篇](https://ithelp.ithome.com.tw/articles/10195356)
