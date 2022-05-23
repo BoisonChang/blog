@@ -170,7 +170,9 @@ ShowPostNavLinks: true
 
 ### 2. Git Branch 相關指令
 
-分支（Branch） 只是一個指向某個 Commit 的指標，所謂的分支，其實就只是一個有 40 個字元的檔案而已。
+- 分支（Branch） 只是一個指向某個 Commit 的指標，所謂的分支，其實就只是一個有 40 個字元的檔案而已。
+- HEAD 是一個指向某一個分支的指標，在分支切換 (checkout) 的時候，HEAD 會跟著指向切換過去的那個分支。
+  - 在 .git 目錄裡有一個名為 HEAD 的檔案，它會記錄目前是在哪個分支的資訊)
 
 #### git branch
 
@@ -202,9 +204,6 @@ ShowPostNavLinks: true
 > 將分支合併回 master
 
 - git merge week1
-
-> HEAD 是一個指向某一個分支的指標，在分支切換 (checkout) 的時候，HEAD 會跟著指向切換過去的那個分支。
-> 在 .git 目錄裡有一個名為  HEAD  的檔案，它會記錄目前是在哪個分支的資訊
 
 ---
 
@@ -298,4 +297,4 @@ Github  則是一個支援 Git 程式碼存取和遠端管理的平台服務，
 
 - [為你自己學 Git](https://gitbook.tw/)
 - [《為你自己學 Git》 閱讀筆記](https://medium.com/@leokao0726/%E7%82%BA%E4%BD%A0%E8%87%AA%E5%B7%B1%E5%AD%B8-git-%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98-f76e4026dbce)
-- [電子書 kingofamani 的 GIT 教學]()
+- [電子書 kingofamani 的 GIT 教學](https://kingofamani.gitbooks.io/git-teach/content/chapter_2/repo.html)
