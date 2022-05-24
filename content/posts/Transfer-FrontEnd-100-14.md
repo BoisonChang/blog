@@ -32,12 +32,11 @@ ShowPostNavLinks: true
 老實說這個問題可以很簡單的回答，執行環境（runtime）不同，能使用的 function 和程式運行的特性也會不同。
 
 > JavaScript 是一個程式語言，會有程式語言本身所規範可以用的東西，例如說用 var 宣告變數，用 if else 進行判斷，或者是使用 function 宣告函式，這些東西都是 JavaScript 這個程式語言本身就有的部分。既然我上面說了「程式語言本身就有的部分」，就代表也有一些東西其實是「不屬於 JavaScript 這個程式語言的」。Node.js 其實是 JavaScript 的一個執行環境（runtime），JavaScript 最常見的兩個執行環境（runtime）就是 Node.js 和 瀏覽器。
-
-by Huli
+**by Huli**
 
 比如 JavaScript 在網頁中執行時就能用到 document 、拿來計時的 setTimeout 與 setInterval，以及拿來做 ajax 的 XMLHttpRequest 與 fetch，這些都是瀏覽器這個執行環境所提供的東西。
 
-> 在早期 JavaScript 是為了在瀏覽器裡面而開發的。
+> **在早期 JavaScript 是為了在瀏覽器裡面而開發的**
 
 不過後來 JavaScript 被應用在很多平臺，現在大多數的人使用 Node.js 這個執行環境（runtime）來執行後端程式。
 
@@ -70,7 +69,7 @@ by Huli
 
 ## 二、什麼是 DOM？
 
-- DOM 全名為 Document Object Model，是一種介面的定義
+> **DOM 全名為 Document Object Model，是一種介面的定義**
 - 根據 W3C DOM 規範，DOM 是一種與瀏覽器，平台，語言的接口
 - 簡單來說它能把一份 HTML 文件內的各個標籤，包括文字、圖片等等都定義成「物件」
 - 而這些物件最終會形成一個樹狀結構，提供瀏覽器跟 JS 溝通的橋樑
@@ -79,9 +78,8 @@ by Huli
 - DOM 最常被用以與 JavaScript 溝通，也就是說雖然程式以 JavaScript 寫成，但使用 DOM 來存取頁面及其元素
 - DOM 其實可以與任何程式語言共同運作。一個網頁的所有元素組織在一起，就構成了一棵「DOM 樹」。
 
-在 DOM 中，每個 元素 (element) 、 文字 (text) 等等都是一個節點。
 
-> **而節點通常分成以下四種（可參考上篇 前端基礎 HTML 做知識的連結）**
+> **在 DOM 中每個 元素 (element)、文字 (text) 等等都是一個節點，而節點通常分成以下四種（可參考上篇 前端基礎 HTML 做知識的連結）**
 
 1. Document: Document 就是指這份文件，也就是這份 HTML 檔的開端，所有的一切都會從 Document 開始往下進行
 2. Element: Element 就是指文件內的各個標籤
@@ -138,15 +136,15 @@ by Huli
 
     假設按鈕本身是 `<input>` 標籤中的 submit 以此為舉例，可以先為其加上 btn 屬性，整個元件長成 `<input type="submit" class="btn">` 因此為其加上事件監聽器 (event listener) 的程式碼如下
 
-    ```
-    document.querySelector(.btn).addEventListener('submit', (e) -> {事件觸發內容的程式碼} )
-    ```
+
+   >  document.querySelector(.btn).addEventListener('submit', (e) -> {事件觸發內容的程式碼} )
+    
 
     如果是想要直接在點到整個網頁中的按鈕就觸發可以用 
-    ```
-    window.addEventListener('submit', (e) -> {事件觸發內容的程式碼} )
+    
+    > window.addEventListener('submit', (e) -> {事件觸發內容的程式碼} )
 
-    ```
+    
     ### 1. 事件資訊 Event(e)
 
     addEventListener 其中的會內建一個「事件物件」，內含有你執行的動作的事件資訊，例如：click 事件就會包含點擊的區塊、位置….等。你可以自由為其命名，例如上述即命名為「e」。
