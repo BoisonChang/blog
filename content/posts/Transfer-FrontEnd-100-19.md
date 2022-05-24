@@ -33,11 +33,12 @@ Webpack 功能非常強大，能夠將各種功能作為模組打包成一個可
 - 可將零散的 JavaScript 模組打包，然後在瀏覽器上運行，解決舊瀏覽器不支援部分新語法的問題，也利於後續管理與維護
 
 > **Webpack 打包流程**
+
 1. index.js, utils.js, templates.js → 經過 webpack 打包 → main.js
 2. index.html 用 src 引入 main.js 模組
 
-
 > **在專案資料夾內安裝 webpack**
+
 1. mkdir webpack-demo
 2. cd webpack-demo
 3. npm init -y
@@ -46,30 +47,31 @@ Webpack 功能非常強大，能夠將各種功能作為模組打包成一個可
 通常開發者會把原始的檔案放在 src 資料夾，編譯過後的檔案放在 dist 資料夾，以方便管理。執行 webpack 就可以進行編譯，預設會把 src 裡的檔案打包到 dist 內成名為 main.js 的檔案。
 
 > **也可以在根目錄建立設定檔 webpack.config.js 來自定義路徑和要打包的模式，模式有兩種**
--  production 的壓縮程度較高，檔案會變比較小，類似 uglify 過後的一串 JavaScript
-    - mode: 'production',
-- development 的可讀性則相較高，但檔案較大
-    - mode: 'development'
 
+- production 的壓縮程度較高，檔案會變比較小，類似 uglify 過後的一串 JavaScript
+  - mode: 'production',
+- development 的可讀性則相較高，但檔案較大
+  - mode: 'development'
 
 > **webpack.config.js 檔案的格式**
 
 ```
-const path = require('path'); 
-module.exports = { 
-mode: 'production', 
-entry: './src/index.js', 
-output: { 
-filename: 'main.js', 
-path: path.resolve(__dirname, 'dist'), 
-}, 
+const path = require('path');
+module.exports = {
+mode: 'production',
+entry: './src/index.js',
+output: {
+filename: 'main.js',
+path: path.resolve(__dirname, 'dist'),
+},
 };
 ```
-> ***在 package.json 建立 script，之後  npm run build 就可以執行 webpack**
+
+> **\*在 package.json 建立 script，之後 npm run build 就可以執行 webpack**
 
 ```
-"scripts": { 
-"build": "webpack", 
+"scripts": {
+"build": "webpack",
 "test": "echo \"Error: no test specified\" && exit 1" },
 ```
 
@@ -86,102 +88,104 @@ path: path.resolve(__dirname, 'dist'),
 ### 1. 打包 npm 上別人第三方的 modules
 
 > **透過 CSS loader 打包 CSS 檔案**
+
 1. css-loader：打包 CSS，在 webpack.config.js 加入 loader
+
 ```
-module.exports = { 
-module: { 
-rules: [ 
-{ test: /\.css$/i, 
-use: ['style-loader', 'css-loader'], 
+module.exports = {
+module: {
+rules: [
+{ test: /\.css$/i,
+use: ['style-loader', 'css-loader'],
 }, ], }, };
 ```
-2. CLI 安裝 style.loader 和 css.loader
-    - npm install --save-dev css-loader style-loader
-3. 在 index.js 引入 style.css 一併打包為 main.js
-    - import css from './style.css';
 
+2. CLI 安裝 style.loader 和 css.loader
+   - npm install --save-dev css-loader style-loader
+3. 在 index.js 引入 style.css 一併打包為 main.js
+   - import css from './style.css';
 
 > **透過 babel-loader 執行 babel**
+
 1.  CLI 安裝 babel-loader
-    - npm install -D babel-loader @babel/core @babel/preset-env 
-2. 在 webpack.config.js 設定檔加入 babel-loader
+    - npm install -D babel-loader @babel/core @babel/preset-env
+2.  在 webpack.config.js 設定檔加入 babel-loader 如下
 
 ```
-rules: [ { 
-test: /\.m?js$/, 
-exclude: /(node_modules|bower_components)/, 
-use: { 
-loader: 'babel-loader', 
-options: { 
-presets: ['@babel/preset-env'] 
+rules: [ {
+test: /\.m?js$/,
+exclude: /(node_modules|bower_components)/,
+use: {
+loader: 'babel-loader',
+options: {
+presets: ['@babel/preset-env']
 } } }
 ```
 
 > **透過 sass-loader 執行 sass**
+
 1. CLI 安裝 sass-loader
-    - npm install sass-loader sass webpack --save-dev 
-2. 在 webpack.config.js 設定檔加入 sass-loader
+   - npm install sass-loader sass webpack --save-dev
+2. 在 webpack.config.js 設定檔加入 sass-loader 如下
 
 ```
-rules: [ { 
-test: /\.s[ac]ss$/i, 
+rules: [ {
+test: /\.s[ac]ss$/i,
 use: [
-'style-loader', 
+'style-loader',
 'css-loader',
-'sass-loader', 
+'sass-loader',
 ], }, ],
 ```
-
 
 ### 2. 利用 Dev Server 自動化打包
 
 dev server 是一套可以在檔案改變的時候「自動」重新打包的 plugin，不用更動程式碼每次都要手動在 CLI 輸入 wbpack / npm run build 太麻煩。
 
 1. CLI 安裝 dev server
-    - npm install sass-loader sass webpack --save-dev
+   - npm install sass-loader sass webpack --save-dev
 2. 在 webpack.config.js 設定檔加入以下，定義編譯完的檔案放在哪裡
-    - devServer: { contentBase: './dist', },
-3. 在 package.json 加入 start 指令，之後 CLI 輸入 npm run start，就會進入到  dev server start 的狀態
-    - "scripts": { "start":  "webpack-dev-server --open", }
-
+   - devServer: { contentBase: './dist', },
+3. 在 package.json 加入 start 指令，之後 CLI 輸入 npm run start，就會進入到 dev server start 的狀態
+   - "scripts": { "start": "webpack-dev-server --open", }
 
 ### 3. 使用 source map 看到原來程式碼的樣子
 
 在 webpack.config.js 加入 source-map 程式碼，在 debug 的時候，就可以在 chrome dev tool 溯源到真正的程式碼。
 
 ```
-module.exports = { 
-mode: 'development', 
-entry: { 
-app: './src/index.js', 
-}, 
-devtool: 'inline-source-map', 
-output: { 
-filename: '[name].bundle.js', 
-path: path.resolve(__dirname, 'dist'), 
+module.exports = {
+mode: 'development',
+entry: {
+app: './src/index.js',
+},
+devtool: 'inline-source-map',
+output: {
+filename: '[name].bundle.js',
+path: path.resolve(__dirname, 'dist'),
 }, };
 ```
 
-### 4. 使用 HtmlWebpackPlugin 自動產生打包後的 html 
+### 4. 使用 HtmlWebpackPlugin 自動產生打包後的 html
 
 > **在 webpack.config.js 加入 HtmlWebpackPlugin，自動產生打包後的 html 在 index.html 檔案內**
 
-
 ```
-const HtmlWebpackPlugin = require('html-webpack-plugin'); 
-const path = require('path'); 
-module.exports = { 
-entry: 'index.js', 
-output: { 
-path: path.resolve(__dirname, './dist'), 
-filename: 'index_bundle.js' 
-}, 
-plugins: [new HtmlWebpackPlugin()] 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+module.exports = {
+entry: 'index.js',
+output: {
+path: path.resolve(__dirname, './dist'),
+filename: 'index_bundle.js'
+},
+plugins: [new HtmlWebpackPlugin()]
 };
 
 ```
 
 > 參考資料:
+
 1. [Webpack 打包工具入門](https://nicolakacha.coderbridge.io/2020/09/09/webpack/)
 2. [Webpack 官方網站文件](https://www.webpackjs.com/)
 
@@ -200,31 +204,30 @@ plugins: [new HtmlWebpackPlugin()]
 - 藉由簡化工作量，可讓開發者將重點放在功能的開發上
 
 > **例如下列功能**
+
 1. 讓網頁自動重新整理
 2. 編譯 SASS 、程式碼檢測
 3. 壓縮 CSS, JS, 圖檔
 4. 自訂任務流程…
 
-
 ### 2. 如何安裝 gulp？
 
-1. 先用 npm 安裝  gulp-cli：npm install --global gulp-cli
+1. 先用 npm 安裝 gulp-cli：npm install --global gulp-cli
 2. 開啟使用 gulp 的專案資料夾
 3. 進行初始化：npm init
 4. 安裝 gulp package：npm install --save-dev gulp
 5. 使用指令檢查是否安裝成功：gulp --version
 
-
 ### 3. gulp 提供的 API
 
 - gulp.task
-    - 執行工作
+  - 執行工作
 - gulp.src
-    - 執行資料來源
+  - 執行資料來源
 - gulp.dest
-    - 執行結果位置
+  - 執行結果位置
 - gulp.watch
-    - 監視執行過程中，資料是否變更
+  - 監視執行過程中，資料是否變更
 
 使用 gulp 內建的 API watch()，在檔案每次被改動的時候自動執行 gulp 工作流程，例如我們可以在 SCSS 檔案被更改的時候，自動執行 complieCSS 這個 task，就不需要每次都要手動執行流程。
 
@@ -233,33 +236,33 @@ plugins: [new HtmlWebpackPlugin()]
 > **gulp API 使用實例**
 
 ```
-const { src, dest, series, parallel, watch } = require('gulp'); 
-const babel = require('gulp-babel'); 
-const uglify = require('gulp-uglify'); 
-const sass = require('gulp-sass'); 
-sass.compiler = require('node-sass'); 
-const cleanCSS = require('gulp-clean-css'); 
-const rename = require('gulp-rename'); 
+const { src, dest, series, parallel, watch } = require('gulp');
+const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
+const cleanCSS = require('gulp-clean-css');
+const rename = require('gulp-rename');
 
-function compileJS() { 
-return src('src/*.js') 
-.pipe(babel()) 
-.pipe(uglify()) 
-.pipe(rename({ extname: '.min.js' })) 
-.pipe(dest('dist')); 
-} 
+function compileJS() {
+return src('src/*.js')
+.pipe(babel())
+.pipe(uglify())
+.pipe(rename({ extname: '.min.js' }))
+.pipe(dest('dist'));
+}
 
-function compileCSS() { 
-return src('src/*.scss') 
-.pipe(sass().on('error', sass.logError)) 
-.pipe(dest('./css')) 
-.pipe(cleanCSS({ compatibility: 'ie8' })) 
-.pipe(rename({ extname: '.min.css' })) 
-.pipe(dest('./css')) 
-} 
+function compileCSS() {
+return src('src/*.scss')
+.pipe(sass().on('error', sass.logError))
+.pipe(dest('./css'))
+.pipe(cleanCSS({ compatibility: 'ie8' }))
+.pipe(rename({ extname: '.min.css' }))
+.pipe(dest('./css'))
+}
 
-exports.default = function() { 
-watch('src/*', series(compileCSS, compileJS)); 
+exports.default = function() {
+watch('src/*', series(compileCSS, compileJS));
 }
 ```
 
@@ -274,14 +277,14 @@ watch('src/*', series(compileCSS, compileJS));
 > **就是在 gulp 任務管理器內執行 babel 轉換語法的 plugin**
 
 ```
-const { src, dest } = require('gulp'); 
-const babel = require('gulp-babel'); 
+const { src, dest } = require('gulp');
+const babel = require('gulp-babel');
 
-function defaultTask() { 
-return src('src/test.js') 
-.pipe(babel({ presets: ['@babel/env']})   // .babelrc 第一次用要放參數 
-).pipe(dest('dist')); 
-} 
+function defaultTask() {
+return src('src/test.js')
+.pipe(babel({ presets: ['@babel/env']})   // .babelrc 第一次用要放參數
+).pipe(dest('dist'));
+}
 
 exports.default = defaultTask;
 ```
@@ -292,13 +295,13 @@ exports.default = defaultTask;
 
 ```
 const { src, dest } = require('gulp');
-const babel = require('gulp-babel'); 
-const uglify = require('gulp-uglify'); 
+const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
 
 function defaultTask() {
-return src('src/*.js') .pipe(babel()) 
-.pipe(uglify()) 
-.pipe(dest('dist')); 
+return src('src/*.js') .pipe(babel())
+.pipe(uglify())
+.pipe(dest('dist'));
 }
 ```
 
@@ -339,7 +342,6 @@ exports.default = defaultTask;
 ```
 
 ### 5. gulp-clean-css
-
 
 > **gulp-clean-css 類似 minify js 對 JS 在做的事，可以把 css 檔案壓縮**
 
@@ -384,33 +386,36 @@ exports.default= minifyImg;
 ## 五、gulp 引入 series / parallel 執行任務
 
 - 引入 series：按順序執行 compileCSS 和 compileJS 兩個任務
-    - exports.default = series(compileCSS, compileJS);
+  - exports.default = series(compileCSS, compileJS);
 - 引入 parallel：同時執行 compileCSS 和 compileJS 兩個任務
-    - exports.default = parallel(compileCSS, compileJS);
+  - exports.default = parallel(compileCSS, compileJS);
 - 執行單個任務
-    - exports.compileCSS = compileCSS
+  - exports.compileCSS = compileCSS
 
 ---
 
 ## 六、Webpack 和 Gulp 的差別？
 
 > **Webpack**
-- 是一套模組整合工具（module bundler）
+
+- 是一套**模組整合工具（module bundler）**
 - 目的：利用模組化的概念，將各種資源打包成能在瀏覽器上執行的程式碼
 - 功能：將各種資源視為一種模組引入打包成 main.js
 
 > **gulp**
-- 是一套任務管理工具（task manager）
+
+- 是一套**任務管理工具（task manager）**
 - 目的：提供自動化與流程管理，整合前端開發環境，藉由簡化工作量，可讓開發者將重點放在功能的開發上。
 - 功能：提供自訂任務流程，例如 babel、scss、壓縮、重新整理、校正時間等。
 
-
 > **兩者目標並不相同，為截然不同的工具，但是恰巧均能夠達到部分功能如以下，因此容易被混淆**
+
 - 使用 Babel 將 ES6 編譯成 ES5 語法
 - 將 SASS 檔編譯成 CSS 檔
 - 壓縮 CSS, JS, 圖檔等
 
---- 
+---
+
 ## 七、總結
 
->  『想說的話一杯酒說不盡，那不如就打包外帶吧。』
+> 『想說的話一杯酒說不盡，那不如就打包外帶吧。』
