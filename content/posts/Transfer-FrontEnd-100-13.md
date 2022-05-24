@@ -65,17 +65,17 @@ ShowPostNavLinks: true
 > **不同元素的預設值**
 
 1. 預設 inline 類型的元素
-   - span, a, input, img, em...
-   - 其不能調整寬和高、上下邊距也不能調
-   - 多個元素也是會並排，不會在寬度未滿的狀況下自動換行
+  - span, a, input, img, em...
+  - 其不能調整寬和高、上下邊距也不能調
+  - 多個元素也是會並排，不會在寬度未滿的狀況下自動換行
 2. 預設 block 類型的元素
-   - div、p、ul、li...
-   - 可以設定高度（height）、寬度（width）
-   - 元素寬度預設會撐到最大，使其占滿整個容器
+  - div、p、ul、li...
+  - 可以設定高度（height）、寬度（width）
+  - 元素寬度預設會撐到最大，使其占滿整個容器
 3. 預設 inline-block 類型的元素
-   - buttom, input, select...
-   - 對外像 display: inline 可以並排，元素之間彼此不會自動「換行」
-   - 對內像 display: block 可以調整各種屬性。（可水平排列）
+  - buttom, input, select...
+  - 對外像 display: inline 可以並排，元素之間彼此不會自動「換行」
+  - 對內像 display: block 可以調整各種屬性。（可水平排列）
 
 > **補充：長度單位有三種**
 
@@ -105,7 +105,7 @@ ShowPostNavLinks: true
 
 ### justify-content
 
-> **justify-content  決定了盒內元素相對於 flex 外容器的對齊位置（水平）**
+> **justify-content  決定了盒內元素相對於 flex 外容器的對齊位置（水平）**
 
 - flex-start：靠左對齊
 - flex-end：靠右對齊
@@ -116,7 +116,7 @@ ShowPostNavLinks: true
 
 ### align-items
 
-> **justify-content  決定了盒內元素相對於 flex 外容器的對齊位置（垂直）**
+> **justify-content  決定了盒內元素相對於 flex 外容器的對齊位置（垂直）**
 
 - flex-start：向上對齊
 - flex-end：向下對齊
@@ -130,7 +130,7 @@ ShowPostNavLinks: true
 
 ### align-content
 
-> **基本上遇到多行元素時使用，整體與 align-items  大同小異**
+> **基本上遇到多行元素時使用，整體與 align-items  大同小異**
 
 - flex-start：向上對齊
 - flex-end：向下對齊
