@@ -321,20 +321,20 @@ NoSQL 將聚集後的資料，作為儲存的最小單位，透過縝密豐富�
 
 ### 1. INSERT 新增資料
 
->**INSERT INTO 資料表名稱 (欄位名稱, 欄位名稱, …) VALUES (欄位值, 欄位值)**
+>INSERT INTO 資料表名稱 (欄位名稱, 欄位名稱, …) VALUES (欄位值, 欄位值)
 
 ### 2. SELECT 查詢資料
 
-> **SELECT 欄位名稱, 欄位名稱, … FROM 資料表名稱**
+> SELECT 欄位名稱, 欄位名稱, … FROM 資料表名稱
 - 使用 * 查詢所有欄位
 - 排序 ORDER BY DESC/ASC
 
 ### 3. UPDATE 修改資料
-> **UPDATE 資料表名稱 SET 欄位名稱 =新要改的欄位值 WHERE 欄位名稱 = 欄位值**
+> UPDATE 資料表名稱 SET 欄位名稱 =新要改的欄位值 WHERE 欄位名稱 = 欄位值
 - 補充 WHERE 後面條件可用 and/or
 
 ### 4. DELETE 刪除資料
-> **DELETE FROM 資料表名稱 WHERE 欄位名稱 = 欄位值**
+> DELETE FROM 資料表名稱 WHERE 欄位名稱 = 欄位值
 
 > 參考資料
 1. [Day 60 - PHP 與 MySQL 入門](https://tw.coderbridge.com/@YSKuo/2da4b41f85134ac5a4042325b43b85dc)
@@ -351,7 +351,7 @@ NoSQL 將聚集後的資料，作為儲存的最小單位，透過縝密豐富�
 - 而 form 的另一個屬性 action 則是能夠指定接收資料的程式或者是伺服器
 - 若是要對 MySQL 中的資料做處理，可以先傳到自己撰寫的 PHP 程式中再用 SQL 指定做更精細的處理
 
-> **關於 GET 和 POST 的差異此處想再進一步說明比較之。基本上需要保密的資料最好透過 POST 傳遞**
+> **關於 GET 和 POST ，基本上需要保密的資料最好透過 POST 傳遞**
 
 ### GET
 1. 網址差異 : 網址會帶有 HTML Form 表單的參數與資料
@@ -388,14 +388,15 @@ NoSQL 將聚集後的資料，作為儲存的最小單位，透過縝密豐富�
 - 建立 Session 之後，所儲存的狀態就叫做 Session information，可以翻作 Session 資訊
 - 在了解 Session 時必須有個觀念，就算沒有 Cookie 的存在，Session 機制也可以正常運作。
 
-> **理解 Session 的原理後回到 HTTP 上就是一樣的。只是在網頁技術中有兩種方法讓 Client 取得號碼牌（以狀態來理解）**
+> **理解 Session 的原理 HTTP 上就是一樣的。只是在網頁中有兩種方法讓 Client 取得號碼牌（以狀態來理解）**
 1. 一個是用 Cookie
 2. 另一個則是把狀態資訊放在網址列上面或是藏在 form 表單中（Cookie 還沒出現前常使用的方式）
 
 ---
 ## 七、什麼是 Cookie？
 
-> **簡單來說 Cookie 就是一個小型文字檔，它的特性是建立後會跟著 Clients 發出的 Request 自動帶到 Server**
+> **簡單來說 Cookie 就是一個小型文字檔**
+- 它的特性是建立後會跟著 Clients 發出的 Request 自動帶到 Server
 - Server 可以透過 HTTP Response 把資料寫到 Cookie
 - 在 Server 的 Response 中會有一個 Header 叫做 Set-Cookie: ...，裡面就能夠放一些資訊回傳給瀏覽器像是辨識使用者身份的 token
 - 舉例以身份辨識來說，所有的 Requset 瀏覽器都會自動把 Cookie 帶上去讓 Server 可以辨識這個身份
@@ -417,7 +418,7 @@ NoSQL 將聚集後的資料，作為儲存的最小單位，透過縝密豐富�
 
 然而一旦網站的架構複雜化，Server 要處理的任務急遽增加時，後端怎麼存放和共享這個 session 資料，又要兼顧效能和方便維護，就變成是很大的問題。
 
-> *因此 Cookie-based Session 就被提出為一個解決方案*
+> **因此 Cookie-based Session 就被提出為一個解決方案**
 - 把資料暫存放在 Cookie 中，讓 Client 自己負責保存
 - 建立 Session 之後若選擇把 Session information 這些資訊存在 Cookie 裡面，就叫做 Cookie-based session
 - 還有另一種方法則是在 Cookie 裡面只存一個 SessionID，其他的 Session 資訊都存在 Server 端，靠著這個 ID 把兩者關聯起來
