@@ -3,7 +3,7 @@ title: "百日轉職前端工程師：第十三週現代前端工具復盤 《DA
 slug: Transfer-FrontEnd-100-20
 date: 2020-11-17T21:20:21+08:00
 draft: false
-tags: ["FrontEnd", "Transfer"]
+tags: ["FrontEnd", "Transfer", "Promise"]
 author: "Boison"
 showToc: false
 TocOpen: false
