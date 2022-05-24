@@ -328,7 +328,7 @@ return htmlspecialchars($str, ENT_QUOTES);
 
 ### CSRF 防範手法
 
-> \*\*防範方式從三個面向
+> **防範方式從三個面向**
 
 #### 1. 使用者端 （Clients）的防範方式
 
