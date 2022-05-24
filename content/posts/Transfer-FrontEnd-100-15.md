@@ -177,4 +177,4 @@ AJAX 是「Asynchronous JavaScript and XML」（非同步的 JavaScript 與 XML 
 ---
 ## 八、結論
 
-> 比起串接全世界的 API，我更想串接的是妳的心。
+> 「比起串接全世界的 API，我更想串接的是妳的心。」

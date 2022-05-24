@@ -30,7 +30,7 @@ ShowPostNavLinks: true
 - HTML 全名為 Hypertext Markup Language（超文本標記語言）是一種用於建立網頁的標準標記語言
 - 基本上就是一份文件，但是這份文件卻是瀏覽器認識的文件，可以將他讀取為我們平常看到五彩繽紛有大有小有圖片的網頁頁面
 
-> **HTML  內的元素 (element)  有兩個重要的基本觀念**
+> **HTML  內的元素 (element)  有兩個重要的基本觀念**
 
 - 巢狀結構
   - 文件內的格式也就是所謂的元素 (element) ／區塊，都是一層一層的「標籤」包覆的
@@ -41,7 +41,7 @@ ShowPostNavLinks: true
   - 運用 class 等為各個區塊加上屬性 `<div class="title"><div>`
   - 在 CSS 的介面中撰寫這個區塊的屬性內的視覺呈現 .title { background: black }
   - 所有的區塊都能夠加上 id 和 class 的屬性
-  - 但一個  element  可以有無數個 class 可是只能有一個 id
+  - 但一個  element  可以有無數個 class 可是只能有一個 id
 
 ---
 
@@ -129,7 +129,7 @@ ShowPostNavLinks: true
 
 ### 5. 提交 Sitemap 增加網站被完整收錄的可能
 
-Sitemap 就像是網站的目錄，將站內所有頁面依分類呈現，而 SEO 需要用到的 Sitemap 常見的檔案格式為 sitemap.xml 檔。可以使用 Google 的  Search Console  提交 XML Sitemap，詳細教學可見 sitemap.xml 網站地圖提交教學。
+Sitemap 就像是網站的目錄，將站內所有頁面依分類呈現，而 SEO 需要用到的 Sitemap 常見的檔案格式為 sitemap.xml 檔。可以使用 Google 的  Search Console  提交 XML Sitemap，詳細教學可見 sitemap.xml 網站地圖提交教學。
 
 ### 6. 網站上方的麵包屑導覽列 (Breadcrumb)
 
@@ -144,4 +144,4 @@ Sitemap 就像是網站的目錄，將站內所有頁面依分類呈現，而 SE
 
 ## 四、總結
 
-`切版水很深，同志待努力。`
+> 『切版水很深，同志待努力。』
