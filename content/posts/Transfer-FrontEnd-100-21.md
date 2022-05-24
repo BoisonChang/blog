@@ -168,7 +168,7 @@ ptt
 以上大概用最簡單的方式介紹了正規表達式（Regular Expression）的概念，但要完整瞭解所有用法請參考以下本文之參考延伸資料。
 
 
-> 參考資料:
+> 參考資料
 1. [胡立 - 簡易 Regular Expression 入門指南](https://blog.huli.tw/2020/05/16/introduction-to-regular-expression/)
 2. [[Javascript] 初探Regex 正規表達式](https://moojing.medium.com/javascript-%E5%88%9D%E6%8E%A2regex-%E6%AD%A3%E8%A6%8F%E8%A1%A8%E9%81%94%E5%BC%8F-1da2f4d94795)
 3. [寫點科普 - 文本分析基礎-正規表達式(RegExp)](https://kopu.chat/%e6%96%87%e6%9c%ac%e5%88%86%e6%9e%90%e5%9f%ba%e7%a4%8e-%e6%ad%a3%e8%a6%8f%e8%a1%a8%e9%81%94%e5%bc%8fregexp/)
