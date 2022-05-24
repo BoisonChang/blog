@@ -77,7 +77,7 @@ by Huli
 - 在 JS 上可以運用各種 DOM API 去操作 DOM 實現網頁功能
 - DOM API 定義了讓 JavaScript 可以存取、改變 HTML/XML 架構、樣式和內容的方法，甚至是對節點綁定的事件
 - DOM 最常被用以與 JavaScript 溝通，也就是說雖然程式以 JavaScript 寫成，但使用 DOM 來存取頁面及其元素
--  DOM 其實可以與任何程式語言共同運作。一個網頁的所有元素組織在一起，就構成了一棵「DOM 樹」。
+- DOM 其實可以與任何程式語言共同運作。一個網頁的所有元素組織在一起，就構成了一棵「DOM 樹」。
 
 在 DOM 中，每個 元素 (element) 、 文字 (text) 等等都是一個節點。
 
