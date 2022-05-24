@@ -32,7 +32,7 @@ Webpack 功能非常強大，能夠將各種功能作為模組打包成一個可
 - Webpack 是一套模組整合工具（Webpack is a module bundler.）
 - 可將零散的 JavaScript 模組打包，然後在瀏覽器上運行，解決舊瀏覽器不支援部分新語法的問題，也利於後續管理與維護
 
-> ***Webpack 打包流程*
+> **Webpack 打包流程**
 1. index.js, utils.js, templates.js → 經過 webpack 打包 → main.js
 2. index.html 用 src 引入 main.js 模組
 
