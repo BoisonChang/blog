@@ -48,7 +48,7 @@ Webpack 功能非常強大，能夠將各種功能作為模組打包成一個可
 > **也可以在根目錄建立設定檔 webpack.config.js 來自定義路徑和要打包的模式，模式有兩種**
 -  production 的壓縮程度較高，檔案會變比較小，類似 uglify 過後的一串 JavaScript
     - mode: 'production',
-- development 的可讀性則相較高，但檔案較大：
+- development 的可讀性則相較高，但檔案較大
     - mode: 'development'
 
 
@@ -81,7 +81,7 @@ path: path.resolve(__dirname, 'dist'),
 - 所以我們也可以利用 webpack 幫我們打包圖片或 CSS
 - 透過各種 loader 把資源載入 webpack，也可以順便做到 uglify JavaScript 或是 minify CSS 之類的編譯
 
-> **以下會介紹一些常見的 loader 的使用，打包 npm 上別人第三方的 modules**
+**以下會介紹一些常見的 loader 的使用，打包 npm 上別人第三方的 modules**
 
 ### 1. 打包 npm 上別人第三方的 modules
 
