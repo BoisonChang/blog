@@ -1,6 +1,6 @@
 ---
 title: "百日轉職前端工程師：第十二週前後端整合復盤 《DAY 18》"
-slug: Transfer-FrontEnd-100-19
+slug: Transfer-FrontEnd-100-18
 date: 2020-11-13T21:47:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
