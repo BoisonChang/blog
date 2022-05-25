@@ -197,14 +197,14 @@ func2() // 'global'
 func2() 印出 global 很合理，但 func1 竟然也印出 global 耶！其實只要記得以下簡單的說明，區分這個程式語言是靜態作用域 (Static Scope)，還是動態作用域 (Dynamic Scope)，就能明白印出結果的差異。
 
 
->** 靜態作用域和動態作用域差別**
+> **靜態作用域和動態作用域差別**
 - 靜態作用域 (Static Scope)
     - 如果在 func1 的地方會印出 global ，這種程式語言採用的就是靜態作用域 (Static Scope)，例如：C / Java / JavaScript 
 - 動態作用域 (Dynamic Scope)
     - 如果在 func1 的地方會印出 local的，這種程式語言採用的就是動態作用域 (Dynamic Scope)，例如：perl
 
 
->** 靜態作用域的特性**
+> **靜態作用域的特性**
 - JavaScript 中的「閉包」 (Closure) 是函式以及其「語彙環境」 (Lexical Environment) 的組合，所有的函式都能夠記住被創造的當下的環境以及變數
 - 「靜態作用域」（lexical scope / 語彙範疇 / 詞法作用域）跟「動態作用域」最大的區別就是，靜態作用域函式內的變數是在這個函式被宣告時 (代碼被編譯時) 就已經設定好的，也就是 early binding
 - 對於 Javascript，只要暸解它是採用靜態作用域 (Static Scope) 或是所謂的語彙作用域 (Lexical Scope) 就可以了
@@ -371,7 +371,6 @@ test.[[scope]] = globalEC.scopeChain
 - 實作上，JS 是有編譯階段的，負責處理 VO 的前置作業
 - let 與 const 也有 hoisting，但在賦值前被呼叫 a 會拋出 ReferenceError: a is not defined，又稱為處於 Temporal Dead Zone (TDZ) 。
 
----
 ## Hoisting 的原理為何？
 
 要完整解釋 hoisting 其背後運作的機制，其實還要扯到 V8 引擎，何謂 V8 引擎？
