@@ -137,3 +137,108 @@ dog2.speak(); // "Bow-wow"
 3. [Javascript 物件導向設計](https://github.com/nodejs-tw/nodejs-wiki-book/blob/master/zh-tw/js-OO-pattern.rst#javascript%E9%A1%9E%E5%88%A5%E5%AF%A6%E4%BD%9C)
 4. [Javascript 物件導向設計](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/prototype.html)
 5. [JavaScript 物件導向白話文筆記——全端開發者內功 I](https://ithelp.ithome.com.tw/articles/10250999)
+6. [你懂 JavaScript 嗎？#19 原型（Prototype）](https://ithelp.ithome.com.tw/articles/10205313)
+7. [JavaScript 入門指南/建構式的原型：Constrctor.prototype](https://javascript.alphacamp.co/constrctor-prototype.html)
+8. [JavaScript 物件導向 (4) - With ES6](https://ithelp.ithome.com.tw/articles/10196867)
+9. [JavaScript ES6 Map and WeakMap Object 物件](https://www.fooish.com/javascript/ES6/Map-and-WeakMap.html)
+
+---
+
+## 二、大部分情況下 this 的值是什麼？
+
+要談 this，也要從「物件導向」開始談，然而弔詭的是 this 真的如此複雜讓很多人混淆的關鍵就是因為在物件以外的地方也可以用 this，但其本質上是沒有太大意義的，就只是可以用而已，這在後續會陸續說明。
+
+> **在物件導向中的 this，代表的就是在物件導向裡面，那個實例 (instance) 本身**
+
+舉個例子：
+
+```
+class Car {
+setName(name) {
+this.name = name
+}
+getName() {
+return this.name
+}
+}
+const myCar = new Car()
+myCar.setName('hello')
+console.log(myCar.getName()) // hello
+```
+
+> **物件導向的世界裡面，this 的作用**
+- 在上面我們宣告了一個 class Car，寫了 setName 跟 getName 兩個方法
+- 在裡面用 this.name 來存取這個 instance 的屬性
+- 為什麼要這樣寫？因為這是唯一的方法，不然你要把 name 這個屬性存在哪裡？沒有其他地方讓你存了
+- 所以 this 的作用在這裡是顯而易見的，所指到的對象就是那個 instance 本身
+- 以上面的範例來說，myCar.setName('hello')，所以 this 就會是myCar
+- 在物件導向的世界裡面，this 的作用就是這麼單純
+
+> **但在 JavaScript 中 this 之所以那麼難懂，就是因為在 JavaScript 裡面，你在任何地方都可以存取到 this**
+
+所以在 JavaScript 裡的 this 跟其他程式語言慣用的那個 this 有了差異，脫離了物件 this 的值就沒什麼意義，但他還是會呈現以下特徵
+1. 嚴格模式底下就都是 undefined
+2. 非嚴格模式，瀏覽器底下是 window
+3. 非嚴格模式，node.js 底下是 global
+
+### 1. 如何去更改 this 的值？
+
+> **僅管 this 可能有預設的值，但我們可以透過一些方法來改它**
+這改的方法也很簡單，一共有三種:
+1. call
+2. apply
+3. bind
+
+前兩種超級類似，叫做 call 跟 apply，這兩種都是能夠呼叫 fucntion 的函式，舉一個例子比較好懂
+
+```
+'use strict';
+function hello(a, b){
+console.log(this, a, b)
+}
+hello(1, 2) // undefined 1 2
+hello.call('yo', 1, 2) // yo 1 2
+hello.apply('hihihi', [1, 2]) // hihihi 1 2
+```
+
+
+- 上面三兩種呼叫 function 的方式是等價的，一模一樣
+- call 跟 apply 傳進的第一個參數的值就是 this
+- 而 apply 的差別只在於他後面要傳進去的參數是一個 array
+- 除了直接呼叫 function 以外，你也可以用 call 或是 apply 去呼叫，差別在於傳參數的方式不同
+
+
+除了以上兩種以外，還有最後一種可以改變 this 的方法：bind
+
+```
+'use strict';
+function hello() {
+console.log(this)
+}
+const myHello = hello.bind('my')
+myHello() // my
+```
+
+你可能會好奇如果我們把 call 跟 bind 同時用會怎樣？答案是不會改變，一但 bind 了以後值就不會改變了，這邊還要特別提醒的一點是在非嚴格模式底下，無論是用 call、apply 還是 bind，你傳進去的如果是 primitive 都會被轉成 object。
+
+
+
+### 2. 物件中的 this
+
+> **最前面我們示範了在物件導向 class 裡面的 this，但在 JavaScript 裡面還有另外一種方式也是物件**
+
+
+
+
+
+
+
+
+
+
+
+
+
+> 參考資料
+1. [[JavaScript]使用建構器創造實體物件](https://ithelp.ithome.com.tw/articles/10198141)
+2. [從ES6開始的JavaScript學習生活 /物件](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part3/object.html?q=)
