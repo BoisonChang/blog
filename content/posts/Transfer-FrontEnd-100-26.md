@@ -287,20 +287,20 @@ hey() // undefined
 > ***但這不妨礙我們先從更高的視野先去瞭解一下這個在程式領域重要的概念：「物件導向」(Object Oriented Programming)***
 
 OOP（物件導向） 總共有四大支柱，分別是：
-1. Encapsulation（封裝）
+1. **Encapsulation（封裝）**
 - Encapsulation 這個概念是在說，我們可以把許多屬性、方法包裝成一個物件使用把 OOP 與 Procedural programming
 - Encapsulation 的優點在於參數很少或沒有，降低了程式的複雜性與提供了靈活性
-2. Abstraction（抽象）
+2. **Abstraction（抽象）**
 - Abstraction 指得是將此物件的某些屬性與方法隱藏（hide）起來
 - 舉例來說，我們按下遙控器的按鈕就能轉台，其實這是靠遙控器內的小零件互相作用的，但我們不必知道這些
 - 這些被隱藏在遙控器裡的零件與作用就像是被隱藏起來的屬性與方法
 - Abstraction 的優點
     - 使物件的介面更簡單
     - 減少改變的影響
-3. Inheritance（繼承）
+3. **Inheritance（繼承）**
 - Inheritance 的概念就是繼承者擁有某些屬性或是方法，而這些是來自於被繼承者的
 - 使繼承者透過 Inheritance 可以直接取用這些屬性與方法
-4. Polymorphism（多型）
+4. **Polymorphism（多型）**
 - Polymorphism 指的是使用相同名稱的方法，傳入不同的參數，會執行不同的指令
 - 假如我們要讓好多個物件渲染（render）頁面，在 Procedural programming 就會必須用好多 switch 和 case
 - 抽象講法解釋，就是使用單一介面操作多種型態的物件，繼承父類別
@@ -444,7 +444,7 @@ wallet.save = 300;
 console.log(wallet.save); // 125
 ```
 
-另外還有一種定義方式 Object.defineProperty，如果用 defineProperty 去定義 getter & setter，則 enumerable & configurable 預設為 false：
+Object.defineProperty: 另外還有一種定義方式 Object.defineProperty，如果用 defineProperty 去定義 getter & setter，則 enumerable & configurable 預設為 false：
 
 ```
 var wallet = {
@@ -775,7 +775,7 @@ console.log(wallet[money]); // => 還是存取得到，不是真正的 private
 
 
 > 參考資料
-- 物件導向的類別和實體（實例）
+- **物件導向的類別和實體（實例）**
     1. [你懂 JavaScript 嗎？#18 （簡易版）物件導向概念](https://cythilya.github.io/2018/10/25/mixing-up-class-objects/)
     2. [你懂 JavaScript 嗎？#17 物件（Object）](https://cythilya.github.io/2018/10/24/object/)
     3. [JavaScript 進階：物件導向 (new、super、封裝)](https://yakimhsu.com/project/project_w17_advancedJS_07_OOP.html)
@@ -792,12 +792,12 @@ console.log(wallet[money]); // => 還是存取得到，不是真正的 private
     14. [JS Getter 與 Setter DAY71](https://ithelp.ithome.com.tw/articles/10253936)
     15. [JS Object.defineProperty(): value V.S. getter & setter](https://ithelp.ithome.com.tw/articles/10203297 )
     16. [Day 19: getter & setter](https://ithelp.ithome.com.tw/articles/10218892)
-- 物件導向的繼承（Inheritance）
+- **物件導向的繼承（Inheritance）**
     1. [JavaScript new、Function Constructor (建構函式) 及 Object.create()](https://shubo.io/javascript-new/)
     2. [JS 的原型繼承(方法3)－ES6 Class](https://dylan237.github.io/es6-class.html)
     3. [ES6 的 Class 、super 的特例與繼承](https://ithelp.ithome.com.tw/articles/10200658)
     4. [JavaScript ES6 class 關鍵字](https://www.fooish.com/javascript/ES6/class.html)
-- 物件導向的封裝（Encapsulation）
+- **物件導向的封裝（Encapsulation）**
     1. [Javascript 中定義私有属性（Private Properties）](https://segmentfault.com/a/1190000023136396)
     2. [JavaScript 進階：物件導向 (new、super、封裝)](https://yakimhsu.com/project/project_w17_advancedJS_07_OOP.html)
     3. [JavaScript 進階：什麼是閉包 Closure 與實際應用](https://yakimhsu.com/project/project_w17_advancedJS_03_Clousure.html)
