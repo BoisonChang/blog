@@ -3,7 +3,7 @@ title: "百日轉職前端工程師：第十六週 JavaScript核心底層邏輯�
 slug: Transfer-FrontEnd-100-25
 date: 2021-01-13T21:42:21+08:00
 draft: false
-tags: ["FrontEnd", "Transfer"]
+tags: ["FrontEnd", "Transfer", "Closure", "Hoisting", "IIFE", "EventLoop"]
 author: "Boison"
 showToc: false
 TocOpen: false
@@ -124,8 +124,8 @@ console.log('Bye')
 ```
 
 ![](https://miro.medium.com/max/1778/0*0EpvJV7Wc6TLNtF6.gif)
-圖片來源: [How JavaScript works](https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5)
 
+<center>圖片來源: [How JavaScript works](https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5)</center>
 總而言之，Event Loop 這個漂亮的機制設計，讓我們能夠有滑順如斯的網頁瀏覽體驗，它把麻煩的東西（非同步）分開處理，可說是簡單卻又設計精妙。
 
 
