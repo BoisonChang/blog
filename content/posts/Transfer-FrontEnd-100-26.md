@@ -1,7 +1,7 @@
 ---
 title: "百日轉職前端工程師：第十六週 JavaScript物件導向《DAY 26》"
 slug: Transfer-FrontEnd-100-26
-date: 2021-01-20T00:29:21+08:00
+date: 2021-02-20T00:29:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
 author: "Boison"
