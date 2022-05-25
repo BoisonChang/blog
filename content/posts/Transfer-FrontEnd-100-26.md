@@ -64,3 +64,76 @@ ShowPostNavLinks: true
 - 使用物件導向設計的「缺點」
     - 「基礎建設」較繁雜龐大
     - 寫個簡單程式需要比傳統寫法，還要更多行
+
+
+## 2. JavaScript 是原型基礎的物件導向程式語言
+
+- JavaScript 是屬於原型基礎 (Prototype-based) 的物件導向程式語言
+- 其不強調「類別」與「實例」之間的差異，「類別」事實上就是「物件」
+- 在 JavaScript 裡使用物件並不需事先設定類別即可直接建立
+- 甚至到 ES6 標準制定後仍沒變動過，在物件的章節中所介紹的類別定義方式，只是原型物件導向語法的語法糖，骨子裡還是原型，並不是真正的以類型為基礎的物件導向設計
+- 各同樣子型別的物件都會以 Prototype 連結到同一個「原型」物件
+- 也就是說，只要我們為這個原型物件增加屬性，則所有該子型別的物件都可以取用到這個函式，這就是所謂的共用函式
+- 呼應前面說的，Prototype 能讓我們寫出能夠讓多個「物件」共用的函式
+
+那就讓我們看點程式碼吧：
+
+
+```
+function Dog(name) {
+this.name = name;
+}
+
+Dog.prototype.speak = function() {
+console.log('Bark');
+};
+
+Dog.prototype.move = function() {
+console.log('walk');
+};
+
+var dog1 = new Dog('Blacky'),
+dog2 = new Dog('Whity');
+
+dog1.speak(); // "Bark"
+dog2.speak(); // "Bark"
+Dog.prototype.speak = function() {
+console.log('Bow-wow');
+};
+dog1.speak(); // "Bow-wow"
+dog2.speak(); // "Bow-wow"
+```
+
+是什麼讓 dog1.speak() 知道要去上面的 Prototype 找呢？答案如下。
+
+### 3. 透過 Prototype 和 proto 實現原型鏈（Prototype Chain）
+
+> **於是這邊我們要介紹一個跟 Prototype 一組的重要語法「proto」**
+
+- .prototype
+    - 用來實現基於「原型」的繼承與屬性的共享
+    - ex: 用來指定屬性或 function
+- .proto
+    - 構成「原型鏈」，同樣用於實現基於「原型」的繼承
+    - ex: 繼承資料
+
+> **如果你在 dog1 身上找不到 speak 的話，你應該去哪裡找？答案就是透過 dog1.proto**
+- 就去 dog1.proto 這裡找
+    - 而其實其實 dog1.proto 就是 Dog.prototype
+    - 若是還是找不到就會往再上一層找，直到找到 Object.prototype 為止還是沒有，那輸出就會是 null。
+- 透過 Prototype 這樣的方式，將他底下的東西可以用 .proto 連起來，讓他們可以共同享有同一個 Function，這又被稱為「原型串鏈」（Prototype Chain）。
+- 至此，我們已經學會了如何使用 JavaScript 的 Prototype 寫出類似「物件導向」的程式
+- ES6 的語法糖
+    - 雖然如此，但是 Prototype 的繼承寫法會讓人無法一目了然
+    - 所以在 ES6 中允許我們以「語法糖」的概念去用更貼近物件導向的語法來寫
+    - 雖然基底依然還是 Prototype，但可以有效增加開發速度以及易讀性
+
+
+
+
+> 參考資料
+1. [JavaScript 中的 function constructor 和關鍵字 new](https://pjchender.blogspot.com/2016/06/javascriptfunction-constructornew.html)
+2. [前端中階：JS令人搞不懂的地方-物件導向](https://hugh-program-learning-diary-js.medium.com/%E5%89%8D%E7%AB%AF%E4%B8%AD%E9%9A%8E-js%E4%BB%A4%E4%BA%BA%E6%90%9E%E4%B8%8D%E6%87%82%E7%9A%84%E5%9C%B0%E6%96%B9-%E7%89%A9%E4%BB%B6%E5%B0%8E%E5%90%91-cdea0e3266ee)
+3. [Javascript 物件導向設計](https://github.com/nodejs-tw/nodejs-wiki-book/blob/master/zh-tw/js-OO-pattern.rst#javascript%E9%A1%9E%E5%88%A5%E5%AF%A6%E4%BD%9C)
+4. [Javascript 物件導向設計](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/prototype.html)
+5. [JavaScript 物件導向白話文筆記——全端開發者內功 I](https://ithelp.ithome.com.tw/articles/10250999)
