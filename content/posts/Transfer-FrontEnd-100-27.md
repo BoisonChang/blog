@@ -35,14 +35,13 @@ Scrum 是「敏捷式（Agile）開發」底下的一種實作模式， 要聊�
 
 目前主流的開發方式有兩種，近代竄起流行於新創企業的敏捷式（Agile）開發，以及較多大型企業仍在使用的瀑布式開發（Waterfall）。
 
-傳統的開發方式稱為瀑布式開發（Waterfall），使用預測性的設計流程，開發階段就像瀑布一樣從上往下，建立嚴謹、標準的開發程序，清楚的階段劃分，易於分工及責任歸屬，其在一開始更需要完整的溝通和規劃，讓整個較長的開發流程能夠順利無誤地進行，並且完時交付一個符合客戶需求的完整產品。
-
-而敏捷式開發則是將這一串的流程拆解成更短的週期，普遍來說是兩週完成一個瀑布式開發的循環，理念是盡快將產品/功能做出來實際去展示給市場/客戶，瞭解其反饋後，快速修正，並且進到下一個循環，以免最後花了半天好不容易做出來的產品與客戶/市場需求不符合，徒生遺憾，如下圖所示，每一個圓環都跑完一次瀑布式開發的流程並生出一個可展示的產品/功能。
 
 
 > **以下分別列出這兩種開發方式的優缺點（此處列的並非絕對）**
 
 #### 瀑布式（Waterfall）開發
+
+傳統的開發方式稱為瀑布式開發（Waterfall），使用預測性的設計流程，開發階段就像瀑布一樣從上往下，建立嚴謹、標準的開發程序，清楚的階段劃分，易於分工及責任歸屬，其在一開始更需要完整的溝通和規劃，讓整個較長的開發流程能夠順利無誤地進行，並且完時交付一個符合客戶需求的完整產品。
 
 - 優點
     - 最容易管理的開發方式之一，其每個階段都有具體的可交付成果和審查程序
@@ -61,6 +60,8 @@ Scrum 是「敏捷式（Agile）開發」底下的一種實作模式， 要聊�
 
 #### 敏捷式（Agile）開發
 
+敏捷式開發則是將這一串的流程拆解成更短的週期，普遍來說是兩週完成一個瀑布式開發的循環，理念是盡快將產品/功能做出來實際去展示給市場/客戶，瞭解其反饋後，快速修正，並且進到下一個循環，以免最後花了半天好不容易做出來的產品與客戶/市場需求不符合，徒生遺憾，如下圖所示，每一個圓環都跑完一次瀑布式開發的流程並生出一個可展示的產品/功能。
+
 - 優點
     - 專注的客戶的開發方式，確保客戶在每個階段都能不斷參與
     - 敏捷團隊要求積極主動，自我組織能力強，因此很可能從開發項目中獲得更好的結果
@@ -77,19 +78,19 @@ Scrum 是「敏捷式（Agile）開發」底下的一種實作模式， 要聊�
 事實上，敏捷式開發並不是一套被嚴謹被定義的方法，而是一種價值觀和開發原則，每一個團隊在採用敏捷式開發的精神發展出的最適開發模式可能都會有差異，重點是要讓團隊成員由上到下都確實掌握以下敏捷式（Agile）開發的十二大原則，根據不同團隊性質找到最適化的操作方法，而非拘泥於模仿別人的敏捷式開發模式。
 
 
-> *敏捷式開發的十二大原則*
-1. 我們最優先的任務，是透過及早並持續地交付有價值的軟體來滿足客戶需求。(Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.)
-2. 竭誠歡迎改變需求，甚至已處開發後期亦然。敏捷流程掌控變更，以維護客戶的競爭優勢。(Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.)
-3. 經常交付可用的軟體，頻率可以從數週到數個月，以較短時間間隔為佳。(Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.)
-4. 業務人員與開發者必須在專案全程中天天一起工作。(Business people and developers must work together daily throughout the project.)
-5. 以積極的個人來建構專案，給予他們所需的環境與支援，並信任他們可以完成工作。(Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.)
-6. 面對面的溝通是傳遞資訊給開發團隊及團隊成員之間效率最高且效果最佳的方法。(The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.)
-7. 可用的軟體是最主要的進度量測方法。(Working software is the primary measure of progress.)
-8. 敏捷程序提倡可持續的開發。贊助者、開發者及使用者應當能不斷地維持穩定的步調。(Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.)
-9. 持續追求優越的技術與優良的設計，以強化敏捷性。(Continuous attention to technical excellence and good design enhances agility.)
-10. 精簡──或最大化未完成工作量之技藝──是不可或缺的。(Simplicity — the art of maximizing the amount of work not done — is essential.)
-11. 最佳的架構、需求與設計皆來自於能自我組織的團隊。(The best architectures, requirements, and designs emerge from self-organizing teams.)
-12. 團隊定期自省如何更有效率，並據之適當地調整與修正自己的行為。(At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.)
+> **敏捷式開發的十二大原則**
+1. 我們最優先的任務，是透過及早並持續地交付有價值的軟體來滿足客戶需求
+2. 竭誠歡迎改變需求，甚至已處開發後期亦然。敏捷流程掌控變更，以維護客戶的競爭優勢
+3. 經常交付可用的軟體，頻率可以從數週到數個月，以較短時間間隔為佳
+4. 業務人員與開發者必須在專案全程中天天一起工作
+5. 以積極的個人來建構專案，給予他們所需的環境與支援，並信任他們可以完成工作
+6. 面對面的溝通是傳遞資訊給開發團隊及團隊成員之間效率最高且效果最佳的方法
+7. 可用的軟體是最主要的進度量測方法
+8. 敏捷程序提倡可持續的開發。贊助者、開發者及使用者應當能不斷地維持穩定的步調
+9. 持續追求優越的技術與優良的設計，以強化敏捷性
+10. 精簡──或最大化未完成工作量之技藝──是不可或缺的
+11. 最佳的架構、需求與設計皆來自於能自我組織的團隊
+12. 團隊定期自省如何更有效率，並據之適當地調整與修正自己的行為
 
 
 而基於以上敏捷式（Agile）開發的十二大原則，也發展出了各種更細膩的實作模式，其中較有名的屬於「Kanban」（看板）和「Scrum」，由於網路上資料很多就不贅述，直接來談談 Scrum 的一些基本概念。
@@ -100,15 +101,21 @@ Scrum 是「敏捷式（Agile）開發」底下的一種實作模式， 要聊�
 
 
 > **Scrum 中的三個角色**
-1. Product Owner
-- 通常這個角色會是由擁有這個產品的人擔任，通常會由 Product Owner 決定 Item 內容，並讓開發團隊自行拆解 Task 進行開發，這個人需要有權限決定最後產品的走向，能決定什麼要開發什麼不要開發，一般來說在公司中可能會由 PM（產品經理）擔任，但在更小的新創公司可能就是創辦人或者 CEO 擔任。
+1. **Product Owner**
 
-2. Scrum Master
-- 要負責幫助大家跑 Scrum 這個開發方法的人，這個角色必須非常瞭解 Scrum 的開發方式和原則，帶領大家討論並且實際在開發中迭代推進，但實際上在規模小的公司中非常可能也是由 PM（產品經理）擔任。
+- 通常這個角色會是由擁有這個產品的人擔任，通常會由 Product Owner 決定 Item 內容，並讓開發團隊自行拆解 Task 進行開發
+- 這個人需要有權限決定最後產品的走向，能決定什麼要開發什麼不要開發
+- 一般來說在公司中可能會由 PM（產品經理）擔任，但在更小的新創公司可能就是創辦人或者 CEO 擔任
+
+2. **Scrum Master**
+
+- 要負責幫助大家跑 Scrum 這個開發方法的人
+- 這個角色必須非常瞭解 Scrum 的開發方式和原則，帶領大家討論並且實際在開發中迭代推進
+- 但實際上在規模小的公司中非常可能也是由 PM（產品經理）擔任。
 
 
-3. Team
-- 基本上就是開發團隊，也就是工程師和介面設計師們，負責實際的產品開發。
+3. **Team**
+- 基本上就是開發團隊，也就是工程師和介面設計師們，負責實際的產品開發
 
 
 > 參考資料: [淺談重構](https://jimmylab.wordpress.com/2018/10/01/refactoring/)
@@ -120,12 +127,17 @@ Scrum 是「敏捷式（Agile）開發」底下的一種實作模式， 要聊�
 大家會先在 Backlog（待辦清單）上列出想要開發的功能，Procuct Backlog 是這個產品所有要做的功能，而 Sprint Backlog （衝刺待辦清單）則是這個 Sprint 中所有我們要做的功能。
 
 
-在 Sprint 開始時會有個 Spring Planning Meeting，會由PM（產品經理）大致上決定工程師要做什麼，然後工程師跟 PM 討論我們能做多少？通常會用人力時數（點數票）的方式投票每個功能要耗費多少點數票，讓 PM 能夠實際掌握狀況並將其這次 Spring 要開發的功能寫上這次的 Sprint Backlog（衝刺待辦清單），基本上 Sprint backlog（放置本次 Sprint 要開發的 Item）決定後就後若是有新的票要進來，必須要跟 PM 額外溝通，或者是就是不準插單，先跑完這輪再說。
+> **在 Sprint 開始時會有個 Spring Planning Meeting**
 
-Scrum 中重要的概念跟「Kanban」（看板）很像，最大的差異可能就是那個兩個禮拜循環一次的時程。而「Kanban」（看板）的開發週期則是可能更短，甚至可能到一兩天部署（Deploy）一次，但這兩種實作模式基本都是深刻應用敏捷式（Agile）開發的十二大原則，我認為 Kanban 可能更適合一到兩人的微型團隊去使用，基本上角色分配可以非常單純。
+會由PM（產品經理）大致上決定工程師要做什麼，然後工程師跟 PM 討論我們能做多少？通常會用人力時數（點數票）的方式投票每個功能要耗費多少點數票，讓 PM 能夠實際掌握狀況並將其這次 Spring 要開發的功能寫上這次的 Sprint Backlog（衝刺待辦清單），基本上 Sprint backlog（放置本次 Sprint 要開發的 Item）決定後就後若是有新的票要進來，必須要跟 PM 額外溝通，或者是就是不準插單，先跑完這輪再說。
+
+- Scrum 中重要的概念跟「Kanban」（看板）很像，最大的差異可能就是那個兩個禮拜循環一次的時程
+- Kanban（看板）的開發週期則是可能更短，甚至可能到一兩天部署（Deploy）一次
+- 這兩種實作模式基本都是深刻應用敏捷式（Agile）開發的十二大原則
+- 我認為 Kanban 可能更適合一到兩人的微型團隊去使用，基本上角色分配可以非常單純
 
 
-基本上由於開發週期只有兩週，每天都會有短暫的 Daily Standup / Daily Standup Meeting，去快速溝通 
+> **由於開發週期只有兩週，每天都會有短暫的 Daily Standup / Daily Standup Meeting 去快速溝通** 
 
 1. 今天要做什麼
 2. 昨天做了什麼
@@ -138,16 +150,16 @@ Sprint 結束後，就會統一把 Sprint 開發的東西部署（Deploy）到�
 
 > **基本上完整循環的 Sprint 可能會有四種會議**
 
-1. 衝刺計畫會議（Sprint Planning Meeting）
+1. **衝刺計畫會議（Sprint Planning Meeting）**
 - 每個衝刺期間的一開始必須先舉行衝刺計畫會議
 - 主要用來決定該衝刺期間的待辦項目，以及團隊的衝刺任務
-2. 每日站立會議（Daily Standup Meeting）
+2. **每日站立會議（Daily Standup Meeting）**
 - 衝刺期間的每一天早上，都要執行15分鐘的站立會議
 - 主要可以用來了解團隊的工作執行狀況。
-3. 衝刺審查會議（Sprint Review Meeting）
+3. **衝刺審查會議（Sprint Review Meeting）**
 - 每個衝刺的最後一天會先執行衝刺審查會議，隨後執行衝刺回顧會議
 - 在衝刺審查會議中，主要用來展示並了解該衝刺的待辦項目達成狀況
-4. 衝刺回顧會議（Sprint Retrospective Meeting）
+4. **衝刺回顧會議（Sprint Retrospective Meeting）**
 - 相較之下，前述的衝刺審查會議，其討論的主題鎖定在「產品」上頭
 - 而此處的衝刺回顧會議，其討論的主題則聚焦在團隊的「開發程序」上頭
 - 主要用來討論並調整下一期衝刺的開發程序
@@ -155,21 +167,36 @@ Sprint 結束後，就會統一把 Sprint 開發的東西部署（Deploy）到�
 
 > **基本上完整循環的 Sprint 可能會有幾種項目和清單**
 
-- Item（物件）
-    - 又稱 Story，是 Product Owner 定義的產品產出。Item 大小要講究，要可以讓團隊在一般的速率下，可以完成3-5個。太多太繁雜，太少萬一沒做完就感覺整個 Sprint 一事無成，對團隊信心是個打擊
-- Task（工作）
-    - 是開發團隊針對 Item（物件），列出完成 Item 所需的工作。工作分配是開發團隊自己安排。Task 是完成 Story 的施工項目，在 sprint planning meeting 時，團隊會將每一個 Story 再細分若干個 Task。典型的 Task 有設計使用者介面，coding，寫自動化單元測試程式，設計資料庫表格格式，寫 DAO（data access object），寫自動化功能測試，寫使用手冊等等
-- 產品待辦清單（Product Backlog）
-    - 其實，產品待辦清單的概念很簡單，它主要包含了一般常見的功能性需求和非功能性需求；不過，比較特別的是，它還包含了技術團隊提出的需求，而不只是照顧到客戶的需求而已
-    - 也因此，Scrum敏捷開發特別採用了「產品待辦清單」（Product Backlog）的字眼，用來跟傳統作法上只照顧客戶的系統需求，做字面上的分野。所有關於此專案或是產品的代辦事項就稱為 Product Backlog，放在 Product Backlog 裡面的東西稱為 product backlog item（PBI），需要依據優先順樹經過排序，比較重要，比較優先要施工的 PBI 放在前面
-- 衝刺待辦清單（Sprint Backlog）
-    - 衝刺待辦清單中的待辦項目，其實是產品待辦清單的子集。在每一次的衝刺規畫會議中，才會開會決定要處理哪些待辦項目。Sprint backlog 就是某一個 Sprint 準備施工的 User Story（可以想成是 Product Backlog 的子集合），同樣的 Sprint Backlog 裡面的 Story 也是要排序過的，比較重要的先開工
-- 潛在可交付產品增量（Potentially Shippable Product Increment）
+- **Item（物件）**
+    - 又稱 Story，是 Product Owner 定義的產品產出
+    - Item 大小要講究，要可以讓團隊在一般的速率下，可以完成3-5個
+    - 太多太繁雜，太少萬一沒做完就感覺整個 Sprint 一事無成，對團隊信心是個打擊
+- **Task（工作）**
+    - 是開發團隊針對 Item（物件），列出完成 Item 所需的工作，至於工作分配是開發團隊自己安排
+    - Task 是完成 Story 的施工項目，在 sprint planning meeting 時，團隊會將每一個 Story 再細分若干個 Task
+    - 典型的 Task 有設計使用者介面，coding，寫自動化單元測試程式，設計資料庫表格格式，寫 DAO（data access object），寫自動化功能測試，寫使用手冊等等
+- **產品待辦清單（Product Backlog）**
+    - 其實，產品待辦清單的概念很簡單，它主要包含了一般常見的功能性需求和非功能性需求
+    - 不過，比較特別的是，它還包含了技術團隊提出的需求，而不只是照顧到客戶的需求而已
+    - 也因此，Scrum敏捷開發特別採用了「產品待辦清單」（Product Backlog）的字眼，用來跟傳統作法上只照顧客戶的系統需求，做字面上的分野
+    - 所有關於此專案或是產品的代辦事項就稱為 Product Backlog
+    - 放在 Product Backlog 裡面的東西稱為 product backlog item（PBI）
+    - 需要依據優先順樹經過排序，比較重要，比較優先要施工的 PBI 放在前面
+- **衝刺待辦清單（Sprint Backlog）**
+    - 衝刺待辦清單中的待辦項目，其實是產品待辦清單的子集
+    - 在每一次的衝刺規畫會議中，才會開會決定要處理哪些待辦項目
+    - Sprint backlog 就是某一個 Sprint 準備施工的 User Story（可以想成是 Product Backlog 的子集合）
+    - 同樣的 Sprint Backlog 裡面的 Story 也是要排序過的，比較重要的先開工
+- **潛在可交付產品增量（Potentially Shippable Product Increment）**
     - 開發團隊的產出，簡單的說就是 Product Owner 說要上線就可以馬上上線的東西才算數
-- 燃盡圖（Burndown Chart）
-    - 簡單來說，我們可以繪製燃盡圖，來呈現一個時間區段中，剩餘的工作量。所以，有些文章或書籍中，也將「Burndown Chart」中譯為「剩餘工作圖」或者是「剩餘時間圖」，原因正是如此
-    - 嚴格講起來 brundown chart 可以分成三種，從大到小分別是 release burndown chart, Story burndown chart 以及 Task burndown chart，在這邊先解釋 Task burndown chart 
-    - 在 sprint planning meeting 結束之後，先把所有 stories 的 tasks 施工的小時數加總起來，假設有 250 小時。然後第每一天 daily - Scrum 會議之後，Developer  會報告說有一些 tasks 已經被做完了，假設第二天有 15 小時的工作已經完成了，那麼Scrum 團隊就可以畫一張圖，把 250 小時減掉每天完成的工作時數，剩下來的就是尚未完成的工作。所以只要每天看這張 burndown chart，團隊就可以知道進度是否正常（理論上在 sprint 最後一天剩下未完成的工作時間應該是 0）
+- **燃盡圖（Burndown Chart）**
+    - 簡單來說，我們可以繪製燃盡圖，來呈現一個時間區段中，剩餘的工作量
+    - 所以，有些文章或書籍中，也將「Burndown Chart」中譯為「剩餘工作圖」或者是「剩餘時間圖」，原因正是如此
+    - 嚴格講起來 brundown chart 可以分成三種
+    - 從大到小分別是 release burndown chart, Story burndown chart 以及 Task burndown chart，在這邊先解釋 Task burndown chart 
+    - 在 sprint planning meeting 結束之後，先把所有 stories 的 tasks 施工的小時數加總起來，假設有 250 小時
+    - 然後第每一天 daily - Scrum 會議之後，Developer  會報告說有一些 tasks 已經被做完了，假設第二天有 15 小時的工作已經完成了，那麼Scrum 團隊就可以畫一張圖，把 250 小時減掉每天完成的工作時數，剩下來的就是尚未完成的工作
+    - 所以只要每天看這張 burndown chart，團隊就可以知道進度是否正常（理論上在 sprint 最後一天剩下未完成的工作時間應該是 0）
 
 
 > 參考資料
