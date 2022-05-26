@@ -223,6 +223,7 @@ User Story（使用者故事）就是一個當你在寫 spec（規格） 時可�
     通過驗收測試確認 User Story（使用者故事）被正確完成
 
 > **User Story（使用者故事）的六個特性：INVEST**
+
 一個好的 User Story（使用者故事）應該遵循 **INVEST** 原則
 - **Independent（獨立性）**
     - 要盡可能的讓一個 User Story（使用者故事）獨立於其他的 User Story
