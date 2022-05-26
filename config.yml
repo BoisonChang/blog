@@ -4,6 +4,8 @@ paginate: 10
 defaultContentLanguage: zh-tw
 theme: PaperMod
 
+
+disqusShortname: boison-tw
 enableRobotsTXT: true
 buildDrafts: true
 buildFuture: false
