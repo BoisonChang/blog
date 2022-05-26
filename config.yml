@@ -5,7 +5,6 @@ defaultContentLanguage: zh-tw
 theme: PaperMod
 
 
-disqusShortname: boison-tw
 enableRobotsTXT: true
 buildDrafts: true
 buildFuture: false
@@ -52,7 +51,6 @@ params:
   showtoc: true
   tocopen: false
   ShowShareButtons: true
-  comments: true
 
   assets:
     favicon: "/favicon.ico"
