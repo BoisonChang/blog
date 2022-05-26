@@ -60,6 +60,8 @@ FTP 的傳輸使用的是 TCP 封包協定， TCP 在建立連線前會先進行
 ![](https://blog.miniasp.com/image.axd?picture=WindowsLiveWriter/FTPProtocol_1341C/image_3.png)
 一般來說，指令通道的連線與下指令都沒有什麼問題，有問題的通常是在資料通道的建立，而資料通道的建立方式是由 FTP Client 所下的指令決定的，以 FileZilla 設定為例。
 
+圖片來源: [解說 FTP Protocol 的運作原理](https://blog.miniasp.com/post/2008/06/29/FTP-Protocol-Definitive-Explanation)
+
 FTP Client (e.g. FileZilla) 每次建立連線時都會下 PORT 或 PASV 指令，如下範例，而每次下指令傳輸資料時，都會建立一次 data connection，包括取得遠端的檔案清單(LIST)時回傳的檔案列表、下載檔案、或上傳檔案。
 
 ```
