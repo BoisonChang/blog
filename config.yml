@@ -87,6 +87,8 @@ params:
       url: 'https://twitter.com/Boison0720'
     - name: github
       url: 'https://github.com/BoisonChang'
+    - name: email
+      url: "mailto:dragoncres@gmail.com"
   analytics:
     google:
       SiteVerificationTag: XYZabc
