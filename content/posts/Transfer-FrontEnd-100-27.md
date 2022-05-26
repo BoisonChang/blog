@@ -167,36 +167,36 @@ Sprint 結束後，就會統一把 Sprint 開發的東西部署（Deploy）到�
 
 > **基本上完整循環的 Sprint 可能會有幾種項目和清單**
 
-- **Item（物件）**
-    - 又稱 Story，是 Product Owner 定義的產品產出
-    - Item 大小要講究，要可以讓團隊在一般的速率下，可以完成3-5個
-    - 太多太繁雜，太少萬一沒做完就感覺整個 Sprint 一事無成，對團隊信心是個打擊
-- **Task（工作）**
-    - 是開發團隊針對 Item（物件），列出完成 Item 所需的工作，至於工作分配是開發團隊自己安排
-    - Task 是完成 Story 的施工項目，在 sprint planning meeting 時，團隊會將每一個 Story 再細分若干個 Task
-    - 典型的 Task 有設計使用者介面，coding，寫自動化單元測試程式，設計資料庫表格格式，寫 DAO（data access object），寫自動化功能測試，寫使用手冊等等
-- **產品待辦清單（Product Backlog）**
-    - 產品待辦清單的概念很簡單，它主要包含了一般常見的功能性需求和非功能性需求
-    - 比較特別的是，它還包含了技術團隊提出的需求，而不只是照顧到客戶的需求而已
-    - 也因此，Scrum敏捷開發特別採用了「產品待辦清單」（Product Backlog）的字眼，用來跟傳統作法上只照顧客戶的系統需求，做字面上的分野
-    - 所有關於此專案或是產品的代辦事項就稱為 Product Backlog
-    - 放在 Product Backlog 裡面的東西稱為 product backlog item（PBI）
-    - 需要依據優先順樹經過排序，比較重要，比較優先要施工的 PBI 放在前面
-- **衝刺待辦清單（Sprint Backlog）**
-    - 衝刺待辦清單中的待辦項目，其實是產品待辦清單的子集
-    - 在每一次的衝刺規畫會議中，才會開會決定要處理哪些待辦項目
-    - Sprint backlog 就是某一個 Sprint 準備施工的 User Story（可以想成是 Product Backlog 的子集合）
-    - 同樣的 Sprint Backlog 裡面的 Story 也是要排序過的，比較重要的先開工
-- **潛在可交付產品增量（Potentially Shippable Product Increment）**
-    - 開發團隊的產出，簡單的說就是 Product Owner 說要上線就可以馬上上線的東西才算數
-- **燃盡圖（Burndown Chart）**
-    - 繪製燃盡圖，來呈現一個時間區段中，剩餘的工作量
-    - 有些文章或書籍中，也將「Burndown Chart」中譯為「剩餘工作圖」或者是「剩餘時間圖」，原因正是如此
-    - 嚴格講起來 brundown chart 可以分成三種
-    - 從大到小分別是 **release burndown chart, Story burndown chart 以及 Task burndown chart，在這邊先解釋 Task burndown chart**
-    - 在 sprint planning meeting 結束之後，先把所有 stories 的 tasks 施工的小時數加總起來，假設有 250 小時
-    - 然後第每一天 daily - Scrum 會議之後，Developer  會報告說有一些 tasks 已經被做完了，假設第二天有 15 小時的工作已經完成了，那麼Scrum 團隊就可以畫一張圖，把 250 小時減掉每天完成的工作時數，剩下來的就是尚未完成的工作
-    - 所以只要每天看這張 burndown chart，團隊就可以知道進度是否正常（理論上在 sprint 最後一天剩下未完成的工作時間應該是 0）
+1. **Item（物件）**
+- 又稱 Story，是 Product Owner 定義的產品產出
+- Item 大小要講究，要可以讓團隊在一般的速率下，可以完成3-5個
+- 太多太繁雜，太少萬一沒做完就感覺整個 Sprint 一事無成，對團隊信心是個打擊
+2.  **Task（工作）**
+- 是開發團隊針對 Item（物件），列出完成 Item 所需的工作，至於工作分配是開發團隊自己安排
+- Task 是完成 Story 的施工項目，在 sprint planning meeting 時，團隊會將每一個 Story 再細分若干個 Task
+- 典型的 Task 有設計使用者介面，coding，寫自動化單元測試程式，設計資料庫表格格式，寫 DAO（data access object），寫自動化功能測試，寫使用手冊等等
+3. **產品待辦清單（Product Backlog）**
+- 產品待辦清單的概念很簡單，它主要包含了一般常見的功能性需求和非功能性需求
+- 比較特別的是，它還包含了技術團隊提出的需求，而不只是照顧到客戶的需求而已
+- 也因此，Scrum敏捷開發特別採用了「產品待辦清單」（Product Backlog）的字眼，用來跟傳統作法上只照顧客戶的系統需求，做字面上的分野
+- 所有關於此專案或是產品的代辦事項就稱為 Product Backlog
+- 放在 Product Backlog 裡面的東西稱為 product backlog item（PBI）
+- 需要依據優先順樹經過排序，比較重要，比較優先要施工的 PBI 放在前面
+4. **衝刺待辦清單（Sprint Backlog）**
+- 衝刺待辦清單中的待辦項目，其實是產品待辦清單的子集
+- 在每一次的衝刺規畫會議中，才會開會決定要處理哪些待辦項目
+- Sprint backlog 就是某一個 Sprint 準備施工的 User Story（可以想成是 Product Backlog 的子集合）
+- 同樣的 Sprint Backlog 裡面的 Story 也是要排序過的，比較重要的先開工
+5. **潛在可交付產品增量（Potentially Shippable Product Increment）**
+- 開發團隊的產出，簡單的說就是 Product Owner 說要上線就可以馬上上線的東西才算數
+6. **燃盡圖（Burndown Chart）**
+- 繪製燃盡圖，來呈現一個時間區段中，剩餘的工作量
+- 有些文章或書籍中，也將「Burndown Chart」中譯為「剩餘工作圖」或者是「剩餘時間圖」，原因正是如此
+- 嚴格講起來 brundown chart 可以分成三種
+- 從大到小分別是 **release burndown chart, Story burndown chart 以及 Task burndown chart，在這邊先解釋 Task burndown chart**
+- 在 sprint planning meeting 結束之後，先把所有 stories 的 tasks 施工的小時數加總起來，假設有 250 小時
+- 然後第每一天 daily - Scrum 會議之後，Developer  會報告說有一些 tasks 已經被做完了，假設第二天有 15 小時的工作已經完成了，那麼Scrum 團隊就可以畫一張圖，把 250 小時減掉每天完成的工作時數，剩下來的就是尚未完成的工作
+- 所以只要每天看這張 burndown chart，團隊就可以知道進度是否正常（理論上在 sprint 最後一天剩下未完成的工作時間應該是 0）
 
 
 > 參考資料
