@@ -5,18 +5,7 @@ date: 2020-11-17T21:20:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "Promise"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day20，也是 11/17（二），這週的主題會講的是一些現代前端工具諸如 SaSS、Babel、Gulp、Webpack，能夠幫助工程師更方便的開發以及與團隊協作，這些工具的精神也被運用到現代框架中，因此了解這些工具的本身，也能夠在未來對於學習前端框架有一個更全面的瞭解，本文也會帶到在發送 request 常用的函式 promise 和 fetch。

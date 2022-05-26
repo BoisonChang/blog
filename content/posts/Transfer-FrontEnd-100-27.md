@@ -5,18 +5,7 @@ date: 2021-02-22T22:27:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day27，也是 2021/02/22（一），這週的主是產品開發流程，瞭解產品開發流程意味著工程師可以從更寬闊的視角去瞭解產品開發的全局，能夠更好的跟 PM（產品經理） 溝通，也能適時點出 PM 由於不熟悉技術所忽略的盲點，其中現在比較主流的開發方式為瀑布式開發，和敏捷式開發，會在文中詳細介紹。

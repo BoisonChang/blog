@@ -5,18 +5,7 @@ date: 2020-06-14T19:16:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day4，也是 6/14（日），今天來聊聊最高休息法，教你如何休息。

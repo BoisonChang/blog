@@ -5,18 +5,18 @@ date: 2020-06-08T11:36:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+# showToc: false
+# TocOpen: false
+# hidemeta: false
+# comments: true
+# disableHLJS: true # to disable highlightjs
+# disableShare: true
+# disableHLJS: false
+# hideSummary: false
+# searchHidden: false
+# ShowReadingTime: true
+# ShowBreadCrumbs: true
+# ShowPostNavLinks: true
 ---
 
 開始先弄懂一下前端工程師可能要懂的知識點，之後有看到什麼查什麼，昨日阿斌密我說他也有參加過胡立的計畫，問了阿斌請他幫我講解一下六角學院的這張圖，以下自己補充完紀錄之，以下內容為個人用麻瓜的語言理解後的翻譯，可能有誤歡迎留言指點。

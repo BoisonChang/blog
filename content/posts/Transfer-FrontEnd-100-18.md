@@ -5,18 +5,7 @@ date: 2020-11-13T21:47:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day18，也是 11/13（五），這週的主題會講的該要如何將前後端（分開處理後再）整合，如果有做好這個步驟，那理論上就算後端 Server 掛掉頁面還是會有資料，只是某些部分是空白的而已，而將這個功能做到極致則會有點類似 SPA（Single Page Application）單頁應用一樣，除此之外本週也會介紹 Boostrap 和 jQuery 兩樣好用的工具。

@@ -5,18 +5,7 @@ date: 2020-11-22T17:48:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "AWS"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day22，也是 11/22（日），這週的主題會談到的是伺服器以及如何遠端部署，如果你想要自己架設一個網站，這週的主題會是最核心的基礎，透過購買虛擬主機你將能擁有一個遠端運作的主機，但你同時也必須瞭解部署的基本概念，並且透過電腦的非圖形化介面去下指令完全安裝的一些操作，雖然第一次學習滿多陌生專有名詞但完成令人滿有成就感的。

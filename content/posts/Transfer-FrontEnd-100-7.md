@@ -5,18 +5,7 @@ date: 2020-06-17T16:05:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "BackEnd", "API"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day7，也是 6/17（三）。今天來聊聊前後端的差別。

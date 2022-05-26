@@ -5,18 +5,7 @@ date: 2020-09-04T20:11:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "API"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day15，也是 9/04（五），這週開始整合之前所有學會，前端切版（HTML + CSS），以及 JS 並且去串接網路上的 API 做出一個動態更新的頁面，老實說一開始真得覺得很難，真的實際做出 Twitch 的 Top 排行榜時，內心超級感動呀！但要讀懂 API 文件對我來說還是一件有點難度的事，尤其很多大公司的 API 文件是密密麻麻的英文，根本像是大海撈針，但開始有慢慢抓到訣竅。

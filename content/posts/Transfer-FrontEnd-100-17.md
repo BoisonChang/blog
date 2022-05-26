@@ -5,18 +5,7 @@ date: 2020-11-12T15:42:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day17，也是 11/12（四），這週開始進到資訊安全，「資訊安全」是前端工程師滿重要的一環，要確保你的網頁不會被使用者亂搞就壞掉，或者被駭客竊取資料。

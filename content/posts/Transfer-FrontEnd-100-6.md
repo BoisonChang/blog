@@ -5,18 +5,7 @@ date: 2020-06-16T14:04:21+08:00
 draft: false
 tags: ["FrontEnd", "transfer", "Git"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day6，也是 6/16（二）。標題那句話是出自五倍紅寶石的高見龍，我覺得很好的表現了 Git 的核心精神，今天要來聊聊 Git 這個超好用的版本控制工具，簡單來說你在玩 RPG 的時候不是會各種存檔嗎？
@@ -209,7 +198,7 @@ ShowPostNavLinks: true
 
 ## 四、Git 從本地連上遠端
 
-Github  則是一個支援 Git 程式碼存取和遠端管理的平台服務，有許多的開放原始碼的專案都是使用 Github 進行程式碼的管理。
+Github  則是一個支援 Git 程式碼存取和遠端管理的平台服務，有許多的開放原始碼的專案都是使用 Github 進行程式碼的管理。
 
 > Git 可以分為 Local (本地) 和 Remote (遠端) 兩個環境
 

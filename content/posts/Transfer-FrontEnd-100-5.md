@@ -5,18 +5,7 @@ date: 2020-06-15T20:18:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "CLI"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day5，也是 6/15（一），今天來聊聊命令列介面 CLI (Command-line interface) 。

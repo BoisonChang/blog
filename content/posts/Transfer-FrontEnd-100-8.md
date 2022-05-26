@@ -5,18 +5,7 @@ date: 2020-06-18T13:36:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day8，也是 7/16（四）。今天開始要來復盤之前學過練習過網路基礎，從這篇開始會在寫作形式上做一些改變，因為我發現之前寫作上為了文章的完整性讓我在每次動筆前有太大的壓力，也因為沒有較長的時間寫作導致我寫作的頻次降低，因此之後這個系列將會降低完整性，但求更常記錄下更多學習上細節。

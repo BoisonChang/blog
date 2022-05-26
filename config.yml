@@ -47,7 +47,7 @@ params:
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   disableSpecial1stPost: false
-  showtoc: false
+  showtoc: true
   tocopen: false
   ShowShareButtons: true
 

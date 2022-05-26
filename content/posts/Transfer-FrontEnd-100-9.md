@@ -5,18 +5,7 @@ date: 2020-07-20T16:11:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "JavaScript"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day9，也是 7/20（一）。

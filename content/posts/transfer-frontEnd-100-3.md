@@ -5,18 +5,7 @@ date: 2020-06-12T00:07:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "HTML"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day3，也是 6/12（五），今天來聊聊網頁的普通常識。

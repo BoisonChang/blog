@@ -5,18 +5,7 @@ date: 2020-09-02T20:32:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "HTML"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day12，也是 9/02（三）。今天開始要來復盤之前學過練習過前端基礎下，這塊是介紹 HTML 和 CSS 處理網頁最基礎的切版問題，但第一次接觸也帶給了我不小的挫折，並且發現其中真的要玩的話水可是很深的呢！但熟悉之後這塊也帶給了我不小的成就感，未來有機會挺希望繼續深入這塊的。

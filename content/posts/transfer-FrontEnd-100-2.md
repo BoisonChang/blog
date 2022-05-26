@@ -5,18 +5,7 @@ date: 2020-06-10T23:41:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 今天是百日轉職前端工程師的 Day2，也是 6/10（三），我想要聊聊「時間管理」。距離胡立課程開課還有兩天，這幾天大約把 Codeacdemy 的 HTML & CSS 寫完了。

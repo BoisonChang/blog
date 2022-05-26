@@ -5,18 +5,7 @@ date: 2020-09-04T14:43:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "JavaScript"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day14，也是 9/04（五）。今天開始要來復盤之前學過練習過前端基礎，也就是真正踏入前端工程師的真正門檻 JS，千萬不要搞錯 Java 和 JavaScript 歐，不然會被笑的！

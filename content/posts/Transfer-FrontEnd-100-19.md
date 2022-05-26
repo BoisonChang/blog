@@ -5,18 +5,7 @@ date: 2020-11-14T15:52:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "Webpack", "Gulp"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day19，也是 11/14（六），這週的主題會講的是一些現代前端工具 Webpack 和 Gulp。

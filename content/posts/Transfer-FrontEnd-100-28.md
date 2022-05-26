@@ -5,18 +5,6 @@ date: 2021-02-24T17:58:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
 ---
 
 大家好，這是百日轉職前端工程師的 Day28，也是 2021/02/24（一），今天我想要談談內心話，談談為什麼即便如此不適合當工程師的我，卻從沒想過放棄的堅持了半年以上朝這條路前進。

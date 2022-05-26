@@ -5,18 +5,7 @@ date: 2021-02-20T00:29:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day26，也是 2021/02/19（二），這週的主題會 JavaScript 最難但也是最核心，也是面試最常考的部分之一，物件導向。但這也是我覺得程式語言最有趣的部分，很多的程式語言都有物件導向的設計，因此我們可以這麼假設，物件導向，可能幫我們解決了很多大麻煩，導致它如此的無可或缺。

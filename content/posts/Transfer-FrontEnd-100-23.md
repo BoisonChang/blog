@@ -5,18 +5,7 @@ date: 2020-11-22T19:39:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day23，也是 11/22（日），這週的主題會談 FTP ，它是一種網際網路世界普遍採用的通訊協定之一，這算是額外補充的番外篇，希望透過這篇文章補足網路世界知識的一角，也是要瞭解網路運作重要的基礎， FTP 的使用情境（尤其在早期）也是相當多的。

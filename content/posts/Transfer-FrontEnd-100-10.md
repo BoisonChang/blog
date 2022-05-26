@@ -5,18 +5,7 @@ date: 2020-07-20T20:51:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "JavaScript", "ES6"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day10，也是 7/20（一）。今天開始要來復盤之前學過練習過程式基礎下，這塊是介紹 JavaScript 裡面一些比較進階的功能，主要會介紹常用函式、模組、測試還有 ES6 的一些新增的好用功能。

@@ -5,18 +5,7 @@ date: 2021-01-13T21:42:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "Closure", "Hoisting", "IIFE", "EventLoop"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day25，也是 2021/01/13（三），這週的主題會 JavaScript 最難但也是最核心，也是面試最常考的部分，我沒有把握百分之百掌握，但每一篇我都會嘔心瀝血用平易近人的方式書寫，讓任何有點 JS 基礎的人都能輕鬆讀懂，務必以讓看的人能夠看一篇抵三篇為目標， JavaScript 的底層邏輯到底怎麼運作的，就讓我們開始吧（抖

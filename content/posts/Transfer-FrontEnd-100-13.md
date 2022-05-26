@@ -5,18 +5,7 @@ date: 2020-09-03T20:55:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "CSS"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+
 ---
 
 大家好，這是百日轉職前端工程師的 Day13，也是 9/03（四）。今天開始要來復盤之前學過練習過前端基礎下，沒想到上一篇光是 HTML 就有那麼長的篇幅，很多東西都是寫的當下才去把資料整理齊全，花了很大心力，因為既然要寫就希望至少寫的架構是相對完整可擴充的，這篇繼續聊聊 CSS。
