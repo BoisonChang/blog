@@ -5,18 +5,18 @@ date: 2022-05-22T14:54:21+08:00
 draft: false
 tags: ["Hugo", "Github", "Netlify"]
 author: "Boison"
-showToc: false
-TocOpen: false
-hidemeta: false
-comments: true
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+# showToc: false
+# TocOpen: false
+# hidemeta: false
+# comments: true
+# disableHLJS: true # to disable highlightjs
+# disableShare: true
+# disableHLJS: false
+# hideSummary: false
+# searchHidden: false
+# ShowReadingTime: true
+# ShowBreadCrumbs: true
+# ShowPostNavLinks: true
 # author: ["Me", "You"] # multiple authors
 #canonicalURL: "https://canonical.url/to/page"
 # weight: 1
