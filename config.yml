@@ -52,6 +52,7 @@ params:
   showtoc: true
   tocopen: false
   ShowShareButtons: true
+  comments: true
 
   assets:
     favicon: "/favicon.ico"
