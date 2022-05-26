@@ -1,6 +1,6 @@
 baseURL: 'https://boison.tw'
 title: Boison
-paginate: 5
+paginate: 10
 defaultContentLanguage: zh-tw
 theme: PaperMod
 
