@@ -4,6 +4,7 @@ slug:  Transfer-FrontEnd-100-5
 date: 2020-06-15T20:18:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "CLI"]
+keywords: ["FrontEnd", "Transfer", "CLI"]
 author: "Boison"
 
 ---

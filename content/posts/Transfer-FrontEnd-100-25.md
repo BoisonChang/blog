@@ -4,6 +4,7 @@ slug: Transfer-FrontEnd-100-25
 date: 2021-01-13T21:42:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "Closure", "Hoisting", "IIFE", "EventLoop"]
+keywords:  ["FrontEnd", "Transfer", "Closure", "Hoisting", "IIFE", "EventLoop"]
 author: "Boison"
 
 ---

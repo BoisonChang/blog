@@ -4,6 +4,7 @@ slug: Transfer-FrontEnd-100-10
 date: 2020-07-20T20:51:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "JavaScript", "ES6"]
+keywords: ["FrontEnd", "Transfer", "JavaScript", "ES6"]
 author: "Boison"
 
 ---

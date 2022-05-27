@@ -4,6 +4,7 @@ slug: Transfer-FrontEnd-100-20
 date: 2020-11-17T21:20:21+08:00
 draft: false
 tags: ["FrontEnd", "Transfer", "Promise"]
+keywords: ["FrontEnd", "Transfer", "Promise"]
 author: "Boison"
 
 ---
