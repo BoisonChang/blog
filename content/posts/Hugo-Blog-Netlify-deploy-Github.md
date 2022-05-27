@@ -4,6 +4,7 @@ slug: Hugo-Blog-Netlify-deploy-Github
 date: 2022-05-22T14:54:21+08:00
 draft: false
 tags: ["Hugo", "Github", "Netlify"]
+keywords: ["Hugo", "Github", "Netlify"]
 author: "Boison"
 # showToc: false
 # TocOpen: false
