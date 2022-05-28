@@ -1,12 +1,11 @@
 ---
-title: "百日轉職前端工程師：第十四週 FTP 通訊協定《DAY 23》"
+title: '百日轉職前端工程師：第十四週 FTP 通訊協定《DAY 23》'
 slug: Transfer-FrontEnd-100-23
 date: 2020-11-22T19:39:21+08:00
 draft: false
-tags: ["FrontEnd", "Transfer"]
-keywords:  ["FrontEnd", "Transfer"]
-author: "Boison"
-
+tags: ['FrontEnd', 'Transfer']
+keywords: ['FrontEnd', 'Transfer']
+author: 'Boison'
 ---
 
 大家好，這是百日轉職前端工程師的 Day23，也是 11/22（日），這週的主題會談 FTP ，它是一種網際網路世界普遍採用的通訊協定之一，這算是額外補充的番外篇，希望透過這篇文章補足網路世界知識的一角，也是要瞭解網路運作重要的基礎， FTP 的使用情境（尤其在早期）也是相當多的。
@@ -59,9 +58,10 @@ FTP 的傳輸使用的是 TCP 封包協定， TCP 在建立連線前會先進行
 - 預設使用 Port 20，但是會因 FTP Client 選擇使用的「連線模式」不同而有所不同
 
 ![](https://blog.miniasp.com/image.axd?picture=WindowsLiveWriter/FTPProtocol_1341C/image_3.png)
-一般來說，指令通道的連線與下指令都沒有什麼問題，有問題的通常是在資料通道的建立，而資料通道的建立方式是由 FTP Client 所下的指令決定的，以 FileZilla 設定為例。
 
 圖片來源: [解說 FTP Protocol 的運作原理](https://blog.miniasp.com/post/2008/06/29/FTP-Protocol-Definitive-Explanation)
+
+一般來說，指令通道的連線與下指令都沒有什麼問題，有問題的通常是在資料通道的建立，而資料通道的建立方式是由 FTP Client 所下的指令決定的，以 FileZilla 設定為例。
 
 FTP Client (e.g. FileZilla) 每次建立連線時都會下 PORT 或 PASV 指令，如下範例，而每次下指令傳輸資料時，都會建立一次 data connection，包括取得遠端的檔案清單(LIST)時回傳的檔案列表、下載檔案、或上傳檔案。
 
