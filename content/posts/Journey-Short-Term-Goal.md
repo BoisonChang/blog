@@ -3,7 +3,7 @@ title: "短期目標: 降低崩潰的頻率，每天開心一點"
 slug: Journey-Short-Term-Goal
 date: 2022-06-06T17:23:39+08:00
 draft: false
-tags: ["Goal", ]
+tags: ["Goal" ]
 ---
 
 
