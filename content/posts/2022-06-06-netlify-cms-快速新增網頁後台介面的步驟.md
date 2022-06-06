@@ -109,6 +109,6 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
 6. 站點上方找到 Identity 並且點擊 Invite users 輸入你信箱並去信箱收信驗證
 7. 開啟 boison.tw/admin 登入網頁後台如圖
 
-![](static/img/screen-shot-2022-06-06-at-9.48.01-pm.png)
+{{< img src="/static/img/screen-shot-2022-06-06-at-9.48.01-pm.png" >}}
 
 > 圖片來源 & 參考資料：[十分鐘將 Netlify CMS 添加到現有的 Hugo 網站](https://namepluto.com/%E5%8D%81%E5%88%86%E9%90%98%E5%B0%87-netlify-cms-%E6%B7%BB%E5%8A%A0%E5%88%B0%E7%8F%BE%E6%9C%89%E7%9A%84-hugo-%E7%B6%B2%E7%AB%99/)
