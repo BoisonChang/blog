@@ -1,10 +1,11 @@
 ---
 title: "短期目標: 降低崩潰的頻率，每天開心一點"
-slug: Journey-Short-Term-Goal
 date: 2022-06-06T17:23:39+08:00
+author: Boison
+slug: Journey-Short-Term-Goal
 draft: false
-tags: ["Goal" ]
-author: "Boison"
+tags:
+  - Goal
 ---
 
 
@@ -28,7 +29,8 @@ author: "Boison"
 
 每天額外做一點對長期目標有幫助的事(目前是英文跟找日本軟體工作)，不要對自己有過高的期待不要苛責自己，如果做不到也沒關係，但只要每天有做一點就算是達標，就盡可能記錄下來也鼓勵自己，不要每天去思考太長期的事情，定期思考一次就夠了。
 
-![](https://live.staticflickr.com/6177/6216133338_d0cf48ec6c_z.jpg)
+![](https://live.staticflickr.com/5524/11253937913_8844c09e97_k.jpg)
+圖片來源：[Whole Earth Catalog](https://www.flickr.com/photos/bernzo/11253937913)
 
 
 > BTW 雖然應該沒人在看，但不知道有沒有現在也在新竹工作的朋友可以相約聊個，在這真的太無聊。
