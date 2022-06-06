@@ -98,7 +98,7 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
 
 ## 二、到 Netlify 控制台打開後台設定
 
-1. 在 Netlify 後台進入你的 site 點擊 Site settings
+1. 在 [Netlify 後台](https://app.netlify.com/)進入你的 site 點擊 Site settings
 2. 左側選單找到 Identity，將之開啟 Enable Identity
 3. Identity 下找到 Registration 點擊 Edit settings -> Invite only
 4. Identity 下找到  Services 點擊 Enable Git Gateway -> 輸入 Github 帳號密碼
