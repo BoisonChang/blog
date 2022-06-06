@@ -1,5 +1,5 @@
 ---
-title: Netlify CMS 快速新增網頁後台介面的步驟
+title: 用 Netlify CMS 快速新增網頁後台介面的步驟
 date: 2022-06-06T12:48:35.448Z
 author: Boison
 slug: Netlify-CMS-Hugo
@@ -8,9 +8,10 @@ tags:
   - CMS
   - Hugo
 ---
-VS Code 用筆電來寫文章眼睛還是有點痛，畢竟程式碼不用太大但寫文章好像還是不一樣，前鎮子剛好看到一篇可以在網頁新增後台編輯文章介面，用好之後就能在 https://boison.tw/admin 快速編輯文章了！之前的文章都是要貼到 VS Code ,這篇文章是第一篇用後台寫的，感覺比較方便也不用輸入 Command Line 指令。
+本篇文章說明如何在兩分鐘內為你的靜態網站新增後台網頁。說實在筆電上用 VS Code 當編輯器來寫文章眼睛還是有點痛跟麻煩，前陣子印象剛好看到一篇可以在網頁新增後台編輯文章介面就來實作看看，用好之後就能在 https://boison.tw/admin 快速編輯文章了！這篇文章是第一篇不是用 VS Code 當編輯器而是用網頁後台寫的，感覺比較方便也不用輸入 Command Line 指令。
 
 ※ 本文預設你使用[Hugo 並將網站用 Netlify 部署在 Github 上面](https://boison.tw/2022/05/hugo-blog-netlify-deploy-github/)，如連結文章教學
+※ 步驟可能會因時間跟環境有些微差異可參考 [Netlify CMS 官方文件](https://www.netlifycms.org/docs/configuration-options/#collections)為準，但核心原則不會差太多
 
 ---
 ## 一、先在根目錄的 static 資料夾新增資料夾裡面放兩個檔案
@@ -101,7 +102,6 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
 7. 開啟 boison.tw/admin 登入網頁後台如圖
 
 ![](https://i.imgur.com/IKAgCK8.png)
-圖片來源：[十分鐘將 Netlify CMS 添加到現有的 Hugo 網站](https://namepluto.com/%E5%8D%81%E5%88%86%E9%90%98%E5%B0%87-netlify-cms-%E6%B7%BB%E5%8A%A0%E5%88%B0%E7%8F%BE%E6%9C%89%E7%9A%84-hugo-%E7%B6%B2%E7%AB%99/)
 
 
-> 參考資料：[十分鐘將 Netlify CMS 添加到現有的 Hugo 網站](https://namepluto.com/%E5%8D%81%E5%88%86%E9%90%98%E5%B0%87-netlify-cms-%E6%B7%BB%E5%8A%A0%E5%88%B0%E7%8F%BE%E6%9C%89%E7%9A%84-hugo-%E7%B6%B2%E7%AB%99/)
+> 圖片來源 & 參考資料：[十分鐘將 Netlify CMS 添加到現有的 Hugo 網站](https://namepluto.com/%E5%8D%81%E5%88%86%E9%90%98%E5%B0%87-netlify-cms-%E6%B7%BB%E5%8A%A0%E5%88%B0%E7%8F%BE%E6%9C%89%E7%9A%84-hugo-%E7%B6%B2%E7%AB%99/)
