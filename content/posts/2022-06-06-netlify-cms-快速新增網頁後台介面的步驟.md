@@ -8,9 +8,15 @@ tags:
   - CMS
   - Hugo
 ---
-本篇文章說明如何在兩分鐘內為你的靜態網站新增後台網頁。說實在筆電上用 VS Code 當編輯器來寫文章眼睛還是有點痛跟麻煩，前陣子印象剛好看到一篇可以在網頁新增後台編輯文章介面就來實作看看，用好之後就能在 https://boison.tw/admin 快速編輯文章了！這篇文章是第一篇不是用 VS Code 當編輯器而是用網頁後台寫的，感覺比較方便也不用輸入 Command Line 指令。
+> 本篇文章說明如何在兩分鐘內為你的靜態網站新增後台網頁
+
+說實在筆電上用 VS Code 當編輯器來寫文章眼睛還是有點痛跟麻煩，前陣子印象剛好看到一篇可以在網頁新增後台編輯文章介面就來實作看看，用好之後就能在 https://boison.tw/admin 快速編輯文章了！
+
+這篇文章是第一篇不是用 VS Code 當編輯器而是用網頁後台寫的，感覺比較方便也不用輸入 Command Line 指令。
 
 ※ 本文預設你使用[Hugo 並將網站用 Netlify 部署在 Github 上面](https://boison.tw/2022/05/hugo-blog-netlify-deploy-github/)，如連結文章教學
+
+
 ※ 步驟可能會因時間跟環境有些微差異可參考 [Netlify CMS 官方文件](https://www.netlifycms.org/docs/configuration-options/#collections)為準，但核心原則不會差太多
 
 ---
