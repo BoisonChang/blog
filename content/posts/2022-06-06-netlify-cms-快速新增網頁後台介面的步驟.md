@@ -21,7 +21,7 @@ tags:
 
 ---
 ## 一、先在根目錄的 static 資料夾新增資料夾裡面放兩個檔案
-- cd 專案根目錄地址
+- cd 專案根目錄路徑
 - mkdir static/admin
 - touch static/admin/index.html // 制式內容如下 
 - touch static/admin/config.yml // 制式內容如下微調
