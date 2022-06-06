@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  repo: "your github repo , ex:Test/blog" # blog 存放在 Github repo 的位置
+  branch: "master" # 分支
+  site_url: "your site url" # 你的網站網址
+
+media_folder: "static/img" # 存放多媒體的資料夾
+public_folder: "/img"
+locale: "zh_Hant" # 語系 https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-locales/src
+
+collections: # https://www.netlifycms.org/docs/configuration-options/#collections
+  - name: 'posts'
+    label: '文章'
+    folder: 'content/posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: '標題', name: 'title', widget: 'string' }
+      - { label: '發布日期', name: 'date', widget: 'datetime' }
+      - { label: '摘要', name: 'description', widget: 'string' }
+      - { label: '內容', name: 'body', widget: 'markdown' }
+      - { label: "標籤", name: "tags", widget: "list", required: false}
+      - { label: "分類", name: "categories", widget: "list", required: false}
+  - name: "series"
+    label: "系列"
+    folder: "content/series"
+    create: true
+    fields:
+      - {label: "標題", name: "title", widget: "string"}
+      - {label: "内容", name: "body", widget: "markdown", required: false}
+  - name: "categories"
+    label: "分類"
+    folder: "content/categories"
+    create: true
+    fields:
+      - {label: "標題", name: "title", widget: "string"}
+      - {label: "内容", name: "body", widget: "markdown", required: false}
+  - name: "tags"
+    label: "標籤"
+    folder: "content/tags"
+    create: true
+    fields:
+      - {label: "標題", name: "title", widget: "string"}
+      - {label: "内容", name: "body", widget: "markdown", required: false}
