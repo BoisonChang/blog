@@ -6,6 +6,7 @@ slug: Journey-Short-Term-Goal
 draft: false
 tags:
   - Goal
+  - Journey
 ---
 
 
