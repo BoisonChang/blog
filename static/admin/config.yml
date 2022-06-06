@@ -17,19 +17,13 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
     editor:
       preview: false
     fields:
-      - { label: '標題', name: 'title', widget: 'string' }
+      - { label: '標題', name: 'title', widget: 'string' }      
       - { label: '發布日期', name: 'date', widget: 'datetime' }
-      - { label: '摘要', name: 'description', widget: 'string' }
       - { label: '內容', name: 'body', widget: 'markdown' }
+      - { label: '作者', name: 'author', widget: 'string' }
+      - { label: '短網址', name: 'slug', widget: 'string' }
       - { label: "標籤", name: "tags", widget: "list", required: false}
       - { label: "分類", name: "categories", widget: "list", required: false}
-  - name: "series"
-    label: "系列"
-    folder: "content/series"
-    create: true
-    fields:
-      - {label: "標題", name: "title", widget: "string"}
-      - {label: "内容", name: "body", widget: "markdown", required: false}
   - name: "categories"
     label: "分類"
     folder: "content/categories"
