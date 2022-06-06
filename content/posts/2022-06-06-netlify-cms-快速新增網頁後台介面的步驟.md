@@ -20,13 +20,13 @@ tags:
 ---
 ## 一、先在根目錄的 static 資料夾新增資料夾裡面放兩個檔案
 > 以下用終端機指令比較簡潔
-- cd 專案根目錄路徑
-- mkdir static/admin
-- touch static/admin/index.html // 制式內容如下 
-- touch static/admin/config.yml // 制式內容如下微調
-- git add .
-- git commit -m "create admin"
-- git push
+1. cd 專案根目錄路徑
+2. mkdir static/admin
+3. touch static/admin/index.html // 制式內容如下 
+4. touch static/admin/config.yml // 制式內容如下微調
+5. git add .
+6. git commit -m "create admin"
+7. git push
 
 ### index.html 
 
