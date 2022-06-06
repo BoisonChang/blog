@@ -4,6 +4,7 @@ slug: Journey-Short-Term-Goal
 date: 2022-06-06T17:23:39+08:00
 draft: false
 tags: ["Goal" ]
+author: "Boison"
 ---
 
 
