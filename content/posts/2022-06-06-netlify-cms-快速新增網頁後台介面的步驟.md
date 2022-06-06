@@ -1,5 +1,5 @@
 ---
-title: 用 Netlify CMS 快速新增網頁後台介面的步驟
+title: 用 Netlify CMS 新增網頁後台介面
 date: 2022-06-06T12:48:35.448Z
 author: Boison
 slug: Netlify-CMS-Hugo
