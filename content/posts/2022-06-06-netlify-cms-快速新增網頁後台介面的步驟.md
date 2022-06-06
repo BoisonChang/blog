@@ -19,6 +19,7 @@ tags:
 
 ---
 ## 一、先在根目錄的 static 資料夾新增資料夾裡面放兩個檔案
+> 以下用終端機指令比較簡潔
 - cd 專案根目錄路徑
 - mkdir static/admin
 - touch static/admin/index.html // 制式內容如下 
