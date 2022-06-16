@@ -11,17 +11,22 @@ tags:
 
 前文內 String 的內建方法: 
 
-1. String.trim
+1. **String.trim**
+
    * 將字串「前」「後」的指定元素刪除掉回傳一新字串，若是沒指定則預設為空白
-2. String.toLowerCase
+2. **String.toLowerCase**
+
    * 將字串中所有英文大寫轉成小寫後回傳一新字串
-3. String.endsWith
+3. **String.endsWith**
+
    * 判斷字串是否以指定字元做結尾，若是則回傳 true
-4. String.padEnd
+4. **String.padEnd**
+
    * 將一字串不足指定長度的部分以指定值填入，若未指定值則預設填充空白
-5. String.slice
+5. **String.slice**
+
    * 切下初始到結束位置的字串元素然後回傳成一個新的字串
-6. String.repeat
+6. **String.repeat**
 
 ```JavaScript
 '     5566 '.trim() 
@@ -46,12 +51,10 @@ tags:
 本篇進一步詳細整理 Array Prototype 中的方法 Method 有以下幾種
 
 * Basic Array Method
-
 * Filter/Find something
-
 * Special Method
 
----
+- - -
 
 ## 一、Basic Array Method
 
@@ -99,7 +102,7 @@ character.concat(['D'])
 // ['A', 'B', 'C', 'D']
 ```
 
----
+- - -
 
 ## 一、**Filter/Find something**
 
@@ -170,13 +173,13 @@ list.every(item => item.number > 10)
 // false
 ```
 
----
+- - -
 
 ## 三、Special Method
 
 ### 1. reduce()
 
-* Array.prototype.reduce(accumulator, currentValue, currentIndex, array \[, initialValue\])
+* Array.prototype.reduce(accumulator, currentValue, currentIndex, array \[, initialValue])
 * 回傳運算結果的值，initialValue 可以設定初始值
 
 ### 2. sort()
