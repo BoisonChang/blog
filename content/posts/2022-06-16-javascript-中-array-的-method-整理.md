@@ -7,9 +7,43 @@ tags:
   - JavaScript
   - Array
 ---
-之前寫過一篇 [百日轉職前端工程師：第三週 JS 常用內建函式《DAY 9》](https://boison.tw/2020/07/transfer-frontend-100-9/)，這篇進一步詳細整理:
+之前寫過一篇 [百日轉職前端工程師：第三週 JS 常用內建函式《DAY 9》](https://boison.tw/2020/07/transfer-frontend-100-9/) 摘要內容如下:
 
-Array Prototype 中的方法 Method 有以下幾種
+前文內 String 的內建方法: 
+
+1. String.trim
+   * 將字串「前」「後」的指定元素刪除掉回傳一新字串，若是沒指定則預設為空白
+2. String.toLowerCase
+   * 將字串中所有英文大寫轉成小寫後回傳一新字串
+3. String.endsWith
+   * 判斷字串是否以指定字元做結尾，若是則回傳 true
+4. String.padEnd
+   * 將一字串不足指定長度的部分以指定值填入，若未指定值則預設填充空白
+5. String.slice
+   * 切下初始到結束位置的字串元素然後回傳成一個新的字串
+6. String.repeat
+
+```
+'     5566 '.trim() 
+// '5566'
+
+'APPLE'.toLowerCase()
+// 'apple'
+
+'My name is Paul'.endsWith(Paul) 
+// true
+
+'012'.padEnd(10, '-') 
+// '012-------'
+
+'Hello, I am fine. How about you?' .slice(7, 16)
+// 'I am fine.'
+
+'a123'.repeat(3)
+// 'a123a123a123'
+```
+
+本篇進一步詳細整理 Array Prototype 中的方法 Method 有以下幾種
 
 * Basic Array Method
 
