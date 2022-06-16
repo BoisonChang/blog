@@ -60,7 +60,7 @@ character.concat(['D'])
 
 ---
 
-## 一、**Filter/Find something**
+## 一、Filter/Find Array Method
 
 ### 1. Array.prototype.findIndex(item, index, array)
 
@@ -134,27 +134,27 @@ list.every(item => item.number > 10)
 
 * 若沒有 compareFunction，會先自動轉成字串，回傳一個根據 Unicode 排序 array.length 長度的 array
 
-### 3. **Array.prototype.reverse()**
+### 3. Array.prototype.reverse()
 
 * 回傳反過來長度為 array.length 的陣列
 
-### 4. **Array.prototype.slice(start, end)**
+### 4. Array.prototype.slice(start, end)
 
 * 回傳在 start(包含) 跟 end 之間的陣列
 
-### 5. **Array.prototype.splice(start, deleteCount, item1, item2, …)**
+### 5. Array.prototype.splice(start, deleteCount, item1, item2, …)
 
 * 回傳被移掉的值放在陣列裡
 
-### 6. **Array.prototype.indexOf(searchElement)**
+### 6. Array.prototype.indexOf(searchElement)
 
 * 回傳所在位置的 index，如果找不到會回傳 -1
 
-### 7. **Array.prototype.join(separator)**
+### 7. Array.prototype.join(separator)
 
 * 把所有陣列裡的值加上 separator，回傳一個字串
 
-### 8. **Array.prototype.includes(searchElement, fromIndex)**
+### 8. Array.prototype.includes(searchElement, fromIndex)
 
 看 searchElement 有沒有在 array 裡，回傳 Boolean
 
