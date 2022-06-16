@@ -161,7 +161,7 @@ list.every(item => item.number > 10)
 ```javascript
 const character = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 
-character.reduce((acc, val) => acc += val )
+character.reduce((acc, val) => acc + val )
 // 'ABCDEFG'
 
 character.reverse()
