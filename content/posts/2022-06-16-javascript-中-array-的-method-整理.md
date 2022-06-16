@@ -7,6 +7,8 @@ tags:
   - JavaScript
   - Array
 ---
+之前寫過一篇 [百日轉職前端工程師：第三週 JS 常用內建函式《DAY 9》](https://boison.tw/2020/07/transfer-frontend-100-9/)，這篇進一步詳細整理:
+
 Array Prototype 中的方法 Method 有以下幾種
 
 * Basic Array Method
