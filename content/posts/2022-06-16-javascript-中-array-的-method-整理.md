@@ -80,7 +80,7 @@ tags:
 * Array.prototype.concat(arrayN)
 * 兩個陣列合併在一起，並回傳新陣列
 
-```
+```JavaScript
 const character = ['A', 'B', 'C']
 
 character.push('D') 
