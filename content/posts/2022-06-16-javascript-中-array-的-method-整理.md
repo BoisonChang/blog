@@ -9,7 +9,7 @@ tags:
 ---
 之前寫過一篇 [百日轉職前端工程師：第三週 JS 常用內建函式《DAY 9》](https://boison.tw/2020/07/transfer-frontend-100-9/) 摘要內容如下:
 
-前文內 String 的內建方法: 
+前文內 String 的提到的內建方法: 
 
 1. **String.trim**
 
