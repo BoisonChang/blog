@@ -56,7 +56,7 @@ tags:
 
 - - -
 
-## 一、Basic Array Method
+## 一、**Basic Array Method**
 
 ### 1. push()
 
@@ -175,7 +175,7 @@ list.every(item => item.number > 10)
 
 - - -
 
-## 三、Special Method
+## 三、**Special Method**
 
 ### 1. reduce()
 
