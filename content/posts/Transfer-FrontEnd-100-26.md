@@ -230,7 +230,9 @@ const myHello = hello.bind('my')
 myHello() // my
 ```
 
-你可能會好奇如果我們把 call 跟 bind 同時用會怎樣？答案是不會改變，一但 bind 了以後值就不會改變了，這邊還要特別提醒的一點是在非嚴格模式底下，無論是用 call、apply 還是 bind，你傳進去的如果是 primitive 都會被轉成 object。
+> 你可能會好奇如果我們把 call 跟 bind 同時用會怎樣？
+
+答案是不會改變，一但 bind 了以後值就不會改變了，這邊還要特別提醒的一點是在非嚴格模式底下，無論是用 call、apply 還是 bind，你傳進去的如果是 primitive 都會被轉成 object。
 
 ### 2. 物件中的 this
 
