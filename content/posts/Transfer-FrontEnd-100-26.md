@@ -190,9 +190,9 @@ console.log(myCar.getName()) // hello
 
 所以在 JavaScript 裡的 this 跟其他程式語言慣用的那個 this 有了差異，脫離了物件 this 的值就沒什麼意義，但他還是會呈現以下特徵
 
-1. 嚴格模式底下就都是 undefined
-2. 非嚴格模式，瀏覽器底下是 window
-3. 非嚴格模式，node.js 底下是 global
+1. 嚴格模式 : undefined
+2. 非嚴格模式/瀏覽器 :  window
+3. 非嚴格模式/node.js : global
 
 ### 1. 如何去更改 this 的值？
 
