@@ -571,7 +571,7 @@ animal.speak() // "some sounds"
 * class 中只能放方法（**在class 中的 function 都叫做 method**）
 * 子類別需要在 constructor() 中呼叫 super() 來使用父類別的建構函式
 * super() 只能在 constructor() 中執行
-* 子類別的 constructor() 呼叫 super 之前，this 是沒有指向的，會跑出 Reference Error
+* 子類別的 constructor() 呼叫 super 之前，this 是沒有指向的會跑出 Reference Error
 
 #### I. ES6 繼承與 super
 
