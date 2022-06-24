@@ -309,9 +309,6 @@ OOP（物件導向） 總共有四大支柱，分別是：
 * Abstraction 指得是將此物件的某些屬性與方法隱藏（hide）起來
 * 舉例來說，我們按下遙控器的按鈕就能轉台，其實這是靠遙控器內的小零件互相作用的，但我們不必知道這些
 * 這些被隱藏在遙控器裡的零件與作用就像是被隱藏起來的屬性與方法
-
-
-
 * Abstraction 的優點
 
   1. 使物件的介面更簡單
@@ -381,18 +378,19 @@ var magic = new SwordMan("魔法師",100);
 
 ```
 function Person(){
-console.log(this);}
-var john = new Person();// console.log(john);
+console.log(this)
+}
+var john = new Person()// console.log(john)
 ```
 
 但若函式的最後 return 其他物件，則原新物件內容會被覆蓋。
 
 ```
 function Person (){
-this.firstName = 'John';
-this.lastName = 'Doe';
-return {"RETURN":"原本this的內容就不會被回傳"};}
-var john = new Person();
+this.firstName = 'John'
+this.lastName = 'Doe'
+return {"RETURN":"原本this的內容就不會被回傳"}}
+var john = new Person()
 console.log(john); // Object {"RETURN":"原本this的內容就不會被回傳"}
 ```
 
@@ -401,16 +399,16 @@ console.log(john); // Object {"RETURN":"原本this的內容就不會被回傳"}
 ```
 function Dog(name) { 
 this.name = name
-};
+}
 Dog.prototype.getName = function() {
-return this.name;
-};
+return this.name
+}
 Dog.prototype.sayHello = function() {
-console.log(this.name);
-};
-var d = new Dog('Peter');
-var b = new Dog("Cow");
-console.log(d.sayHello() === b.sayHello());
+console.log(this.name)
+}
+var d = new Dog('Peter')
+var b = new Dog("Cow")
+console.log(d.sayHello() === b.sayHello())
 ```
 
 那 ES6 有 Class 的語法糖的程式碼的實例創建方法其實本質上也差不多，可見下範例：
@@ -418,19 +416,19 @@ console.log(d.sayHello() === b.sayHello());
 ```
 class Dog {
 setName(name) {
-this.name = name;
+this.name = name
 }
 getName() {
-return this.name;
+return this.name
 }
 sayHello() { // 這邊在語法上不用加 function
-console.log(this.name);
+console.log(this.name)
 }
 }
-var d = new Dog(); // 實例
-d.setName('PAUL');
-d.sayHello();
-console.log(d.getName());
+var d = new Dog() // 實例
+d.setName('PAUL')
+d.sayHello()
+console.log(d.getName())
 ```
 
 ※ 這邊再額外提物件導向中兩個好用的工具，其概念也被運用在 Vue.Js 中，很推薦先暸解一下：
