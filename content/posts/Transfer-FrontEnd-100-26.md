@@ -87,15 +87,15 @@ author: Boison
 
 ```
 function Dog(name) {
-this.name = name
+  this.name = name
 }
 
 Dog.prototype.speak = function() {
-console.log('Bark')
+  console.log('Bark')
 }
 
 Dog.prototype.move = function() {
-console.log('walk')
+  console.log('walk')
 }
 
 var dog1 = new Dog('Blacky'),
@@ -104,7 +104,7 @@ var dog2 = new Dog('Whity')
 dog1.speak() // "Bark"
 dog2.speak() // "Bark"
 Dog.prototype.speak = function() {
-console.log('Bow-wow')
+  console.log('Bow-wow')
 };
 dog1.speak() // "Bow-wow"
 dog2.speak() // "Bow-wow"
@@ -165,12 +165,12 @@ dog2.speak() // "Bow-wow"
 
 ```
 class Car {
-setName(name) {
-this.name = name
-}
-getName() {
-return this.name
-}
+  setName(name) {
+    this.name = name
+  }
+  getName() {
+    return this.name
+  }
 }
 const myCar = new Car()
 myCar.setName('hello')
@@ -206,9 +206,11 @@ console.log(myCar.getName()) // hello
 
 ```
 'use strict'
+
 function hello(a, b){
-console.log(this, a, b)
+  console.log(this, a, b)
 }
+
 hello(1, 2) // undefined 1 2
 hello.call('yo', 1, 2) // yo 1 2
 hello.apply('hihihi', [1, 2]) // hihihi 1 2
@@ -223,8 +225,9 @@ hello.apply('hihihi', [1, 2]) // hihihi 1 2
 
 ```
 'use strict'
+
 function hello() {
-console.log(this)
+  console.log(this)
 }
 const myHello = hello.bind('my')
 myHello() // my
@@ -240,10 +243,10 @@ myHello() // my
 
 ```
 const obj = {
-value: 1,
-hello: function() {
-console.log(this.value)
-}
+  value: 1,
+  hello: function() {
+    console.log(this.value)
+  }
 }
 obj.hello() // 1
 ```
@@ -252,11 +255,12 @@ obj.hello() // 1
 
 ```
 const obj = {
-value: 1,
-hello: function() {
-console.log(this.value)
+  value: 1,
+  hello: function() {
+    console.log(this.value)
+  }
 }
-}
+
 obj.hello() // 1
 const hey = obj.hello
 hey() // undefined
@@ -335,18 +339,21 @@ JS 是用原型繼承的方式實作物件導向繼承的抽象概念，JS 要�
 
 ```
 function Role(name, blood){
-this.name = name || ""
-this.blood = blood || ""
+  this.name = name || ""
+  this.blood = blood || ""
 }
+
 function SwordMan(name, blood){
-Role.call(this, name, blood)
-this.fight = "揮劍攻擊"
+  Role.call(this, name, blood)
+  this.fight = "揮劍攻擊"
 }
+
 function Magician(name, blood){
-Role.call(this, name, blood)
-this.fight = "火球術！"
-this.cure = "治療！"
+  Role.call(this, name, blood)
+  this.fight = "火球術！"
+  this.cure = "治療！"
 }
+
 SwordMan.prototype = new Role()
 Magician.prototype = new Role()
 var sword = new SwordMan("劍士",200)
@@ -378,8 +385,9 @@ var magic = new SwordMan("魔法師",100)
 
 ```
 function Person(){
-console.log(this)
+  console.log(this)
 }
+
 var john = new Person()// console.log(john)
 ```
 
@@ -387,10 +395,11 @@ var john = new Person()// console.log(john)
 
 ```
 function Person (){
-this.firstName = 'John'
-this.lastName = 'Doe'
-return {"RETURN":"原本this的內容就不會被回傳"}
+  this.firstName = 'John'
+  this.lastName = 'Doe'
+  return {"RETURN":"原本this的內容就不會被回傳"}
 }
+
 var john = new Person()
 console.log(john) // Object {"RETURN":"原本this的內容就不會被回傳"}
 ```
@@ -399,14 +408,17 @@ console.log(john) // Object {"RETURN":"原本this的內容就不會被回傳"}
 
 ```
 function Dog(name) { 
-this.name = name
+  this.name = name
 }
+
 Dog.prototype.getName = function() {
-return this.name
+  return this.name
 }
+
 Dog.prototype.sayHello = function() {
-console.log(this.name)
+  console.log(this.name)
 }
+
 var d = new Dog('Peter')
 var b = new Dog("Cow")
 console.log(d.sayHello() === b.sayHello())
@@ -416,16 +428,17 @@ console.log(d.sayHello() === b.sayHello())
 
 ```
 class Dog {
-setName(name) {
-this.name = name
+  setName(name) {
+    this.name = name
+  }
+  getName() {
+    return this.name
+  }
+  sayHello() { // 這邊在語法上不用加 function
+    console.log(this.name)
+  }
 }
-getName() {
-return this.name
-}
-sayHello() { // 這邊在語法上不用加 function
-console.log(this.name)
-}
-}
+
 var d = new Dog() // 實例
 d.setName('PAUL')
 d.sayHello()
@@ -449,11 +462,12 @@ console.log(d.getName())
 
 ```
 var wallet = {
-total: 100,
-set save(price){
-this.total = this.total + price / 2
+  total: 100,
+  set save(price){
+    this.total = this.total + price / 2
+  }
 }
-}
+
 wallet.save = 300;
 console.log(wallet.total); // 250
 ```
@@ -462,14 +476,15 @@ console.log(wallet.total); // 250
 
 ```
 var wallet = {
-total: 100,
-set save(price){
-this.total = this.total + price / 2
-},
-get save(){
-return this.total / 2;
+  total: 100,
+  set save(price){
+    this.total = this.total + price / 2
+  },
+  get save(){
+    return this.total / 2;
+  }
 }
-}
+
 wallet.save = 300;
 console.log(wallet.save); // 125
 ```
@@ -478,29 +493,33 @@ Object.defineProperty: 另外還有一種定義方式 Object.defineProperty，�
 
 ```
 var wallet = {
-total: 100,
+  total: 100,
 }
+
 Object.defineProperty(wallet,'save',{
-configurable: true,
-enumerable: true,
-set : function(price){
-this.total = this.total + price / 2;
-},
-get : function(){
-return this.total / 2;
-}
+  configurable: true,
+  enumerable: true,
+  set : function(price){
+    this.total = this.total + price / 2
+  },
+  get : function(){
+    return this.total / 2
+  }
 })
-wallet.save = 300;
-console.log(wallet);
+
+wallet.save = 300
+console.log(wallet)
 ```
 
 ```
-var a = [1,2,3];
+var a = [1,2,3]
+
 Object.defineProperty(Array.prototype,'latest',{
-get: function(){
-return this[this.length - 1]
-}
+  get: function(){
+    return this[this.length - 1]
+  }
 })
+
 console.log(a.latest);
 ```
 
