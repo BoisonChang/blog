@@ -597,7 +597,7 @@ class SuperMan extends Person{
     this.power = power
   }
   hello(){
-    console.log(我是個有${this.power}戰鬥力的SuperMAN)
+    console.log(`我是個有 ${this.power} 戰鬥力的 SuperMAN`)
   }
 }
 ```
