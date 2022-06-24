@@ -391,7 +391,7 @@ this.firstName = 'John'
 this.lastName = 'Doe'
 return {"RETURN":"原本this的內容就不會被回傳"}}
 var john = new Person()
-console.log(john); // Object {"RETURN":"原本this的內容就不會被回傳"}
+console.log(john) // Object {"RETURN":"原本this的內容就不會被回傳"}
 ```
 
 但假若我們建立了一個狗的建構式，也在裡面寫入了行為的 function，實際執行上每叫一隻狗，就要叫一個 function，一萬隻狗一萬個 function 非常耗費記憶體，因此我們可以透過原型鍊將其寫在 Prototype 中，讓其共用一個 function 節省運算資源如下：
