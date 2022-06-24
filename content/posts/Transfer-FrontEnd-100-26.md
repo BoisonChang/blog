@@ -649,7 +649,7 @@ class SuperMan extends Person{
   }
   hello(){
     console.log('子類實例中，被super.property改掉的')
-    property${this.property}')
+    property(`${this.property}`)
   }
   static sonPrivateMethod(){
     super.showProperty()
