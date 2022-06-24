@@ -492,7 +492,10 @@ wallet.save = 300;
 console.log(wallet.save); // 125
 ```
 
-Object.defineProperty: 另外還有一種定義方式 Object.defineProperty，如果用 defineProperty 去定義 getter & setter，則 enumerable & configurable 預設為 false：
+**Object.defineProperty:** 
+
+* 另外還有一種定義方式 Object.defineProperty，如果用 defineProperty 去定義 getter & setter
+* 則 enumerable & configurable 預設為 false
 
 ```
 var wallet = {
