@@ -172,6 +172,7 @@ class Car {
     return this.name
   }
 }
+
 const myCar = new Car()
 myCar.setName('hello')
 console.log(myCar.getName()) // hello
@@ -229,6 +230,7 @@ hello.apply('hihihi', [1, 2]) // hihihi 1 2
 function hello() {
   console.log(this)
 }
+
 const myHello = hello.bind('my')
 myHello() // my
 ```
@@ -248,6 +250,7 @@ const obj = {
     console.log(this.value)
   }
 }
+
 obj.hello() // 1
 ```
 
