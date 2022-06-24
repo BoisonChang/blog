@@ -389,7 +389,8 @@ var john = new Person()// console.log(john)
 function Person (){
 this.firstName = 'John'
 this.lastName = 'Doe'
-return {"RETURN":"原本this的內容就不會被回傳"}}
+return {"RETURN":"原本this的內容就不會被回傳"}
+}
 var john = new Person()
 console.log(john) // Object {"RETURN":"原本this的內容就不會被回傳"}
 ```
