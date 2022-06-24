@@ -648,7 +648,7 @@ class SuperMan extends Person{
     console.log(super.property)
   }
   hello(){
-    console.log(`子類實例中，被super.property改掉的 property ${this.property}`)
+    console.log(`子類實例中，被 super.property 改掉的 property ${this.property}`)
   }
   static sonPrivateMethod(){
     super.showProperty()
