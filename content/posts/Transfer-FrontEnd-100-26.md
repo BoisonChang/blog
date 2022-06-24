@@ -688,7 +688,7 @@ class Triple {
     if (n === undefined) {
       n = 1
     }
-  return n * 3
+    return n * 3
   }
 }
 
