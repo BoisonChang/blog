@@ -186,7 +186,7 @@ console.log(myCar.getName()) // hello
 * 以上面的範例來說，myCar.setName('hello')，所以 this 就會是myCar
 * 在物件導向的世界裡面，this 的作用就是這麼單純
 
-> **但在 JavaScript 中 this 之所以那麼難懂，就是因為在 JavaScript 裡面，你在任何地方都可以存取到 this**
+> **JavaScript 中 this 之所以那麼難懂，在 JavaScript 中任何地方都可以存取到 this**
 
 所以在 JavaScript 裡的 this 跟其他程式語言慣用的那個 this 有了差異，脫離了物件 this 的值就沒什麼意義，但他還是會呈現以下特徵
 
