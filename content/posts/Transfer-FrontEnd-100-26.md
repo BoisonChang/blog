@@ -87,27 +87,27 @@ author: Boison
 
 ```
 function Dog(name) {
-this.name = name;
+this.name = name
 }
 
 Dog.prototype.speak = function() {
-console.log('Bark');
-};
+console.log('Bark')
+}
 
 Dog.prototype.move = function() {
-console.log('walk');
-};
+console.log('walk')
+}
 
 var dog1 = new Dog('Blacky'),
-var dog2 = new Dog('Whity');
+var dog2 = new Dog('Whity')
 
-dog1.speak(); // "Bark"
-dog2.speak(); // "Bark"
+dog1.speak() // "Bark"
+dog2.speak() // "Bark"
 Dog.prototype.speak = function() {
-console.log('Bow-wow');
+console.log('Bow-wow')
 };
-dog1.speak(); // "Bow-wow"
-dog2.speak(); // "Bow-wow"
+dog1.speak() // "Bow-wow"
+dog2.speak() // "Bow-wow"
 ```
 
 是什麼讓 dog1.speak() 知道要去上面的 Prototype 找呢？答案如下。
@@ -205,7 +205,7 @@ console.log(myCar.getName()) // hello
 前兩種超級類似，叫做 call 跟 apply，這兩種都是能夠呼叫 fucntion 的函式，舉一個例子比較好懂
 
 ```
-'use strict';
+'use strict'
 function hello(a, b){
 console.log(this, a, b)
 }
@@ -222,7 +222,7 @@ hello.apply('hihihi', [1, 2]) // hihihi 1 2
 用 call 或是 apply 去呼叫，跟直接呼叫 function的差別，在於傳參數的方式不同。除了以上兩種以外，還有最後一種可以改變 this 的方法：bind
 
 ```
-'use strict';
+'use strict'
 function hello() {
 console.log(this)
 }
@@ -335,22 +335,22 @@ JS 是用原型繼承的方式實作物件導向繼承的抽象概念，JS 要�
 
 ```
 function Role(name, blood){
-this.name = name || "";
-this.blood = blood || "";
+this.name = name || ""
+this.blood = blood || ""
 }
 function SwordMan(name, blood){
-Role.call(this, name, blood);
-this.fight = "揮劍攻擊";
+Role.call(this, name, blood)
+this.fight = "揮劍攻擊"
 }
 function Magician(name, blood){
-Role.call(this, name, blood);
-this.fight = "火球術！";
+Role.call(this, name, blood)
+this.fight = "火球術！"
 this.cure = "治療！"
 }
-SwordMan.prototype = new Role();
-Magician.prototype = new Role();
-var sword = new SwordMan("劍士",200);
-var magic = new SwordMan("魔法師",100);
+SwordMan.prototype = new Role()
+Magician.prototype = new Role()
+var sword = new SwordMan("劍士",200)
+var magic = new SwordMan("魔法師",100)
 ```
 
 可以看到說，雖然 sword 與 magic 都有 name 與 blood ，但會發現顯示出來的不一樣，這是因為我們繼承了Role 所以在覆寫時候才能顯示不一樣，而不是只會統一顯示。
