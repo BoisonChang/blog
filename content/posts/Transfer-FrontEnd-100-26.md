@@ -538,17 +538,20 @@ this.name = name
 this.gender = gender
 this.age = age
 }
+
 Dog.prototype = Object.create(Animal.prototype)
+
 Dog.prototype.speak = function() {
 console.log('Bow-wow')
-};
+}
+
 Dog.prototype.move = function() {
 console.log('walk')
-};
+}
 
-var dog1 = new Dog('Blacky', 'male', 3),
-dog2 = new Dog('Whity', 'female', 1),
-animal = new Animal('Browny', 'male', 5)
+var dog1 = new Dog('Blacky', 'male', 3)
+var dog2 = new Dog('Whity', 'female', 1)
+var animal = new Animal('Browny', 'male', 5)
 dog1.speak() // "Bow-wow"
 dog2.speak() // "Bow-wow"
 animal.speak() // "some sounds"
@@ -575,26 +578,26 @@ animal.speak() // "some sounds"
 
 ```
 class Person{
-constructor(age, weight){
-this.age = age
-this.weight = weight
-}
-call_this(){
-return this;
-}
-static SonCanNotUse(){
-console.log("內部專用")
-}
+ constructor(age, weight){
+  this.age = age
+  this.weight = weight
+ }
+ call_this(){
+  return this;
+ }
+ static SonCanNotUse(){
+  console.log("內部專用")
+ }
 }
 
 class SuperMan extends Person{
-constructor(age, weight, power){  // 如果在super()之前就呼叫this 的話，會reference error
-super()
-this.power = power
-}
-hello(){
-console.log(我是個有${this.power}戰鬥力的SuperMAN)
-}
+ constructor(age, weight, power){  // 如果在super()之前就呼叫this 的話，會reference error
+  super()
+  this.power = power
+ }
+ hello(){
+  console.log(我是個有${this.power}戰鬥力的SuperMAN)
+ }
 }
 ```
 
