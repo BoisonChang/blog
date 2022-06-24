@@ -590,7 +590,7 @@ console.log("內部專用")
 class SuperMan extends Person{
 constructor(age, weight, power){  // 如果在super()之前就呼叫this 的話，會reference error
 super()
-this.power=power
+this.power = power
 }
 hello(){
 console.log(我是個有${this.power}戰鬥力的SuperMAN)
@@ -718,8 +718,8 @@ console.log(I'm ${name}. ${age} years old.) // 不要加this
 }
 }
 Person.student('Teagan', '22') // I'm Teagan. 22 years old.
-let person = new Person('Teagan', 22); // 被定義為靜態方法的函式，無法被已實體化（new 過）的類別物件呼叫
-person.student; // Uncaught TypeError: person.student is not a function
+let person = new Person('Teagan', 22) // 被定義為靜態方法的函式，無法被已實體化（new 過）的類別物件呼叫
+person.student // Uncaught TypeError: person.student is not a function
 ```
 
 ### 2 . 物件導向的封裝（Encapsulation）
