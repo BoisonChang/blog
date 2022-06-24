@@ -605,7 +605,7 @@ class SuperMan extends Person{
 > **要注意的點是一定要在繼承的 class 的 constructor() 中使用 this 前呼叫 super()**
 
 * 為什麼有這樣的寫法限制？因為一般沒有繼承的情況下，在 constructor 裡面會先建立一個物件，然後把 this 指向這個物件
-* 相反地，有繼承的情況下，在子類別的 constructor 裏就不會有建立物件的動作
+* 相反地，**有繼承的情況下，在子類別的 constructor 裏就不會有建立物件的動作**
 * 為什麼呢？因為建立物件的動作只需要做一次就好了
 * 所以我們會預期，物件已經在母類別的 constructor 裏建立了，否則就會在子物件裡重複動作
 * 所以，我們要在子類別呼叫 super()，this 才不會是空（不然會跳 undefined ）
