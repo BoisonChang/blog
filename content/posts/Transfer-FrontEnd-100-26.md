@@ -641,8 +641,8 @@ class SuperMan extends Person{
   constructor(age, weight, power){
   // 如果在 super() 之前就呼叫 this 的話，會 reference error
     super();
-    this.property = "子類用this初始化的property"
-    super.property = "子類用super初始化的property"
+    this.property = "子類用 this 初始化的property"
+    super.property = "子類用 super 初始化的property"
     this.power = power
     super.showProperty()
     console.log(super.property)
