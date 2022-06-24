@@ -50,19 +50,21 @@ author: Boison
 
      * 而萊絲這個物件則是一條具體的狗，它的屬性也是具體的，狗有皮毛顏色，而萊絲的皮毛顏色是棕白色的
   3. 實例
+
      * 因此，萊絲就是狗這個類別（Class）的一個實例（instance）
 
 > **物件導向設計的優缺點**
 
 1. 使用物件導向設計的「優點」
 
-  * 便於程式碼「重複使用」
-  * 把程式細節隱藏在物件內
-  * 讓主程式能變短，且簡化主程式邏輯
+* 便於程式碼「重複使用」
+* 把程式細節隱藏在物件內
+* 讓主程式能變短，且簡化主程式邏輯
+
 2. 使用物件導向設計的「缺點」
 
-  * 「基礎建設」較繁雜龐大
-  * 寫個簡單程式需要比傳統寫法，還要更多行
+* 「基礎建設」較繁雜龐大
+* 寫個簡單程式需要比傳統寫法，還要更多行
 
 ## 2. JavaScript 是原型基礎的物件導向程式語言
 
@@ -80,7 +82,6 @@ author: Boison
 
 * 也就是說，只要我們為這個原型物件增加屬性，則所有該子型別的物件都可以取用到這個函式，這就是所謂的共用函式
 * 呼應前面說的，Prototype 能讓我們寫出能夠讓多個「物件」共用的函式
-
 
 那就讓我們看點程式碼吧：
 
@@ -131,6 +132,7 @@ dog2.speak(); // "Bow-wow"
   * 而其實其實 dog1.proto 就是 Dog.prototype
   * 若是還是找不到就會往再上一層找，直到找到 Object.prototype 為止還是沒有，那輸出就會是 null。
 * 透過 Prototype 這樣的方式，將他底下的東西可以用 .proto 連起來
+
   * 透過 Prototype 這樣的方式，將他底下的東西可以用 .proto 連起來，讓他們可以共同享有同一個 Function，這又被稱為「原型串鏈」（Prototype Chain）。
   * 至此，我們已經學會了如何使用 JavaScript 的 Prototype 寫出類似「物件導向」的程式
 * ES6 的語法糖
@@ -155,7 +157,7 @@ dog2.speak(); // "Bow-wow"
 
 ## 二、大部分情況下 this 的值是什麼？
 
-要談 this，也要從「物件導向」開始談，然而弔詭的是 this 真的如此複雜讓很多人混淆的關鍵就是因為在物件以外的地方也可以用 this，但其本質上是沒有太大意義的，就只是可以用而已，這在後續會陸續說明。
+要談 this，也要從「物件導向」開始談，然而弔詭的是 this 真的如此複雜讓很多人混淆的關鍵就是因為**在物件以外的地方也可以用 this**，但其本質上是沒有太大意義的，就只是可以用而已，這在後續會陸續說明。
 
 > **在物件導向中的 this，代表的就是在物件導向裡面，那個實例 (instance) 本身**
 
@@ -280,7 +282,7 @@ hey() // undefined
 
 > 參考資料
 
-1. [\[JavaScript]使用建構器創造實體物件](https://ithelp.ithome.com.tw/articles/10198141)
+1. \[[JavaScript]使用建構器創造實體物件](https://ithelp.ithome.com.tw/articles/10198141)
 2. [從ES6開始的JavaScript學習生活 /物件](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part3/object.html?q=)
 
 - - -
@@ -811,7 +813,7 @@ console.log(wallet[money]); // => 還是存取得到，不是真正的 private
   3. [JavaScript 進階：物件導向 (new、super、封裝)](https://yakimhsu.com/project/project_w17_advancedJS_07_OOP.html)
   4. [JavaScript 物件導向式程式設計](https://www.fooish.com/javascript/oop-object-oriented-programming.html)
   5. [前端工程研究：關於 JavaScript 的物件藍圖建立方法](https://blog.miniasp.com/post/2020/06/19/JavaScript-Object-in-depth)
-  6. [\[教學] 深入淺出 JavaScript ES6 Class (類別)](https://shubo.io/javascript-class/#%E7%94%A8-super-%E8%A6%86%E5%AF%AB-constructor)
+  6. \[[教學] 深入淺出 JavaScript ES6 Class (類別)](https://shubo.io/javascript-class/#%E7%94%A8-super-%E8%A6%86%E5%AF%AB-constructor)
   7. [ES6 中最容易誤會的語法糖 Class - 基本用法](https://medium.com/enjoy-life-enjoy-coding/javascript-es6-%E4%B8%AD%E6%9C%80%E5%AE%B9%E6%98%93%E8%AA%A4%E6%9C%83%E7%9A%84%E8%AA%9E%E6%B3%95%E7%B3%96-class-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-23e4a4a5e8ed)
   8. [Day 10: ES6篇 - Class(類別)](https://ithelp.ithome.com.tw/articles/10185583)
   9. [學 JS 的心路歷程 Day21-JS 支援物件導向?(二)](https://ithelp.ithome.com.tw/articles/10208093)
