@@ -197,7 +197,6 @@ console.log(myCar.getName()) // hello
 ### 1. 如何去更改 this 的值？
 
 > **僅管 this 可能有預設的值，但我們可以透過一些方法來改它**
-> 這改的方法也很簡單，一共有三種:
 
 1. call
 2. apply
