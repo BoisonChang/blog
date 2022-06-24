@@ -568,7 +568,7 @@ animal.speak() // "some sounds"
 
 > **聊到這邊我想先定義幾個 ES6 Class 語法糖的特性**
 
-* class 中只能放方法（在class 中的 function 都叫做 method）
+* class 中只能放方法（**在class 中的 function 都叫做 method**）
 * 子類別需要在 constructor() 中呼叫 super() 來使用父類別的建構函式
 * super() 只能在 constructor() 中執行
 * 子類別的 constructor() 呼叫 super 之前，this 是沒有指向的，會跑出 Reference Error
