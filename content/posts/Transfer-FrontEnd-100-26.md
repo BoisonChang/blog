@@ -130,8 +130,9 @@ dog2.speak(); // "Bow-wow"
 
   * 而其實其實 dog1.proto 就是 Dog.prototype
   * 若是還是找不到就會往再上一層找，直到找到 Object.prototype 為止還是沒有，那輸出就會是 null。
-* 透過 Prototype 這樣的方式，將他底下的東西可以用 .proto 連起來，讓他們可以共同享有同一個 Function，這又被稱為「原型串鏈」（Prototype Chain）。
-* 至此，我們已經學會了如何使用 JavaScript 的 Prototype 寫出類似「物件導向」的程式
+* 透過 Prototype 這樣的方式，將他底下的東西可以用 .proto 連起來
+  * 透過 Prototype 這樣的方式，將他底下的東西可以用 .proto 連起來，讓他們可以共同享有同一個 Function，這又被稱為「原型串鏈」（Prototype Chain）。
+  * 至此，我們已經學會了如何使用 JavaScript 的 Prototype 寫出類似「物件導向」的程式
 * ES6 的語法糖
 
   * 雖然如此，但是 Prototype 的繼承寫法會讓人無法一目了然
