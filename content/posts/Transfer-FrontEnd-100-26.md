@@ -639,7 +639,7 @@ class Person{
 
 class SuperMan extends Person{
   constructor(age, weight, power){
-  // 如果在super()之前就呼叫this 的話，會reference error
+  // 如果在 super() 之前就呼叫 this 的話，會 reference error
     super();
     this.property = "子類用this初始化的property"
     super.property = "子類用super初始化的property"
