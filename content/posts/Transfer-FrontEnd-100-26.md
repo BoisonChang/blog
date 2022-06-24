@@ -284,7 +284,7 @@ hey() // undefined
 
 > 參考資料
 >
-> 1. JavaScript使用建構器創造實體物件](https://ithelp.ithome.com.tw/articles/10198141)
+> 1. [JavaScript使用建構器創造實體物件](https://ithelp.ithome.com.tw/articles/10198141)
 > 2. [從ES6開始的JavaScript學習生活 /物件](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part3/object.html?q=)
 
 - - -
