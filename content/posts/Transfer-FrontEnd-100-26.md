@@ -214,12 +214,12 @@ hello.call('yo', 1, 2) // yo 1 2
 hello.apply('hihihi', [1, 2]) // hihihi 1 2
 ```
 
-* 上面三兩種呼叫 function 的方式是等價的，一模一樣
-* call 跟 apply 傳進的第一個參數的值就是 this
-* 而 apply 的差別只在於他後面要傳進去的參數是一個 array
-* 除了直接呼叫 function 以外，你也可以用 call 或是 apply 去呼叫，差別在於傳參數的方式不同
+* 上面兩種呼叫 function 的方式是等價的，一模一樣
 
-除了以上兩種以外，還有最後一種可以改變 this 的方法：bind
+  * call 跟 apply 傳進的第一個參數的值就是 this
+  * 而 apply 的差別只在於他後面要傳進去的參數是一個 array
+
+用 call 或是 apply 去呼叫，跟直接呼叫 function的差別在於傳參數的方式不同，除了以上兩種以外，還有最後一種可以改變 this 的方法：bind
 
 ```
 'use strict';
