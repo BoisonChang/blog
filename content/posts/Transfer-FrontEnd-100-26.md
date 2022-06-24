@@ -516,42 +516,42 @@ console.log(a.latest);
 * 而是應該要拷貝一份與 Animal.prototype 相同內容的物件後，指派給 Dog.prototype
 
 ```
-Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype)
 ```
 
 這就是我們需要的，Object.create 會回傳與一個原型物件相同的新物件回來，因此就不會出現改到 Animal.prototype 的問題了。我們的完整範例會如下：
 
 ```
 function Animal(name, gender, age) {
-this.name = name;
-this.gender = gender;
-this.age = age;
+this.name = name
+this.gender = gender
+this.age = age
 }
 
 Animal.prototype.speak = function() {
-console.log('some sounds');
-};
-Animal.prototype.move = function() {};
+console.log('some sounds')
+}
+Animal.prototype.move = function() {}
 
 function Dog(name, gender, age) {
-this.name = name;
-this.gender = gender;
-this.age = age;
+this.name = name
+this.gender = gender
+this.age = age
 }
-Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype)
 Dog.prototype.speak = function() {
-console.log('Bow-wow');
+console.log('Bow-wow')
 };
 Dog.prototype.move = function() {
-console.log('walk');
+console.log('walk')
 };
 
 var dog1 = new Dog('Blacky', 'male', 3),
 dog2 = new Dog('Whity', 'female', 1),
-animal = new Animal('Browny', 'male', 5);
-dog1.speak(); // "Bow-wow"
-dog2.speak(); // "Bow-wow"
-animal.speak(); // "some sounds"
+animal = new Animal('Browny', 'male', 5)
+dog1.speak() // "Bow-wow"
+dog2.speak() // "Bow-wow"
+animal.speak() // "some sounds"
 ```
 
 > **當你瞭解以上的邏輯， ES6 的繼承寫法又更簡單了**
@@ -576,24 +576,24 @@ animal.speak(); // "some sounds"
 ```
 class Person{
 constructor(age, weight){
-this.age=age;
-this.weight=weight;
+this.age = age
+this.weight=weight
 }
 call_this(){
 return this;
 }
 static SonCanNotUse(){
-console.log("內部專用");
+console.log("內部專用")
 }
 }
 
 class SuperMan extends Person{
 constructor(age, weight, power){  // 如果在super()之前就呼叫this 的話，會reference error
-super();
-this.power=power;
+super()
+this.power=power
 }
 hello(){
-console.log(我是個有${this.power}戰鬥力的SuperMAN);
+console.log(我是個有${this.power}戰鬥力的SuperMAN)
 }
 }
 ```
@@ -617,18 +617,18 @@ console.log(我是個有${this.power}戰鬥力的SuperMAN);
 ```
 class Person{
 constructor(age, weight){
-this.age=age;
-this.weight=weight;
+this.age = age
+this.weight=weight
 this.property='會在父類別實例中產生的屬性'
 }
 call_this(){
-return this;
+return this
 }
 showProperty(){
 console.log(父類別實例的: ${this.property})
 }
 static SonCanNotUse(){
-console.log("老子專用");
+console.log("老子專用")
 console.log(父類別私有方法的: ${this.property})
 }
 
@@ -637,17 +637,18 @@ class SuperMan extends Person{
 constructor(age, weight, power){
 // 如果在super()之前就呼叫this 的話，會reference error
 super();
-this.property="子類用this初始化的property";
-super.property="子類用super初始化的property";
-this.power=power;
-super.showProperty();
-console.log(super.property);
+this.property="子類用this初始化的property"
+super.property="子類用super初始化的property"
+this.power=power
+super.showProperty()
+console.log(super.property)
 }
 hello(){
-console.log('子類實例中，被super.property改掉的');
-property${this.property}');}
+console.log('子類實例中，被super.property改掉的')
+property${this.property}')
+}
 static sonPrivateMethod(){
-super.showProperty();
+super.showProperty()
 }
 }
 ```
@@ -655,8 +656,8 @@ super.showProperty();
 裡面特別難理解的一點是，這兩行程式碼的運行邏輯會截然不同:
 
 ```
-super.showProperty();
-console.log(super.property);
+super.showProperty()
+console.log(super.property)
 ```
 
 * 用 super 賦值
@@ -682,21 +683,21 @@ console.log(super.property);
 class Triple {
 static triple(n) {
 if (n === undefined) {
-n = 1;
+n = 1
 }
-return n * 3;
+return n * 3
 }
 }
 class BiggerTriple extends Triple {
 static triple(n) {
-return super.triple(n) * super.triple(n);
+return super.triple(n) * super.triple(n)
 }
 }
-console.log(Triple.triple()); // 3
-console.log(Triple.triple(6)); // 18
-var tp = new Triple();
-console.log(BiggerTriple.triple(3)); // 81，在在子類別中用 super 取出 static
-console.log(tp.triple()); // TypeError: tp.triple is not a function
+console.log(Triple.triple()) // 3
+console.log(Triple.triple(6)) // 18
+var tp = new Triple()
+console.log(BiggerTriple.triple(3)) // 81，在在子類別中用 super 取出 static
+console.log(tp.triple()) // TypeError: tp.triple is not a function
 ```
 
 * 被定義為靜態方法的函式可以直接以 constructor function 呼叫
@@ -709,16 +710,16 @@ console.log(tp.triple()); // TypeError: tp.triple is not a function
 ```
 class Person {
 constructor(name, age) {
-this.name = name;
-this.age = age;
+this.name = name
+this.age = age
 }
 static student(name, age) { //Static Method 不需實體化所需類別的實例就可以被呼叫
-console.log(I'm ${name}. ${age} years old.) //不要加this
+console.log(I'm ${name}. ${age} years old.) // 不要加this
 }
 }
 Person.student('Teagan', '22') // I'm Teagan. 22 years old.
-let person = new Person('Teagan', 22); //被定義為靜態方法的函式，無法被已實體化（new 過）的類別物件呼叫
-person.student; //Uncaught TypeError: person.student is not a function
+let person = new Person('Teagan', 22); // 被定義為靜態方法的函式，無法被已實體化（new 過）的類別物件呼叫
+person.student; // Uncaught TypeError: person.student is not a function
 ```
 
 ### 2 . 物件導向的封裝（Encapsulation）
@@ -758,14 +759,14 @@ Closure （閉包）可以達到封裝（Encapsulation）的目的，其實閉�
 
 ```
 function Wallet(init) {
-let money = init;
+let money = init
 this.getMoney = function() {
-return money;
+return money
 }
-};
-const wallet = new Wallet(100);
-console.log(wallet.getMoney());
-console.log(wallet.money); // => 存取不到，真正的 private
+}
+const wallet = new Wallet(100)
+console.log(wallet.getMoney())
+console.log(wallet.money) // => 存取不到，真正的 private
 ```
 
 #### II. ES6 - constructor 版 ( real private )
@@ -775,14 +776,14 @@ console.log(wallet.money); // => 存取不到，真正的 private
 ```
 class Wallet {
 constructor(num) {
-var _money = num;
-this.getMoney = () => _money;
-this.setMoney = (newNum) => _money = newNum;
+var _money = num
+this.getMoney = () => _money
+this.setMoney = (newNum) => _money = newNum
 }
-};
-const wallet = new Wallet(100);
-console.log(wallet.getMoney());
-console.log(wallet._money); // => 存取不到，真正的 private
+}
+const wallet = new Wallet(100)
+console.log(wallet.getMoney())
+console.log(wallet._money) // => 存取不到，真正的 private
 ```
 
 #### III. ES6 - Symbols 版 ( half private )
@@ -790,18 +791,18 @@ console.log(wallet._money); // => 存取不到，真正的 private
 比較新的寫法，使用上較為方便。
 
 ```
-var money = Symbol();
+var money = Symbol()
 class Wallet {
 constructor(num) {
-this[money] = num;
+this[money] = num
 }
 getMoney() {
-return this[money];
+return this[money]
 }
-};
-const wallet = new Wallet(100);
-console.log(wallet.getMoney());
-console.log(wallet[money]); // => 還是存取得到，不是真正的 private
+}
+const wallet = new Wallet(100)
+console.log(wallet.getMoney())
+console.log(wallet[money]) // => 還是存取得到，不是真正的 private
 ```
 
 就我自己的理解，封裝（Encapsulation）只是一個概念，而不是 JavaScript 中內建的語法，可以透過很多種方式達成，而 JavaScript 也不斷在新版本中推出新的語法糖。
