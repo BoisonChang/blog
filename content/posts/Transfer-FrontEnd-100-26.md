@@ -667,7 +667,7 @@ console.log(super.property)
 
   * super.showProperty() 會指向父類別中的 showProperty() 
   * 但其印出的 this.property 卻是子類別在 super.property=" 子類用 super 初始化的 property 宣告的這行程式碼：「父類別實例的子類用 super 初始化的 property」
-  * 也就是在賦值的時候 super 等同子類中的 this，指向子類實例
+  * **也就是在賦值的時候 super 等同子類中的 this，指向子類實例**
 * **當 super 取值**
 
   * 然而 console.log(super.property) 的時則會印出 undefined
