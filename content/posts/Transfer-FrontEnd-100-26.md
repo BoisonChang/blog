@@ -672,7 +672,7 @@ console.log(super.property)
 
   * 然而 console.log(super.property) 的時則會印出 undefined
   * 因為當我們試圖用 super 取值時，這邊的 super 指向父類的 prototype
-  * 而父類中則沒有給予 this.property 一個值
+  * **而父類中則沒有給予 this.property 一個值**
 
 #### II. ES6 繼承與 static
 
