@@ -684,18 +684,20 @@ console.log(super.property)
 
 ```
 class Triple {
-static triple(n) {
-if (n === undefined) {
-n = 1
+  static triple(n) {
+    if (n === undefined) {
+      n = 1
+    }
+  return n * 3
+  }
 }
-return n * 3
-}
-}
+
 class BiggerTriple extends Triple {
-static triple(n) {
-return super.triple(n) * super.triple(n)
+  static triple(n) {
+    return super.triple(n) * super.triple(n)
+  }
 }
-}
+
 console.log(Triple.triple()) // 3
 console.log(Triple.triple(6)) // 18
 var tp = new Triple()
@@ -712,14 +714,15 @@ console.log(tp.triple()) // TypeError: tp.triple is not a function
 
 ```
 class Person {
-constructor(name, age) {
-this.name = name
-this.age = age
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
+  static student(name, age) { //Static Method 不需實體化所需類別的實例就可以被呼叫
+  console.log(I'm ${name}. ${age} years old.) // 不要加this
+  }
 }
-static student(name, age) { //Static Method 不需實體化所需類別的實例就可以被呼叫
-console.log(I'm ${name}. ${age} years old.) // 不要加this
-}
-}
+
 Person.student('Teagan', '22') // I'm Teagan. 22 years old.
 let person = new Person('Teagan', 22) // 被定義為靜態方法的函式，無法被已實體化（new 過）的類別物件呼叫
 person.student // Uncaught TypeError: person.student is not a function
