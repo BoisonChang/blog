@@ -592,7 +592,7 @@ class Person{
 }
 
 class SuperMan extends Person{
-  constructor(age, weight, power){  // 如果在super()之前就呼叫this 的話，會reference error
+  constructor(age, weight, power){  // 如果在 super() 之前就呼叫 this 的話會 reference error
     super()
     this.power = power
   }
