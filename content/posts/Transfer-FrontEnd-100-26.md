@@ -827,7 +827,7 @@ console.log(wallet[money]) // => 還是存取得到，不是真正的 private
   3. [JavaScript 進階：物件導向 (new、super、封裝)](https://yakimhsu.com/project/project_w17_advancedJS_07_OOP.html)
   4. [JavaScript 物件導向式程式設計](https://www.fooish.com/javascript/oop-object-oriented-programming.html)
   5. [前端工程研究：關於 JavaScript 的物件藍圖建立方法](https://blog.miniasp.com/post/2020/06/19/JavaScript-Object-in-depth)
-  6. [\[教學] 深入淺出 JavaScript ES6 Class (類別)](<* 1. https://shubo.io/javascript-class/#%E7%94%A8-super-%E8%A6%86%E5%AF%AB-constructor>)
+  6. [深入淺出 JavaScript ES6 Class (類別)](<* 1. https://shubo.io/javascript-class/#%E7%94%A8-super-%E8%A6%86%E5%AF%AB-constructor>)
   7. [ES6 中最容易誤會的語法糖 Class - 基本用法](https://medium.com/enjoy-life-enjoy-coding/javascript-es6-%E4%B8%AD%E6%9C%80%E5%AE%B9%E6%98%93%E8%AA%A4%E6%9C%83%E7%9A%84%E8%AA%9E%E6%B3%95%E7%B3%96-class-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-23e4a4a5e8ed)
   8. [Day 10: ES6篇 - Class(類別)](https://ithelp.ithome.com.tw/articles/10185583)
   9. [學 JS 的心路歷程 Day21-JS 支援物件導向?(二)](https://ithelp.ithome.com.tw/articles/10208093)
