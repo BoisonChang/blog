@@ -266,7 +266,7 @@ hey() // undefined
 
 記住：「要看 this，就看這個函式『怎麽』被呼叫」。
 
-> **這邊我們要再引入一個新的觀念，過去我們習以為常的呼叫 function 其實是一種語法糖**
+> **再引入一個新的觀念，過去我們習以為常的呼叫 function 其實是一種語法糖**
 
 * 比方說上述的 obj.hello()，他真正的樣貌其實是等於 obj.hello.call(obj)
 * 所以 hello 的 this 被改成 obj，會得到 console.log(obj.value) 為 1
