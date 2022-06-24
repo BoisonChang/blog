@@ -765,11 +765,12 @@ Closure （閉包）可以達到封裝（Encapsulation）的目的，其實閉�
 
 ```
 function Wallet(init) {
-let money = init
-this.getMoney = function() {
-return money
+  let money = init
+  this.getMoney = function() {
+    return money
+  }
 }
-}
+
 const wallet = new Wallet(100)
 console.log(wallet.getMoney())
 console.log(wallet.money) // => 存取不到，真正的 private
@@ -781,12 +782,13 @@ console.log(wallet.money) // => 存取不到，真正的 private
 
 ```
 class Wallet {
-constructor(num) {
-var _money = num
-this.getMoney = () => _money
-this.setMoney = (newNum) => _money = newNum
+  constructor(num) {
+    var _money = num
+    this.getMoney = () => _money
+    this.setMoney = (newNum) => _money = newNum
+  }
 }
-}
+
 const wallet = new Wallet(100)
 console.log(wallet.getMoney())
 console.log(wallet._money) // => 存取不到，真正的 private
@@ -799,13 +801,14 @@ console.log(wallet._money) // => 存取不到，真正的 private
 ```
 var money = Symbol()
 class Wallet {
-constructor(num) {
-this[money] = num
+  constructor(num) {
+    this[money] = num
+  }
+  getMoney() {
+    return this[money]
+  }
 }
-getMoney() {
-return this[money]
-}
-}
+
 const wallet = new Wallet(100)
 console.log(wallet.getMoney())
 console.log(wallet[money]) // => 還是存取得到，不是真正的 private
