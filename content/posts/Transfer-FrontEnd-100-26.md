@@ -270,9 +270,10 @@ hey() // undefined
 
 * 比方說上述的 obj.hello()，他真正的樣貌其實是等於 obj.hello.call(obj)
 * 所以 hello 的 this 被改成 obj，會得到 console.log(obj.value) 為 1
-* 那既然如此過去我們呼叫 function 時為何都沒碰到這個概念呢？
 
-  * 其實有的，只是我們預設傳入了一個 undefined 將 this 改成 undefined。
+> 那既然如此過去我們呼叫 function 時為何都沒碰到這個概念呢？
+
+* 其實有的，只是我們預設傳入了一個 undefined 將 this 改成 undefined。
 
 ### 3. 箭頭函式中的 this
 
