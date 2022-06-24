@@ -523,30 +523,31 @@ Dog.prototype = Object.create(Animal.prototype)
 
 ```
 function Animal(name, gender, age) {
-this.name = name
-this.gender = gender
-this.age = age
+  this.name = name
+  this.gender = gender
+  this.age = age
 }
 
 Animal.prototype.speak = function() {
-console.log('some sounds')
+  console.log('some sounds')
 }
+
 Animal.prototype.move = function() {}
 
 function Dog(name, gender, age) {
-this.name = name
-this.gender = gender
-this.age = age
+  this.name = name
+  this.gender = gender
+  this.age = age
 }
 
 Dog.prototype = Object.create(Animal.prototype)
 
 Dog.prototype.speak = function() {
-console.log('Bow-wow')
+  console.log('Bow-wow')
 }
 
 Dog.prototype.move = function() {
-console.log('walk')
+  console.log('walk')
 }
 
 var dog1 = new Dog('Blacky', 'male', 3)
