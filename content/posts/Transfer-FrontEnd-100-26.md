@@ -98,7 +98,7 @@ console.log('walk');
 };
 
 var dog1 = new Dog('Blacky'),
-dog2 = new Dog('Whity');
+var dog2 = new Dog('Whity');
 
 dog1.speak(); // "Bark"
 dog2.speak(); // "Bark"
