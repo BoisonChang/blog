@@ -445,7 +445,7 @@ console.log(d.getName())
   * getter（取得方法）與 setter（設定方法）的呼叫語法，長得像一般的存取物件成員的語法，都是用句號 (.) 呼叫
   * 而且 setter（設定方法）是用指定值的語法，不是傳入參數的那種語法
 
-Getter: 取得特定值的方法
+**Getter: 取得特定值的方法**
 
 ```
 var wallet = {
@@ -458,7 +458,7 @@ wallet.save = 300;
 console.log(wallet.total); // 250
 ```
 
-Setter: 存值的方法
+**Setter: 存值的方法**
 
 ```
 var wallet = {
