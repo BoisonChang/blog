@@ -66,7 +66,7 @@ author: Boison
 * 「基礎建設」較繁雜龐大
 * 寫個簡單程式需要比傳統寫法，還要更多行
 
-## 2. JavaScript 是原型基礎的物件導向程式語言
+### 2. JavaScript 是原型基礎的物件導向程式語言
 
 > JavaScript 是屬於原型基礎 (Prototype-based) 的物件導向程式語言
 
