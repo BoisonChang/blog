@@ -578,26 +578,26 @@ animal.speak() // "some sounds"
 
 ```
 class Person{
- constructor(age, weight){
-  this.age = age
-  this.weight = weight
- }
- call_this(){
-  return this;
- }
- static SonCanNotUse(){
-  console.log("內部專用")
- }
+  constructor(age, weight){
+    this.age = age
+    this.weight = weight
+  }
+  call_this(){
+    return this;
+  }
+  static SonCanNotUse(){
+    console.log("內部專用")
+  }
 }
 
 class SuperMan extends Person{
- constructor(age, weight, power){  // 如果在super()之前就呼叫this 的話，會reference error
-  super()
-  this.power = power
- }
- hello(){
-  console.log(我是個有${this.power}戰鬥力的SuperMAN)
- }
+  constructor(age, weight, power){  // 如果在super()之前就呼叫this 的話，會reference error
+    super()
+    this.power = power
+  }
+  hello(){
+    console.log(我是個有${this.power}戰鬥力的SuperMAN)
+  }
 }
 ```
 
@@ -619,40 +619,40 @@ class SuperMan extends Person{
 
 ```
 class Person{
- constructor(age, weight){
-  this.age = age
-  this.weight = weight
-  this.property = '會在父類別實例中產生的屬性'
- }
- call_this(){
-  return this
- }
- showProperty(){
-  console.log(父類別實例的: ${this.property})
- }
- static SonCanNotUse(){
-  console.log("老子專用")
-  console.log(父類別私有方法的: ${this.property})
- }
+  constructor(age, weight){
+    this.age = age
+    this.weight = weight
+    this.property = '會在父類別實例中產生的屬性'
+  }
+  call_this(){
+    return this
+  }
+  showProperty(){
+    console.log(父類別實例的: ${this.property})
+  }
+  static SonCanNotUse(){
+    console.log("老子專用")
+    console.log(父類別私有方法的: ${this.property})
+  }
 }
 
 class SuperMan extends Person{
- constructor(age, weight, power){
+  constructor(age, weight, power){
   // 如果在super()之前就呼叫this 的話，會reference error
-  super();
-  this.property = "子類用this初始化的property"
-  super.property = "子類用super初始化的property"
-  this.power = power
-  super.showProperty()
-  console.log(super.property)
- }
- hello(){
-  console.log('子類實例中，被super.property改掉的')
-  property${this.property}')
- }
- static sonPrivateMethod(){
-  super.showProperty()
- }
+    super();
+    this.property = "子類用this初始化的property"
+    super.property = "子類用super初始化的property"
+    this.power = power
+    super.showProperty()
+    console.log(super.property)
+  }
+  hello(){
+    console.log('子類實例中，被super.property改掉的')
+    property${this.property}')
+  }
+  static sonPrivateMethod(){
+    super.showProperty()
+  }
 }
 ```
 
