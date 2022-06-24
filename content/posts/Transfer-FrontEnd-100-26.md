@@ -719,7 +719,7 @@ class Person {
     this.age = age
   }
   static student(name, age) { //Static Method 不需實體化所需類別的實例就可以被呼叫
-  console.log(I'm ${name}. ${age} years old.) // 不要加this
+  console.log(`I'm ${name}. ${age} years old.`) // 不要加this
   }
 }
 
