@@ -262,7 +262,7 @@ const hey = obj.hello
 hey() // undefined
 ```
 
-明明就是同一個函式，怎麼第一次呼叫時 this.value 是 1，第二次呼叫時就變成 undefined 了？
+> 同一個函式，怎麼第一次呼叫時 this.value 是 1，第二次呼叫時就變成 undefined 了？
 
 記住：「要看 this，就看這個函式『怎麽』被呼叫」。
 
