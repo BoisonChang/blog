@@ -1,12 +1,15 @@
 ---
-title: "百日轉職前端工程師：第五週談談轉職初衷《DAY 11》"
-slug: Transfer-FrontEnd-100-11
+title: 百日轉職前端工程師：第五週談談轉職初衷《DAY 11》
 date: 2020-09-02T15:31:21+08:00
-draft: false
-tags: ["FrontEnd", "Transfer"]
-keywords: ["FrontEnd", "Transfer"]
-author: "Boison"
-
+author: Boison
+slug: Transfer-FrontEnd-100-11
+tags:
+  - FrontEnd
+  - Transfer
+draft: true
+keywords:
+  - FrontEnd
+  - Transfer
 ---
 
 大家好，這是百日轉職前端工程師的 Day11，也是 9/2（三）。很早的時候就有很多人問我轉職的理由是什麼？
