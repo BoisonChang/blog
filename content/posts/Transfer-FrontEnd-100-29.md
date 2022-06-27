@@ -1,12 +1,15 @@
 ---
-title: "百日轉職前端工程師：第二十一週 找到工作了 / 連載腰斬 《DAY 29》"
-slug: Transfer-FrontEnd-100-29
+title: 百日轉職前端工程師：第二十一週 找到工作了 / 連載腰斬 《DAY 29》
 date: 2021-03-02T23:12:21+08:00
-draft: false
-tags: ["FrontEnd", "Transfer"]
-keywords:  ["FrontEnd", "Transfer"]
-author: "Boison"
-
+author: Boison
+slug: Transfer-FrontEnd-100-29
+tags:
+  - FrontEnd
+  - Transfer
+draft: true
+keywords:
+  - FrontEnd
+  - Transfer
 ---
 
 大家好，這是百日轉職前端工程師的 Day29，也是 4/2（五）。基本上就如標題所言，程式導師計劃第四期 的課程還沒上完（總共有 24 週我上到第 22 週），基本上 React 的部分只上到 40%，還沒做出成品，然後找工作一開始時完全不會用 Vue，後來就找到一份 Vue 的前端工程師工作了，所以連載腰斬，緊急來寫這一篇完結篇，也跟大家聊聊中間發生了什麼事。
