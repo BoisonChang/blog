@@ -1,12 +1,15 @@
 ---
-title: "百日轉職前端工程師：第十五週轉職中的挫折《DAY 24》"
-slug: Transfer-FrontEnd-100-24
+title: 百日轉職前端工程師：第十五週轉職中的挫折《DAY 24》
 date: 2020-11-22T21:40:21+08:00
-draft: false
-tags: ["FrontEnd", "Transfer"]
-keywords:  ["FrontEnd", "Transfer"]
-author: "Boison"
-
+author: Boison
+slug: Transfer-FrontEnd-100-24
+tags:
+  - FrontEnd
+  - Transfer
+draft: true
+keywords:
+  - FrontEnd
+  - Transfer
 ---
 
 
