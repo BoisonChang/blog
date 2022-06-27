@@ -24,6 +24,7 @@ collections: # https://www.netlifycms.org/docs/configuration-options/#collection
       - { label: '短網址', name: 'slug', widget: 'string' }
       - { label: "標籤", name: "tags", widget: "list", required: false}
       - { label: "分類", name: "categories", widget: "list", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", required: false, default: true}
   - name: "categories"
     label: "分類"
     folder: "content/categories"
