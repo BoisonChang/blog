@@ -114,7 +114,7 @@ function getLength(something: string | number): number {
 
 ### 1. 基本型別(Basic Types)
 
-#### I. 原始型別（ Primitive Types）
+#### I. 原始型別（Primitive Types）
 
 * number、string、boolean、undefined、null、
 * ES6: symbol
