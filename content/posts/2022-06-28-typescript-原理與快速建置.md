@@ -64,29 +64,29 @@ let employeeCode = <number> code
 
 // 兩種寫法，第二種則是值 as 型別 (as keyword)寫法
 // 開發 React 專案使用 JSX 語法時只能用第二種
-let code: any = 123; 
-let employeeCode = code as number;
+let code: any = 123
+let employeeCode = code as number
 
 // 例子1
-let obj = {};
-obj.age = 18; //error: property 'age' does not exist on `{}`
-obj.name = 'iris'; //error: property 'name' does not exist on `{}`
+let obj = {}
+obj.age = 18 // error: property 'age' does not exist on `{}`
+obj.name = 'iris' // error: property 'name' does not exist on `{}`
 
 /// 使用介面（Interfaces）來定義物件的型別
 interface Foo {
-  age: number;
-  name: string;
+  age: number
+  name: string
 }
 
 /// 語法1: 值 as 型別
-const obj2 = {} as Foo;
-obj2.age = 18;
-obj2.name = "iris";
+const obj2 = {} as Foo
+obj2.age = 18
+obj2.name = "iris"
 
 const obj3 = {
   age: 18,
   name: "iris"
-} as Foo;
+} as Foo
 
 /// 語法2: <型別>值
 const obj4 = <Foo>{
@@ -323,26 +323,26 @@ const scheme = getScheme(HttpPort.Http)
 // 聯合型別用在資料可以是多種型別中的一種
 let sign : string | number
 
-sign = 0 //OK
-sign = 'red' //OK
-sign = true //Error:Type 'true' is not assignable to type 'string | number'
+sign = 0 // OK
+sign = 'red' // OK
+sign = true // Error:Type 'true' is not assignable to type 'string | number'
 
 
 // 交集型別主要用來將多個型別合併成一個型別
 type Person = {
-    name: string;
+    name: string
 }
 
 type Contact = {
-    phone: string;
+    phone: string
 }
 
 function showPersonContact(personContact: Person & Contact): void {
     console.log(personContact)
 }
 
-let personContact: Person & Contact = {name: "Dane", phone: "111-111-111"};
-showPersonContact(personContact); //{name: "Dane", phone: "111-111-111"}
+let personContact: Person & Contact = {name: "Dane", phone: "111-111-111"}
+showPersonContact(personContact) //{name: "Dane", phone: "111-111-111"}
 ```
 
 ### **VII. 通用型別(Generic Types)**
@@ -408,9 +408,9 @@ class Log <T>{
 }
 
 let log1 = new Log() // 可以不限縮型別
-log1.run(1) //1
+log1.run(1) // 1
 let log2 = new Log<string>() // 也可以限縮型別
-log2.run("2") //2
+log2.run("2") // 2
 ```
 
 ---
