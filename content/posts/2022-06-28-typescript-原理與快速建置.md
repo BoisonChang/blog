@@ -128,6 +128,7 @@ function getLength(something: string | number): number {
 
 ### 2. TypeScript 擴充型別
 
+
 #### I. 列舉(Enum)
 
 * 用來表示被限定在一定範圍集合的系列元素
