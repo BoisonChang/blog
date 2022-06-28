@@ -5,7 +5,7 @@ author: Boison
 slug: typeScript-101
 tags:
   - TypeScript
-draft: true
+draft: false
 ---
 ## 一、TypeScript 是甚麼
 
