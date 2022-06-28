@@ -91,16 +91,16 @@ const obj4 = <Foo>{
   name: "iris"
 };
 
-console.log("assertions-as", obj2); //{ age: 18, name: 'iris' }
-console.log("assertions-as", obj3); //{ age: 18, name: 'iris' }
-console.log("assertions-<type>", obj4); //{ age: 18, name: 'iris' }
+console.log("assertions-as", obj2) //{ age: 18, name: 'iris' }
+console.log("assertions-as", obj3) //{ age: 18, name: 'iris' }
+console.log("assertions-<type>", obj4) //{ age: 18, name: 'iris' }
 
 // 例子2
 function getLength(something: string | number): number {
     if ((<string>something).length) {
-        return (<string>something).length;
+        return (<string>something).length
     } else {
-        return something.toString().length;
+        return something.toString().length
     }
 }
 ```
@@ -184,8 +184,8 @@ let directions = Directions.Up;
 let arr:[number, boolean, string] = [3.14, true, "hello"]
 // 當訪問一個已知索引的元素，會得到正確的型別
 
-arr[2].substring(1, 4); // ell
-arr[1].substring(1, 4); // 報錯，布林值沒有 substring 方法
+arr[2].substring(1, 4) // ell
+arr[1].substring(1, 4) // 報錯，布林值沒有 substring 方法
 ```
 
 ### III. **介面(Interface)**
@@ -225,7 +225,7 @@ let myPhone: Phone = {
 
 ```javascript
 // 字串字面值(String Literal Types)，用來限定字串變數只能使用列舉的字串值
-let foo: 'Hello';
+let foo: 'Hello'
 foo = 'Bar' // Error:Type '"Bar"' is not assignable to type '"Hello"'.
 foo = 'Hello' // OK
 foo = null // OK
