@@ -392,8 +392,8 @@ log2.run("2") // 2
 
 1. CLI 安裝
 
-   * npm init @vitejs/app my-react-app --template react-ts
-   * npx create-react-app my-react-app --typescript
+   * 法1: npm init @vitejs/app my-react-app --template react-ts
+   * 法2: npx create-react-app my-react-app --typescript
 2. cd my-react-app
 3. npm install 
 4. npm run dev
