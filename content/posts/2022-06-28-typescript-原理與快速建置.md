@@ -151,7 +151,7 @@ enum Direction {
 enum Direction {
   Up = "UP",
   Down = "DOWN",
-  Left =3,
+  Left = 3,
   Right ,
 }
 
@@ -173,7 +173,7 @@ declare enum Directions {
     Right
 }
 
-let directions = Directions.Up;
+let directions = Directions.Up
 ```
 
 ### II. **元組(Tuple)**
