@@ -13,34 +13,31 @@ TypeScript (而後簡稱為TS) 是一個基於 Javascript 的超集合 (superset
 
 JS 是一個語言的集合，而 TS 完全基於 JS 的語法，有點類似「擴充板的 JS 」，多了額外擴充如型別系統與註記（Annotation）等。
 
----
+- - -
 
 ## 二、TypeScript 解決甚麼問題
 
 TS 改善了過去 JS 弱型別語言的缺點，透過 TS 擴充的型別系統和編譯器檢查，讓開發者在開發過程做更多的約束，撰寫更嚴謹、更少錯誤和重複、更好管理的程式碼，從而大大減少實際運行程式碼時的錯誤。
 
----
+- - -
 
 ## 三、TypeScript 怎用
 
 ### 1. 基本用法
 
-> Type Inference (型別推斷)
+> **Type Inference (型別推斷)**
 
 * 若是沒使用 Type Annotation (型別註記) 在宣告變數時定義型別，TS 會代勞
 
-> Type Annotation (型別註記)
+> **Type Annotation (型別註記)**
 
 * 在宣告變數時手動指定型別，告訴編譯器這個資料必須永遠都是這個型別
-
 * 大部分情況下會使用型別註解 ; 型別斷言使用情境較少
-
 * 型別註解大部分使用在初始化階段，像是宣告變數、函式參數或回傳值型別等
 
-> Type Assertions (型別斷言)
+> **Type Assertions (型別斷言)**
 
 * 在賦值時根據需求覆蓋/修改一開始的型別推論
-
 * 型別斷言可能用在接收外部參數，中間過程需要明確指定資料型別的時候
 
 #### I. Type Annotation (型別註記)
@@ -108,7 +105,7 @@ function getLength(something: string | number): number {
 }
 ```
 
----
+- - -
 
 ## 四、TypeScript  可用型別
 
@@ -117,15 +114,11 @@ function getLength(something: string | number): number {
 * **原始型別（ Primitive Types）**
 
   * number、string、boolean、undefined、null、
-
   * ES6: symbol
-
 * **物件型別 Object Types**： 
 
   * Function、Array、Object
-
   * ES6: Class、Class 去 new 出的物件實例 instance 
-
 * **void**
 
   * 表示不回傳任何值(等於預設回傳 undefined)
@@ -135,15 +128,11 @@ function getLength(something: string | number): number {
 ### I. **列舉(Enum)**
 
 * 用來表示被限定在一定範圍集合的系列元素
-
 * 列舉又分三種型別
 
   1. 數字列舉(Number enum)
-
   2. 字串列舉(String enum)
-
   3. 異構列舉(Heterogeneous enum)
-
 * 例如一週 7 天 (限定週一至週日)，紅綠燈 (限定顏色紅、黃、綠)
 
 ```javascript
@@ -202,11 +191,8 @@ arr[1].substring(1, 4); // 報錯，布林值沒有 substring 方法
 ### III. **介面(Interface)**
 
 * 用來約束 Class 的行為，只描述屬性 (Property) 和方法 (Method)
-
 * 可以想成是抽象的「形容詞」，但要注意的是 Interface 不像 Class 一樣可以實例化
-
 * 介面的概念像是訂定契約，使用此契約的物件或類別就一定會符合契約中所規定的規範
-
 * 但是介面只會定義描述有哪些方法 (Method) 和屬性 (Property) 無法實作
 
 ```javascript
@@ -228,19 +214,13 @@ let myPhone: Phone = {
 ### IV. **明文型別(Literal Type)**
 
 * 一個值也可以成為一個型別
-
 * 比如字串 "Kira" 若成為某變數的型別的話
-
 * 在此型別底下只能存剛好等於 "Kira" 字串值，不只字串，數字、物件等其他型別也可以
-
 * 明文型別(Literal Type) 分成幾種
 
   1. 字串字面值(String Literal Types)
-
   2. 數字字面值(Numeric Literal)
-
   3. 列舉字面值(Enum literal types)
-
   4. 布林值字面值(Boolean literal types)
 
 ```javascript
@@ -286,37 +266,24 @@ const scheme = getScheme(HttpPort.Http)
 ### **V. 特殊型別**
 
 * any、never（TS 2.0）
-
 * any 可以兼容所有的型別
-
 * 遇到 any 型別，TS 就會跳過檢查系統不會進行型別檢查
-
 * 函式沒有回傳值或return 表達式回傳的值之型別為 never
-
 * never 型別很常使用在處理函式的錯誤情況
-
 * 所有型別中都包含 never，never 是所有型別的子型別
-
 * unknown （TS 3.0）
-
 * 可以看成是 any 型別的安全版本
-
 * unknown 和 any 一樣可以接受任何型別賦值
-
 * 但若賦值 unknown 型別給其他型別，除了 unknown 和 any 其他型別都會報錯
-
 * 最大的差異在於預設情況下`允許操作屬性或方法`變成`禁止操作屬性或方法`
-
 * unknown 型別要進行限縮才能使用屬性或方法
 
   1. 型別檢測 (type guard)
-
   2. 型別斷言 (Type Assertions) 
 
 ### **VI. 複合型別**
 
 * 即聯合型別 (Union Types) 與交集型別 (Intersection Types) 的型別組合
-
 * 這類型的型別由邏輯運算子組成，分別是 | 與 &
 
 ```javascript
@@ -350,19 +317,13 @@ showPersonContact(personContact) //{name: "Dane", phone: "111-111-111"}
 * 指在定義函式、介面或類別時，不預先指定具體的型別，而是在使用時再指定型別的特性
 
   1. 通用函式
-
   2. 通用介面(Generics Interface)
-
   3. 通用類別(Generics Types)
-
-* 可以達到讓傳入參數和回傳值型別相同 T \=> T，且傳入型別可以是任何型別
+* 可以達到讓傳入參數和回傳值型別相同 T => T，且傳入型別可以是任何型別
 
   * 在函式後面加上`<T>`
-
   * 其中 T 用來指代任意輸入的型別，之後就可以使用 T 作為回傳值同型別的指代
-
   * 倘若參數是字串型別，則回傳值亦為字串型別 
-
   * 倘若參數是布林型別，則回傳值亦為布林型別
 
 ```javascript
@@ -413,34 +374,24 @@ let log2 = new Log<string>() // 也可以限縮型別
 log2.run("2") // 2
 ```
 
----
+- - -
 
 ## 四、TypeScript 在 React 專案快速建制
 
 1. CLI 安裝
 
    * npm init @vitejs/app my-react-app --template react-ts
-
    * npx create-react-app my-react-app --typescript
-
 2. cd my-react-app
-
 3. npm install 
-
 4. npm run dev
 
 > 參考資料
 >
 > 1. [Typescript 初心者手札](https://ithelp.ithome.com.tw/users/20120053/ironman/2273)
->
 > 2. [前端是該來學一下 TypeScript 了](https://ithelp.ithome.com.tw/users/20131472/ironman/4100)
->
 > 3. [TypeScript 筆記：推斷、註記與斷言](https://simonallen.coderbridge.io/2021/08/06/ts-inference-annotations-assertiong/)
->
 > 4. [TypeScript學習筆記（六）- 型別推論&型別斷言](https://www.gushiciku.cn/pl/gfUW/zh-tw)
->
 > 5. [TypeScript 基礎入門：從型別談起](https://hackmd.io/@Heidi-Liu/typescript#%E5%9E%8B%E5%88%A5%E6%96%B7%E8%A8%80-Type-Assertion)
->
-> 6. [TypeScript 入門：型別系統初探](./https%3A%2F%2Flinwei5316.medium.com%2Ftypescript-%E5%85%A5%E9%96%80-%E5%9E%8B%E5%88%A5%E7%B3%BB%E7%B5%B1%E5%88%9D%E6%8E%A2-%E8%A8%BB%E8%25A%20d69b8f50-9339-47c2-b442-b61fb25a13a8.md "!https://linwei5316.medium.com/typescript-%E5%85%A5%E9%96%80-%E5%9E%8B%E5%88%A5%E7%B3%BB%E7%B5%B1%E5%88%9D%E6%8E%A2-%E8%A8%BB%E8%A8%98-%E6%8E%A8%E8%AB%96-%E6%96%B7%E8%A8%80-20cd07829eea")
->
-> 7. [TypeScript: 元組型別（tuple）和列舉型別（enum）](https://www.796t.com/article.php?id\=220354)
+> 6. [TypeScript 入門：型別系統初探](./https%3A%2F%2Flinwei5316.medium.com%2Ftypescript-%E5%85%A5%E9%96%80-%E5%9E%8B%E5%88%A5%E7%B3%BB%E7%B5%B1%E5%88%9D%E6%8E%A2-%E8%A8%BB%E8%25A%20d69b8f50-9339-47c2-b442-b61fb25a13a8.md "!https\://linwei5316.medium.com/typescript-%E5%85%A5%E9%96%80-%E5%9E%8B%E5%88%A5%E7%B3%BB%E7%B5%B1%E5%88%9D%E6%8E%A2-%E8%A8%BB%E8%A8%98-%E6%8E%A8%E8%AB%96-%E6%96%B7%E8%A8%80-20cd07829eea")
+> 7. [TypeScript: 元組型別（tuple）和列舉型別（enum）](https://www.796t.com/article.php?id=220354)
