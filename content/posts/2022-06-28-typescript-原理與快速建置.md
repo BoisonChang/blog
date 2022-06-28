@@ -7,6 +7,9 @@ tags:
   - TypeScript
 draft: false
 ---
+本文介紹 TypeScript 基本的寫法和解決的問題，依序介紹 TypeScript 中擴充的型別，最後會分享如何快速建制專案。
+
+
 ## 一、TypeScript 是甚麼
 
 TypeScript (而後簡稱為 TS) 是一個基於 Javascript 的超集合 (superset) 開源語言，可以編譯成純 JS  且可以運行在任何瀏覽器、任何伺服器或任何系統上。
