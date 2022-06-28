@@ -167,8 +167,8 @@ let directions = Direction.Up
 
 // 外部列舉(Ambient enum），declare 在 TS 主要用來做聲明，表示此物件已經存在
 declare enum Directions {
-    Up = 1,  //常數
-    Down, //計算值
+    Up = 1,  // 常數
+    Down, // 計算值
     Left ,
     Right
 }
@@ -240,7 +240,7 @@ zeroOrOne = 2 // Error: Type '2' is not assignable to type '0 | 1'
 // 布林字面值(Boolean Literal Types)
 const TRUE: true  = true
 const FALSE: false = false
-const TRUE: true = false // Error: Type 'false' is not assignable to type 'true'
+const TRUE: true = false  // Error: Type 'false' is not assignable to type 'true'
 const FALSE: false = true // Error: Type 'true' is not assignable to type 'false'
 
 // 列舉字面值(Enum Literal Types)
@@ -290,9 +290,9 @@ const scheme = getScheme(HttpPort.Http)
 // 聯合型別用在資料可以是多種型別中的一種
 let sign : string | number
 
-sign = 0 // OK
+sign = 0     // OK
 sign = 'red' // OK
-sign = true // Error:Type 'true' is not assignable to type 'string | number'
+sign = true  // Error:Type 'true' is not assignable to type 'string | number'
 
 
 // 交集型別主要用來將多個型別合併成一個型別
