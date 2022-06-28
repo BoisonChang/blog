@@ -324,7 +324,7 @@ let personContact: Person & Contact = {name: "Dane", phone: "111-111-111"}
 showPersonContact(personContact) //{name: "Dane", phone: "111-111-111"}
 ```
 
-### **VII. 通用型別(Generic Types)**
+### VII. 通用型別(Generic Types)
 
 * 指在定義函式、介面或類別時，不預先指定具體的型別，而是在使用時再指定型別的特性
 
