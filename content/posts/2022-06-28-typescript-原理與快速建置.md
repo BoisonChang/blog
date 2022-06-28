@@ -109,7 +109,7 @@ function getLength(something: string | number): number {
 
 ## 四、TypeScript  可用型別
 
-## **1. 基本型別(Basic Types)**
+## 1. 基本型別(Basic Types)
 
 * **原始型別（ Primitive Types）**
 
@@ -123,9 +123,9 @@ function getLength(something: string | number): number {
 
   * 表示不回傳任何值(等於預設回傳 undefined)
 
-## **2. TypeScript 擴充型別**
+## 2. TypeScript 擴充型別
 
-### I. **列舉(Enum)**
+### I. 列舉(Enum)
 
 * 用來表示被限定在一定範圍集合的系列元素
 * 列舉又分三種型別
@@ -176,7 +176,7 @@ declare enum Directions {
 let directions = Directions.Up
 ```
 
-### II. **元組(Tuple)**
+### II. 元組(Tuple)
 
 * 用來表示一個已知元素數量和型別的陣列
 
@@ -188,7 +188,7 @@ arr[2].substring(1, 4) // ell
 arr[1].substring(1, 4) // 報錯，布林值沒有 substring 方法
 ```
 
-### III. **介面(Interface)**
+### III. 介面(Interface)
 
 * 用來約束 Class 的行為，只描述屬性 (Property) 和方法 (Method)
 * 可以想成是抽象的「形容詞」，但要注意的是 Interface 不像 Class 一樣可以實例化
@@ -211,7 +211,7 @@ let myPhone: Phone = {
 }
 ```
 
-### IV. **明文型別(Literal Type)**
+### IV. 明文型別(Literal Type)
 
 * 一個值也可以成為一個型別
 * 比如字串 "Kira" 若成為某變數的型別的話
@@ -263,7 +263,7 @@ function getScheme(port: HttpPort): "http" | "https" {
 const scheme = getScheme(HttpPort.Http)
 ```
 
-### **V. 特殊型別**
+### V. 特殊型別
 
 * any、never（TS 2.0）
 
@@ -293,7 +293,7 @@ const scheme = getScheme(HttpPort.Http)
 
     2. 型別斷言 (Type Assertions) 
 
-### **VI. 複合型別**
+### VI. 複合型別
 
 * 即聯合型別 (Union Types) 與交集型別 (Intersection Types) 的型別組合
 * 這類型的型別由邏輯運算子組成，分別是 | 與 &
