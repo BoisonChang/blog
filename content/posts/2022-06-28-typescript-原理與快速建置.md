@@ -113,15 +113,15 @@ function getLength(something: string | number): number {
 
 #### I. 原始型別（ Primitive Types）
 
-  * number、string、boolean、undefined、null、
-  * ES6: symbol
+* number、string、boolean、undefined、null、
+* ES6: symbol
 #### II. 物件型別 Object Types
 
-  * Function、Array、Object
-  * ES6: Class、Class 去 new 出的物件實例 instance 
+* Function、Array、Object
+* ES6: Class、Class 去 new 出的物件實例 instance 
 #### III. void
 
-  * 表示不回傳任何值(等於預設回傳 undefined)
+* 表示不回傳任何值(等於預設回傳 undefined)
 
 ### 2. TypeScript 擴充型別
 
