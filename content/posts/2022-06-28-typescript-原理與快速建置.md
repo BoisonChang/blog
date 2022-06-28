@@ -266,20 +266,32 @@ const scheme = getScheme(HttpPort.Http)
 ### **V. 特殊型別**
 
 * any、never（TS 2.0）
-* any 可以兼容所有的型別
-* 遇到 any 型別，TS 就會跳過檢查系統不會進行型別檢查
-* 函式沒有回傳值或return 表達式回傳的值之型別為 never
-* never 型別很常使用在處理函式的錯誤情況
-* 所有型別中都包含 never，never 是所有型別的子型別
-* unknown （TS 3.0）
-* 可以看成是 any 型別的安全版本
-* unknown 和 any 一樣可以接受任何型別賦值
-* 但若賦值 unknown 型別給其他型別，除了 unknown 和 any 其他型別都會報錯
-* 最大的差異在於預設情況下`允許操作屬性或方法`變成`禁止操作屬性或方法`
-* unknown 型別要進行限縮才能使用屬性或方法
 
-  1. 型別檢測 (type guard)
-  2. 型別斷言 (Type Assertions) 
+  * any 可以兼容所有的型別
+
+    * 遇到 any 型別，TS 就會跳過檢查系統不會進行型別檢查
+
+    * 函式沒有回傳值或return 表達式回傳的值之型別為 never
+
+  * never 型別很常使用在處理函式的錯誤情況
+
+    * 所有型別中都包含 never，never 是所有型別的子型別
+
+* unknown （TS 3.0）
+
+  * 可以看成是 any 型別的安全版本
+
+  * unknown 和 any 一樣可以接受任何型別賦值
+
+  * 但若賦值 unknown 型別給其他型別，除了 unknown 和 any 其他型別都會報錯
+
+  * 最大的差異在於預設情況下`允許操作屬性或方法`變成`禁止操作屬性或方法`
+
+  * unknown 型別要進行限縮才能使用屬性或方法
+
+    1. 型別檢測 (type guard)
+
+    2. 型別斷言 (Type Assertions) 
 
 ### **VI. 複合型別**
 
