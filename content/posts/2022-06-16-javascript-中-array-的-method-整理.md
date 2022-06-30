@@ -205,8 +205,10 @@ list.every(item => item.number > 10)
 ### 6. indexOf()
 
 * Array.prototype.indexOf(searchElement)
-* 回傳所在位置的 index，如果找不到會回傳 -1
-
+* 回傳找到第一個位置的 index，如果找不到會回傳 -1
+* 延伸
+*lastIndexOf
+*回傳找到最後一個位置的 index，如果找不到會回傳 -1
 ### 7. join()
 
 * Array.prototype.join(separator)
