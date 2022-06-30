@@ -206,8 +206,7 @@ list.every(item => item.number > 10)
 
 * Array.prototype.indexOf(searchElement)
 * 回傳找到第一個位置的 index，如果找不到會回傳 -1
-* 延伸
-*lastIndexOf
+* 延伸lastIndexOf()
 *回傳找到最後一個位置的 index，如果找不到會回傳 -1
 ### 7. join()
 
