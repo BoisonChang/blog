@@ -44,9 +44,9 @@ function hasDuplicates(nums) {
 ```javascript
 // GOOD  TC:O(N) SC:O(N)
 var findDisappearedNumbers = function(nums) {
-  const set = new Set();
+  const set = new Set()
   for (let i = 0; i < nums.length; i++) {
-    set.add(i + 1);
+    set.add(i + 1)
   }
   for (const num of nums) {
     set.delete(num)
@@ -124,11 +124,11 @@ var findDisappearedNumbers = function(nums) {
 ```javascript
 // BEST TC:O(N) SC:O(1)
 var singleNumber = function(nums) {
-    let singleEl = nums[0];
+    let singleEl = nums[0]
     for (let i = 1; i < nums.length; i++) {
-        singleEl ^= nums[i];
+        singleEl ^= nums[i]
     }
-    return singleEl;
+    return singleEl
 }
 ```
 
@@ -170,11 +170,11 @@ var singleNumber = function(nums) {
 ```javascript
 // BEST TC:O(N) SC:O(1)
 var missingNumber = function(nums) {
-    let sum = 0;
+    let sum = 0
     for(let i=0;i<nums.length;i++){
         sum += i+1-nums[i]
     }
-    return sum;
+    return sum
 }
 ```
 
@@ -215,17 +215,17 @@ var singleNumber = function(nums) {
 ```javascript
 // BEST  TC:O(N) SC:O(N)
 var findDisappearedNumbers = function(nums) {
-    let resultArr = [];
+    let resultArr = []
     for(let i = 0; i < nums.length; i++) {
-        let idx = Math.abs(nums[i]) - 1;        
+        let idx = Math.abs(nums[i]) - 1       
         if(nums[idx] > 0) {
-            nums[idx] = -nums[idx];
+            nums[idx] = -nums[idx]
         }
     }
     
     for(let j = 0; j < nums.length; j++) {
         if(nums[j] > 0) {
-            resultArr.push(j+1);
+            resultArr.push(j+1)
         }
     }
     return resultArr
@@ -247,9 +247,9 @@ var construct2DArray = function(original, m, n) {
     let nextIdx = 0
     if(m*n !== original.length) return arr
     for(let i = 0; i < m; i++) {
-        arr.push(original.slice(nextIdx, nextIdx+n));
-        nextIdx += n;
+        arr.push(original.slice(nextIdx, nextIdx+n))
+        nextIdx += n
     }
-    return arr;
+    return arr
 }
 ```
