@@ -28,6 +28,8 @@ draft: false
 
 ## 一﹑應用 Set 之問題
 
+要了解原理可先見 [ES6: Set 物件，特性是元素不重複](https://boison.tw/2022/07/es6-set/) 一文
+
 > [217.Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 
 ```javascript
