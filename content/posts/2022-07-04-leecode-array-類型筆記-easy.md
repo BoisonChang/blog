@@ -112,6 +112,11 @@ var findDisappearedNumbers = function(nums) {
 
 ## 三、應用 XOR 之問題
 
+目前不太知道怎樣理解最正確，暫時理解為同樣的數字碰撞會消失，就像是打泡泡遊戲同樣顏色泡泡碰撞會消失最後留下單獨的數字。
+
+![](https://miro.medium.com/max/700/1*VlmrccsF58VKbyi68LbGkA.png)
+圖片來源: [XOR 位元運算子](https://medium.com/@hyWang/xor-%E4%BD%8D%E5%85%83%E9%81%8B%E7%AE%97%E5%AD%90-1c25b4ae15fb)
+
 > [136.Single Number](https://leetcode.com/problems/single-number/)
 
 ```javascript
