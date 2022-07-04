@@ -134,6 +134,9 @@ var singleNumber = function(nums) {
 
 ## 四、應用 indexOf & lastIndexOf  之問題
 
+要了解原理可先見 [JavaScript 中 Array 的 Method 整理](https://boison.tw/2022/06/javascript-array-method/) 一文
+要
+
 > [217.Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 
 ```javascript
@@ -230,6 +233,8 @@ var findDisappearedNumbers = function(nums) {
 ---
 
 ## 七、應用 slice 之問題
+
+要了解原理可先見 [JavaScript 中 Array 的 Method 整理](https://boison.tw/2022/06/javascript-array-method/) 一文
 
 > [2022.Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array/)
 
