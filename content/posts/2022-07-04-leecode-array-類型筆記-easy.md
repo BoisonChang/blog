@@ -11,20 +11,14 @@ draft: false
 以下先將做題過程常用到的方法列出，在依序對應不同題目解法: 
 
 1. Set: Set 物件常用在處理陣列中值重複的題目中
-
 2. for 代替 forEach: 本身不會回傳值，所以要回傳值要用 for 迴圈
-
 3. XOR: ^ 可以用來快速找出陣列中單獨出現的元素
-
 4. indexOf & lastIndexOf: 可以用來找出陣列中不重複出現的數字
-
 5. 陣列加總: 陣列加總後的總合常用來找出連續數列中缺失的數字
-
 6. 取負法: 取負法可以直接對陣列本身做註記找出連續數列中缺失的數字
-
 7. slice: slice 可以用來對陣列做一維轉二維的內容擷取的處理
 
----
+- - -
 
 ## 一﹑應用 Set 之問題
 
@@ -34,7 +28,7 @@ draft: false
 
 ```javascript
 //  BEST TC:O(1) SC:O(N)
-function hasDuplicates(nums) {
+var hasDuplicates = function(nums) {
     return new Set(nums).size !== nums.length
 }
 ```
@@ -73,16 +67,15 @@ var singleNumber = function(nums) {
 }
 ```
 
----
+- - -
 
 ## 二、應用 for 代替 forEach 之問題
 
 > [217.Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 
 ```javascript
-
 //  EASY TC:O(N^2) SC:O(N)
-function hasDuplicates(nums) {
+var hasDuplicates = function(nums) {
     var keep = []
     for(var i in nums){
         if(keep.indexOf(nums[i])<0){
@@ -110,7 +103,7 @@ var findDisappearedNumbers = function(nums) {
 }
 ```
 
----
+- - -
 
 ## 三、應用 XOR 之問題
 
@@ -132,7 +125,7 @@ var singleNumber = function(nums) {
 }
 ```
 
----
+- - -
 
 ## 四、應用 indexOf & lastIndexOf  之問題
 
@@ -143,7 +136,7 @@ var singleNumber = function(nums) {
 
 ```javascript
 //  EASY TC:O(N^2) SC:O(1)
-function hasDuplicates(nums) {
+var hasDuplicates = function(nums) {
     return nums.some(x => nums.indexOf(x) !== nums.lastIndexOf(x))
 }
 ```
@@ -161,7 +154,7 @@ var singleNumber = function(nums) {
 }
 ```
 
----
+- - -
 
 ## 五、應用陣列加總之問題
 
@@ -196,7 +189,7 @@ var singleNumber = function(nums) {
 }
 ```
 
----
+- - -
 
 ## 六、應用取負法之問題
 
@@ -232,7 +225,7 @@ var findDisappearedNumbers = function(nums) {
 }
 ```
 
----
+- - -
 
 ## 七、應用 slice 之問題
 
