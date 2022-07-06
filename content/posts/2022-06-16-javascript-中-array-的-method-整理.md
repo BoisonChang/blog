@@ -26,7 +26,9 @@ tags:
 5. **String.slice**
 
    * 切下初始到結束位置的字串元素然後回傳成一個新的字串
-6. **String.repeat**
+6. String.replace
+   * 用來將字串中的字取代為另一個字。
+7. String.repeat
 
 ```JavaScript
 '     5566 '.trim() 
@@ -46,6 +48,12 @@ tags:
 
 'a123'.repeat(3)
 // 'a123a123a123'
+
+'Hello John ! Hello Peter!'.replace('Hello', 'Hi')
+// 'Hi John ! Hello Peter!'
+'Hello John ! Hello Peter!'.replace(/Hello/g, 'Hi')
+// 'Hi John ! Hi Peter!'
+
 ```
 
 本篇進一步詳細整理 Array Prototype 中的方法 Method 有以下幾種
