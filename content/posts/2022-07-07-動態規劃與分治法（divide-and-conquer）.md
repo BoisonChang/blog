@@ -9,9 +9,9 @@ tags:
   - DynamicProgramming
 draft: false
 ---
-> **動態規劃 (dynamic programming) 跟遞迴 (Recursion) 其實都可以算是分治法 (Divide-and-Conquer) 的一種實現**
+> **動態規劃跟遞迴其實都可以算是分治法的一種實現**
 
-1. 動態規劃 (dynamic programming) 其實是分治法的一種延伸與特例
+1. **動態規劃 (dynamic programming)** 其實是分治法的一種延伸與特例
 
    * 動態規劃將較小問題的解記錄下來
 
@@ -19,7 +19,7 @@ draft: false
 
    * 而是直接利用所記錄的較小問題的答案來求解。
 
-2. 分治法（Divide-and-Conquer）採用由上而下（top-down）的解題思路方式
+2. **分治法（Divide-and-Conquer）**採用由上而下（top-down）的解題思路方式
 
    * 可將原始問題分成多個小的
 
@@ -27,7 +27,7 @@ draft: false
 
    * 之後就可以成為原始問題的最終解法
 
-![image](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/6/7/1728f224fc3acaae~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
+![image](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/6/7/1728f224fc3acaae\~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 圖片來源: [JS数据结构与算法之《分治、回溯、动态规划与贪心》](https://juejin.cn/post/6844904182680387597)
 
@@ -59,7 +59,9 @@ draft: false
 
 1. 該問題的規模縮小到一定的程度就可以容易地解決
 
-2. 該問題可以分解爲若干個規模較小的相同問題，即該問題具有 **最佳子結構（Optimal Substructure）** 性質
+2. 該問題可以分解爲若干個規模較小的相同問題
+
+   * 即該問題具有 **最佳子結構（Optimal Substructure）** 性質
 
 3. 利用該問題分解出的子問題的解，可以**合併**爲該問題的解
 
@@ -93,13 +95,19 @@ draft: false
 
 1. 最佳子結構（Optimal Substructure）
 
-2. 無後效性，即子問題的解一旦確定，就不再改變，不受在這之後、包含它的更大的問題的求解決策影響
+2. 無後效性
+
+   * 即子問題的解一旦確定，就不再改變
+
+   * 不受在這之後、包含它的更大的問題的求解決策影響
 
 3. 子問題重疊的性質
 
 > **[遞迴（Recursion）](https://boison.tw/2022/07/recursion/)一文中的費波那契數列 ([509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/))**
 
-費氏數列雖然使用遞歸簡單明瞭，但子問題並不是獨立，很明顯的，子問題重疊，會出現重複計算，因此導致執行效率不佳，當 n 非常大時，直接計算到爆炸，時間複雜度 O(2^n)、空間複雜 O(n)。
+費氏數列雖然使用遞歸簡單明瞭，但子問題並不是獨立。
+
+很明顯的，子問題重疊，會出現重複計算，因此導致執行效率不佳，當 n 非常大時，直接計算到爆炸，時間複雜度 O(2^n)、空間複雜 O(n)。
 
 ```javascript
 // TC:O(2^N) SC:O(N)
