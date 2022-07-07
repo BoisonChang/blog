@@ -47,7 +47,7 @@ Git 是 Linus Torvalds 為了幫助管理 Linux 內核開發而開發的一個�
 
   * 從代碼的私有性上來看 GitLab 是一個更好的選擇，GitLab 提供開源代碼，支持企業自己用企業買的服務器搭建企業 GitLab 只供公司所有人使用
 
-* GitLab 內置了持續集成/持續交付 (CI/CD) 和 DevOps 工作流程
+* GitLab 內置了 GitLab CI 持續集成/持續交付 (CI/CD) 和 DevOps 工作流程
 
 ---
 
