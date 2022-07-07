@@ -31,11 +31,11 @@ tags:
 
    * 切下初始到結束位置的字串元素然後回傳成一個新的字串
 
-6. String.replace
+6. **String.replace**
 
    * 用來將字串中的字取代為另一個字。
 
-7. String.repeat
+7. **String.repeat**
 
 ```
 '     5566 '.trim() 
