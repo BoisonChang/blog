@@ -11,20 +11,15 @@ draft: false
 ---
 > **動態規劃跟遞迴其實都可以算是分治法的一種實現**
 
-1. **動態規劃 (dynamic programming)** 其實是分治法的一種延伸與特例
+1. **動態規劃 (dynamic programming)**  其實是分治法的一種延伸與特例
 
    * 動態規劃將較小問題的解記錄下來
-
    * 使得在處理較大問題的時候，可以不用重複去處理較小的問題
-
    * 而是直接利用所記錄的較小問題的答案來求解。
-
 2. **分治法（Divide-and-Conquer）**採用由上而下（top-down）的解題思路方式
 
    * 可將原始問題分成多個小的
-
    * 而所有小問題的結果彙整合併（bottom-up）由下而上
-
    * 之後就可以成為原始問題的最終解法
 
 ![image](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/6/7/1728f224fc3acaae~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
@@ -34,10 +29,9 @@ draft: false
 ※ 註:
 
 1. 貪婪演算法 （Greedy Algorithm）: 實際上是動態規劃算法的一種特殊情況
-
 2. 回溯法（Back Tracking）: 回溯法是暴力搜尋法中的一種，回溯其實就是在遞迴遞增地建立所有可能中，篩選掉不可能的組合，最終得到所要的答案
 
----
+- - -
 
 ## 一、分治法（Divide-and-Conquer）
 
@@ -52,11 +46,9 @@ draft: false
 1. 分解（divide）
 
    * 將原問題分解為若干個規模較小，相互獨立，與原問題形式相同的子問題
-
 2. 解決（conquer）
 
    * 若子問題規模較小且易於解決時，則直接求解
-
 3. 合併（combine）
 
    * 將各子問題的解合併，合併後的結果為原問題的解
@@ -64,24 +56,19 @@ draft: false
 > **分治法所能解決的問題一般具有以下幾個特徵**
 
 1. 該問題的規模縮小到一定的程度就可以容易地解決
-
 2. 該問題可以分解爲若干個規模較小的相同問題
 
    * 即該問題具有 **最佳子結構（Optimal Substructure）** 性質
-
 3. 利用該問題分解出的子問題的解，可以**合併**爲該問題的解
-
 4. 該問題所分解出的各個子問題是**相互獨立**的
 
 > **常見可用分治法的問題與方法**
 
 * Tower of Hanoi (河內塔)
-
 * Binary tree traversal (二元樹追蹤)
-
 * Quick sort / Merge sort / Binary Search
 
----
+- - -
 
 ## 二、動態規劃 (dynamic programming)
 
@@ -92,21 +79,16 @@ draft: false
 > **動態規劃主要需要考量**
 
 1. 定義原問題與子問題的關係，可使用遞迴關係表示
-
 2. 以自底向上或自頂向下的記憶化方式，儲存子問題的解
-
 3. 決定如何得到完整的最佳解
 
 > **動態規劃適用之情形**
 
 1. 最佳子結構（Optimal Substructure）
-
 2. 無後效性
 
    * 即子問題的解一旦確定，就不再改變
-
    * 不受在這之後、包含它的更大的問題的求解決策影響
-
 3. 子問題重疊的性質
 
 > **[遞迴（Recursion）](https://boison.tw/2022/07/recursion/)一文中的費波那契數列 ([509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/))**
@@ -166,19 +148,14 @@ var fib = function(n) {
 > **常見可用動態規劃（Dynamic Programming）法的問題**
 
 * Floyd-Warshall's Algrithm： 所有路徑間之最短距離
-
 * Traveling Salesman Problem： 旅行推銷員問題
-
 * 0/1 Knapsack Problem： 0/1 背包客問題
 
----
+- - -
 
 > 參考資料
 >
 > 1. [JavaScript 學演算法（二十三）- 分治法、動態規劃](https://chupai.github.io/posts/2009/divide_and_conquer_dp/)
->
 > 2. [JS数据结构与算法之《分治、回溯、动态规划与贪心》](https://juejin.cn/post/6844904182680387597)
->
 > 3. [遞迴函式與回溯法優化](https://ithelp.ithome.com.tw/articles/10278340)
->
 > 4. [用JavaScript學習資料結構與演算法 10：動態規劃](https://break0344.medium.com/data-structures-and-algorithms-10-dynamicprogramming-4f5991175691)
