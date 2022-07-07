@@ -1,12 +1,17 @@
 ---
-title: "百日轉職前端工程師：第十三週正規表達式 《DAY 21》"
-slug: Transfer-FrontEnd-100-21
+title: 百日轉職前端工程師：第十三週正規表達式 《DAY 21》
 date: 2020-11-19T00:40:21+08:00
+author: Boison
+slug: Transfer-FrontEnd-100-21
+tags:
+  - FrontEnd
+  - Transfer
+  - Regex
 draft: false
-tags: ["FrontEnd", "Transfer", "RegExp"]
-keywords:  ["FrontEnd", "Transfer", "RegExp"]
-author: "Boison"
-
+keywords:
+  - FrontEnd
+  - Transfer
+  - RegExp
 ---
 
 大家好，這是百日轉職前端工程師的 Day21，也是 11/18（三），今天要來聊聊滿常見的正規表達式（Regular Expression） ，這是一個新手看到會昏頭看起來很像亂碼的工具，但是實際接觸後發現沒有那麼難，於是簡單來整理一下其用法，簡單來說正規表達式是被用來匹配字串中字元組合的模式，實際上其應用廣泛，從文本資料分析查詢到人工智慧的腳本編寫，都能看到正規表達式的使用。
