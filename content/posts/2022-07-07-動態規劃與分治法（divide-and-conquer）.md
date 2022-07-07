@@ -2,7 +2,7 @@
 title: 動態規劃與分治法（Divide-and-Conquer）
 date: 2022-07-07T06:25:05.489Z
 author: Boison
-slug: algorithms-divide_and_conquer-dynamic_programming
+slug: algorithms-DAC-DP
 tags:
   - Algorithms
   - DivideAndConquer
