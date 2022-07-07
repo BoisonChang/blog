@@ -75,6 +75,7 @@ sum(5)
 ## 三、例子: 費波那契數列
 
 ```javascript
+// EASY TC:O(2^N) SC:O(N)
 // 初始（終止）條件為 n === 0 || n ===1，遞迴條件為 n !== 0 && n !== 1
 function fibo(n) {
   if (n === 0) {
