@@ -4,8 +4,8 @@ date: 2022-07-04T03:05:42.288Z
 author: Boison
 slug: Leetcode-array-note-easy
 tags:
-  - Leetcode
-  - Algorithm
+  - LeetCode
+  - Algorithms
 draft: false
 ---
 以下先將做題過程常用到的方法列出，在依序對應不同題目解法: 
