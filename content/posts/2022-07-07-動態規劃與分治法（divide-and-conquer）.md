@@ -27,7 +27,7 @@ draft: false
 
    * 之後就可以成為原始問題的最終解法
 
-![image](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/6/7/1728f224fc3acaae\~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
+![image](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/6/7/1728f224fc3acaae~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 圖片來源: [JS数据结构与算法之《分治、回溯、动态规划与贪心》](https://juejin.cn/post/6844904182680387597)
 
