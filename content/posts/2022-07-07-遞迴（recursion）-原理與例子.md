@@ -2,7 +2,7 @@
 title: "遞迴（Recursion）: 原理與實例"
 date: 2022-07-07T03:19:20.319Z
 author: Boison
-slug: Recursion
+slug: algorithms-recursion
 tags:
   - Recursion
   - Algorithms
