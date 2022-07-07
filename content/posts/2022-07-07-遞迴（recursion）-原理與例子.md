@@ -112,6 +112,12 @@ fibo(3)
 
 > **動態規劃（Dynamic programming ) 優化後的費波那契數列解法**
 
+用像是 Hash Table 來記錄已經計算過的值，那麼就可以避免把計算過的再計算一次。這時候就只有下圖中的綠色部分會被計算到，而藍色的部分就可以從 Hash Table 中來得到。
+
+![](https://miro.medium.com/max/700/1\*nTQdv7r5So5oF9-kVN_AoA.png)
+
+圖片來源: [用費波那契數列來入手動態規劃](https://medium.com/@ryanyang1221/dynamic-programming-explanation-with-fibonacci-%E7%94%A8%E8%B2%BB%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B8%E5%88%97%E4%BE%86%E8%A7%A3%E9%87%8B%E5%8B%95%E6%85%8B%E8%A6%8F%E5%8A%83-8ce318601d0f)
+
 ```javascript
 // BEST TC:O(N) SC:O(1)
 var fib = function(n) {
@@ -125,7 +131,16 @@ function fibonacci(n, dp) {
   
   return dp[n]
 }
+
+// 遞迴過程
+fibo(3)
+  fibo(2) + fibo(1)      // dp[3]
+    fibo(1) + fibo(0)    // dp[2]
+      return 0           // 0 = dp[0]
+    return 1 + 0         // dp[1] + dp[0] = dp[2] = 1
+  return 1 + 1           // dp[2] + dp[1] = dp[3] = 2
 ```
+
 
 - - -
 
@@ -159,3 +174,4 @@ factorial(4)
 > 2. [JavaScript 學演算法（二十二）- 遞迴 Recursion](https://chupai.github.io/posts/2008/alg_recursion/)
 > 3. [遞迴 (Recursive) 介紹與經典題型](https://kopu.chat/%E9%81%9E%E8%BF%B4-recursive-%E4%BB%8B%E7%B4%B9%E8%88%87%E7%B6%93%E5%85%B8%E9%A1%8C%E5%9E%8B/)﻿
 > 4. [演算法筆記系列 — Dynamic programming 動態規劃](https://medium.com/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/%E6%BC%94%E7%AE%97%E6%B3%95%E7%AD%86%E8%A8%98%E7%B3%BB%E5%88%97-dynamic-programming-%E5%8B%95%E6%85%8B%E8%A6%8F%E5%8A%83-de980ca4a2d3)
+> 5. [Dynamic Programming Explanation with Fibonacci 用費波那契數列來入手動態規劃](https://medium.com/@ryanyang1221/dynamic-programming-explanation-with-fibonacci-%E7%94%A8%E8%B2%BB%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B8%E5%88%97%E4%BE%86%E8%A7%A3%E9%87%8B%E5%8B%95%E6%85%8B%E8%A6%8F%E5%8A%83-8ce318601d0f)
