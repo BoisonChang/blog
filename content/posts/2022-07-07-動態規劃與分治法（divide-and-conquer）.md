@@ -81,7 +81,7 @@ draft: false
 
 動態規劃 (dynamic programming) 與分治法最大的差別是，動態規劃經分解後得到的子問題往往不是互相獨立的，有互相重疊部分（即下一個子階段的求解是建立在上一個子階段的解的基礎上，進行進一步的求解），因此需要用記憶體儲存解子問題的解，以便下次需要同一個子問題解之時直接使用（避免重複運算）
 
-> 動態規劃主要需要考量
+> **動態規劃主要需要考量**
 
 1. 定義原問題與子問題的關係，可使用遞迴關係表示
 
@@ -89,7 +89,7 @@ draft: false
 
 3. 決定如何得到完整的最佳解
 
-> 動態規劃適用之情形
+> **動態規劃適用之情形**
 
 1. 最佳子結構（Optimal Substructure）
 
@@ -97,7 +97,7 @@ draft: false
 
 3. 子問題重疊的性質
 
-> [遞迴（Recursion）](https://boison.tw/2022/07/recursion/)一文中的費波那契數列 ([509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/))
+> **[遞迴（Recursion）](https://boison.tw/2022/07/recursion/)一文中的費波那契數列 ([509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/))**
 
 費氏數列雖然使用遞歸簡單明瞭，但子問題並不是獨立，很明顯的，子問題重疊，會出現重複計算，因此導致執行效率不佳，當 n 非常大時，直接計算到爆炸，時間複雜度 O(2^n)、空間複雜 O(n)。
 
@@ -118,7 +118,7 @@ f(1) = 1;
 f(0) = 0;
 ```
 
-> 若我們用變數 `dp` 將結果儲存，就可以避免重複計算，減少記憶體空間
+> **若我們用變數 `dp` 將結果儲存，就可以避免重複計算，減少記憶體空間**
 
 ```javascript
 // TC:O(N) SC:O(N)
@@ -131,7 +131,7 @@ var fib = function(n) {
 }
 ```
 
-> 進一步優化，只存上一個和當前的值，減少記憶體空間
+> **進一步優化，只存上一個和當前的值，減少記憶體空間**
 
 ```javascript
 // TC:O(N) SC:O(1)
