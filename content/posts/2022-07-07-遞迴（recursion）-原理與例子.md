@@ -1,5 +1,5 @@
 ---
-title: "遞迴（Recursion）: 原理與例子"
+title: "遞迴（Recursion）: 原理與實例"
 date: 2022-07-07T03:19:20.319Z
 author: Boison
 slug: Recursion
@@ -100,7 +100,7 @@ fibo(3)
   return 1 + 1           // 2
 ```
 
-![](https://miro.medium.com/max/1400/0\*8l3i67OHS_YSXPKX.jpeg =700x700)
+![](https://miro.medium.com/max/1400/0\*8l3i67OHS_YSXPKX.jpeg)
 
 圖片來源: [演算法筆記：遞迴（Recursion）](https://medium.com/traveling-light-taipei/%E6%BC%94%E7%AE%97%E6%B3%95%E7%AD%86%E8%A8%98-%E9%81%9E%E8%BF%B4-recursion-e66e81566679)
 
