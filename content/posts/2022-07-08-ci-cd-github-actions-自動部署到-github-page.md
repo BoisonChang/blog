@@ -13,7 +13,7 @@ GitHub Actions 是透過設定一系列的腳本來運行 CI/CD 的流程，因�
 
 此處不多解釋 CI/CD 原理，會把重點放在如何在 GitHub 上用 Actions 撰寫 CICD 的腳本 Workflows，不過練習為了簡化邏輯，並沒有撰寫測試和程式碼檢測等內容，因此 Workflows 其實只撰寫持續交付(Continuous Deployment, CD) 的自動部署的部分。
 
-※ CI/CD 原理請見 [CI/CD 原理: 持續集成&持續部署/交付](./CI%2FCD%20%E5%9F%BA%E7%A4%8E%E5%8E%9F%E7%90%86%20154d8df4-29f0-4fb5-8dff-d65b45f93c60.md "CI/CD 原理: 持續集成&持續部署/交付") (撰寫中)
+※ CI/CD 原理請見 [CI/CD 原理: 持續集成&持續部署/交付](./CI%2FCD%20%E5%9F%BA%E7%A4%8E%E5%8E%9F%E7%90%86%20154d8df4-29f0-4fb5-8dff-d65b45f93c60.md "CI/CD 原理: 持續集成&持續部署/交付") (尚未完成)
 
 - - -
 
