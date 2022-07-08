@@ -72,7 +72,7 @@ GitHub Actions 是透過設定一系列的腳本來運行 CI/CD 的流程，因�
 2. 到 repo 中的 Settings 選擇 Secrets
 
    * 點擊 new secret 
-   * 加入我們剛剛得到的 access token 在 value
+   * 貼上我們剛剛複製的 access token 在 value
    * 其他隨意命名後 Add secret
 3. 到 repo 的 Actions 中建立腳本 Workflows
 
