@@ -121,7 +121,7 @@ jobs:
 
 - - -
 
-## 5. Workflow 設定檔解釋
+## 5. Workflow 設定
 
 1. **name**
 
