@@ -112,7 +112,7 @@ jobs:
 
 - - -
 
-## 4. main 分支內容改變自動部署到  gh-page 分支
+## 4. 自動部署到 gh-page 分支
 
 * 修改 app.js 內容
 * `git commit -am “edit content“`
