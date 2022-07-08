@@ -160,5 +160,5 @@ jobs:
 > 2. [前端工程師在GitHub上持續整合與部署(CI/CD)](https://yusong.io/blog/frontend-ci-cd-on-github/)
 > 3. [搭配Github actions建立一套 CI/CD系統](https://github.com/yichunsung/github_actions_studying)
 > 4. [5 分钟教你快速掌握 GitHub Actions 自动发布 Npm 包和网站](https://segmentfault.com/a/1190000041753907)
-> 5. \[[淺談]用GitHub Actions 簡易的 CI 來發布GitPages](https://medium.com/@JainKai/%E6%B7%BA%E8%AB%87-%E7%94%A8github-actions-%E7%B0%A1%E6%98%93%E7%9A%84-ci-%E4%BE%86%E7%99%BC%E5%B8%83gitpages-6ae48e52467e)
+> 5. [用GitHub Actions 簡易的 CI 來發布GitPages](https://medium.com/@JainKai/%E6%B7%BA%E8%AB%87-%E7%94%A8github-actions-%E7%B0%A1%E6%98%93%E7%9A%84-ci-%E4%BE%86%E7%99%BC%E5%B8%83gitpages-6ae48e52467e)
 > 6. [GitHub Actions 的 Workflow 設定檔解析](https://ithelp.ithome.com.tw/articles/10246589)
