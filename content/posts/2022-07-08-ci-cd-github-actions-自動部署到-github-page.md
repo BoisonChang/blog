@@ -13,7 +13,7 @@ GitHub Actions 是透過設定一系列的腳本來運行 CI/CD 的流程，因�
 
 此處不多解釋 CI/CD 原理，會把重點放在如何在 GitHub 上用 Actions 撰寫 CICD 的腳本 Workflows，不過練習為了簡化邏輯，並沒有撰寫測試和程式碼檢測等內容，因此 Workflows 其實只撰寫持續交付(Continuous Deployment, CD) 的自動部署的部分。
 
-※ CI/CD 原理請見 [CI/CD 原理: 持續集成&持續部署/交付](./CI%2FCD%20%E5%9F%BA%E7%A4%8E%E5%8E%9F%E7%90%86%20154d8df4-29f0-4fb5-8dff-d65b45f93c60.md "CI/CD 原理: 持續集成&持續部署/交付")
+※ CI/CD 原理請見 [CI/CD 原理: 持續集成&持續部署/交付](./CI%2FCD%20%E5%9F%BA%E7%A4%8E%E5%8E%9F%E7%90%86%20154d8df4-29f0-4fb5-8dff-d65b45f93c60.md "CI/CD 原理: 持續集成&持續部署/交付") (撰寫中)
 
 - - -
 
@@ -160,5 +160,5 @@ jobs:
 > 2. [前端工程師在GitHub上持續整合與部署(CI/CD)](https://yusong.io/blog/frontend-ci-cd-on-github/)
 > 3. [搭配Github actions建立一套 CI/CD系統](https://github.com/yichunsung/github_actions_studying)
 > 4. [5 分钟教你快速掌握 GitHub Actions 自动发布 Npm 包和网站](https://segmentfault.com/a/1190000041753907)
-> 5. [\[淺談]用GitHub Actions 簡易的 CI 來發布GitPages](https://medium.com/@JainKai/%E6%B7%BA%E8%AB%87-%E7%94%A8github-actions-%E7%B0%A1%E6%98%93%E7%9A%84-ci-%E4%BE%86%E7%99%BC%E5%B8%83gitpages-6ae48e52467e)
+> 5. \[[淺談]用GitHub Actions 簡易的 CI 來發布GitPages](https://medium.com/@JainKai/%E6%B7%BA%E8%AB%87-%E7%94%A8github-actions-%E7%B0%A1%E6%98%93%E7%9A%84-ci-%E4%BE%86%E7%99%BC%E5%B8%83gitpages-6ae48e52467e)
 > 6. [GitHub Actions 的 Workflow 設定檔解析](https://ithelp.ithome.com.tw/articles/10246589)
