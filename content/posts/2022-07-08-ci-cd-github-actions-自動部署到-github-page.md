@@ -139,18 +139,18 @@ jobs:
      * 設置腳本運行時的 Docker base-image
    * **steps**
 
-     * 實際動作命令名稱為 Checkout
+     * **name:** 動作命令名稱為 Checkout
 
-       * 使用 actions/checkout@v2 來設置 GitHub Actions 的相關環境
-     * 實際動作命令名稱為 Setup node
+       * **uses:** 使用 actions/checkout@v2 來設置 GitHub Actions 的相關環境
+     * **name:** 動作命令名稱為 Setup node
 
-       * 使用 actions/setup-node@v3 來設置使用的 Node.js 版本
-     * 實際動作命令名稱為 Install and build
+       * **uses:** 使用 actions/setup-node@v3 來設置使用的 Node.js 版本
+     * **name:** 動作命令名稱為 Install and build
 
-       * 執行 npm install && npm run build
-     * 實際動作命令名稱為 Deploy
+       * **run:** 執行 npm install && npm run build
+     * **name:** 動作命令名稱為 Deploy
 
-       * 使用 JamesIves/github-pages-deploy-action@4.1.1 部署
+       * **uses:** 使用 JamesIves/github-pages-deploy-action@4.1.1 部署
 
 - - -
 
