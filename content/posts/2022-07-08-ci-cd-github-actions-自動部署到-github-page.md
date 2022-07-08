@@ -44,7 +44,7 @@ GitHub Actions 是透過設定一系列的腳本來運行 CI/CD 的流程，因�
 ```javascript
 {
   "name": "my-app-cicd",
-  "homepage": "https://myusername.github.io/my-app-cicd",
+  "homepage": "https://BoisonChang.github.io/my-app-cicd",
   // ...
 }
 ...
