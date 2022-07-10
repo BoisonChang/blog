@@ -51,8 +51,8 @@ GitHub Actions 是透過設定一系列的腳本來運行 CI/CD 的流程，因�
   "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
     ...
 }
 ```
