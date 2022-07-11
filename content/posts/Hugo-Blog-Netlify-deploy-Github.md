@@ -56,7 +56,7 @@ keywords:
 
 ---
 
-## 二、用 Netlify 將網頁部署在 Github Pages
+## 二、用 Netlify 將網頁部署
 
 1. 在 [github](https://github.com/) 開一個新 repo 取得 URL
 2. 回到 VS Code
