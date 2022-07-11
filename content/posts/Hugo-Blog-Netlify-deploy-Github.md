@@ -69,5 +69,5 @@ keywords:
 
 - 在 Github 新建 repo 後點擊進入右上角點 Code/Https 可以取得 URL
 - 在 Netlify 設定中輸入此 URL，往後每次你更新 repo 內容時會自動讀取內容並重新部署
-- 網站實際上是放在 Github 的空間，Netlify 是協助簡化將網站部屬到 Github 步驟跟調整設定
+- 程式碼一開始先放在 Github 的空間，Netlify 是協助將要發佈的程式碼網站部屬到 Netlify 可更方便的調整設定
 - 「部屬」的意思是將網站內容放入遠端空間，並且註冊取得一組網址讓所有人都能訪問此空間存放之內容
