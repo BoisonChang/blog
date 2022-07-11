@@ -14,7 +14,7 @@ tags:
 
 ※ 註：
 
-* 本文預設你使用 [Hugo 並將網站用 Netlify 部署在 Github 上面](https://boison.tw/2022/05/hugo-blog-netlify-deploy-github/)，如連結文章教學
+* 本文預設你使用 [Hugo 並將網站用 Netlify 部署在 Github 上面](https://boison.tw/2022/05/blog-hugo-deploy-netlify/)，如連結文章教學
 * 步驟可能會因時間跟環境有些微差異可參考 [Netlify CMS 官方文件](https://www.netlifycms.org/docs/configuration-options/#collections)為準，但核心原則不會差太多
 
 - - -
