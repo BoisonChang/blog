@@ -68,7 +68,8 @@ draft: false
 
   9. `git push -u origin main`
 
-* `npm install --save gh-page`
+* 安裝套件
+  * `npm install --save gh-page`
 
 * 設定 package.json 檔案內容
 
