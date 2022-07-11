@@ -1,5 +1,5 @@
 ---
-title: 用 Hugo 寫 Blog 部署在 Github Pages
+title: 用 Hugo 寫 Blog 部署在 Netlify
 date: 2022-05-22T14:54:21+08:00
 author: Boison
 slug: Hugo-Blog-Netlify-deploy-Github
@@ -14,7 +14,7 @@ keywords:
   - Netlify
 ---
 
-這篇文章說明如何在 5 分鐘架設一個靜態網站。首先你可以利用 Hugo 這套工具產生你的網站架構，接著利用 Netlify 將網頁部署在 Github Pages。
+這篇文章說明如何在 5 分鐘架設一個靜態網站。首先你可以利用 Hugo 這套工具產生你的網站架構，接著利用 Netlify 將網頁部署在 Netlify。
 
 本文假設你是在 Mac 的環境下操作，若你的環境是 Windows 則雖概念相同但步驟會略有差異；若是過去完全沒有寫程式的經驗，你會需要根據注意事項花額外的時間準備好一些基礎建設並適度了解其原理。
 
