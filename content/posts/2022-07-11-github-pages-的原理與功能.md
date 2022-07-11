@@ -8,7 +8,7 @@ tags:
   - GitHub
 draft: false
 ---
-> GitHub Pages 是在 GitHub 裡面，可以解析靜態網頁/文件並渲染成頁面的網頁代管服務
+> **GitHub Pages 是在 GitHub 裡面，可以解析靜態網頁/文件並渲染成頁面的網頁代管服務**
 
 在 GitHub 的專案內新建一個分支名稱為 gh-pages 時，GitHub 便會預設將此分支內的檔案以靜態網頁的方式呈現，因此可以利用此類特性來製造一個簡單的網站。
 
@@ -18,7 +18,7 @@ draft: false
 
 ## 1. GitHub Pages 的限制
 
-> 使用 gh-pages 時，會有以下的限制
+> **使用 gh-pages 時會有以下的限制**
 
 1. 僅能呈現靜態頁面的內容（即 HTML 網頁） 
 
