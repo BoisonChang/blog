@@ -64,7 +64,7 @@ draft: false
 
   7. 在 GitHub 上開設 repo 取名 my-app-cicd
 
-  8. `git remote add origin <`[`https://github.com/BoisonChang/my-app-cicd.git`](https://github.com/BoisonChang/my-app-cicd.git)`>`
+  8. `git remote add origin <https://github.com/BoisonChang/my-app-cicd.git>`
 
   9. `git push -u origin main`
 
