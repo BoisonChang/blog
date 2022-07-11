@@ -2,7 +2,7 @@
 title: 用 Hugo 寫 Blog 部署在 Netlify
 date: 2022-05-22T14:54:21+08:00
 author: Boison
-slug: Hugo-Blog-Netlify-deploy-Github
+slug: Blog-Hugo-deploy-Netlify
 tags:
   - Hugo
   - Github
