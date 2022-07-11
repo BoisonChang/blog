@@ -1,43 +1,24 @@
 ---
-title: "用 Hugo 寫 Blog 部署在 Github Pages"
-slug: Hugo-Blog-Netlify-deploy-Github
+title: 用 Hugo 寫 Blog 部署在 Github Pages
 date: 2022-05-22T14:54:21+08:00
+author: Boison
+slug: Hugo-Blog-Netlify-deploy-Github
+tags:
+  - Hugo
+  - Github
+  - Netlify
 draft: false
-tags: ["Hugo", "Github", "Netlify"]
-keywords: ["Hugo", "Github", "Netlify"]
-author: "Boison"
-# showToc: false
-# TocOpen: false
-# hidemeta: false
-# comments: true
-# disableHLJS: true # to disable highlightjs
-# disableShare: true
-# disableHLJS: false
-# hideSummary: false
-# searchHidden: false
-# ShowReadingTime: true
-# ShowBreadCrumbs: true
-# ShowPostNavLinks: true
-# author: ["Me", "You"] # multiple authors
-#canonicalURL: "https://canonical.url/to/page"
-# weight: 1
-# aliases: ["/AirTag"]
-#cover:
-#    image: "<image path/url>" # image path/url
-#    alt: "<alt text>" # alt text
-#    caption: "<text>" # display caption under cover
-#    relative: true # when using page bundles set this to true
-#    hidden: true # only hide on current single page
-#editPost:
-#    URL: "https://github.com/<path_to_repo>/content"
-#    Text: "Suggest Changes" # edit text
-#    appendFilePath: false # to append file path to Edit link
-  
+keywords:
+  - Hugo
+  - Github
+  - Netlify
 ---
 
 這篇文章說明如何在 5 分鐘架設一個靜態網站。首先你可以利用 Hugo 這套工具產生你的網站架構，接著利用 Netlify 將網頁部署在 Github Pages。
 
 本文假設你是在 Mac 的環境下操作，若你的環境是 Windows 則雖概念相同但步驟會略有差異；若是過去完全沒有寫程式的經驗，你會需要根據注意事項花額外的時間準備好一些基礎建設並適度了解其原理。
+
+本文著重在實作面，至於原理請見 [Netlify 靜態網站托管的功能](https://boison.tw/2022/07/netlify-101/) 一文。
 
 ※ 當然你也可以不要花太多時間搞懂這些鬼東西，只要簡單依照現有的安裝教學指引讓網站成功運行，若是過程中卡住，很歡迎你聯繫我，我很願意提供幫助。
 
