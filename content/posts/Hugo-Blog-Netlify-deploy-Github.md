@@ -1,5 +1,5 @@
 ---
-title: 用 Hugo 寫 Blog 部署在 Netlify
+title: 用 Hugo 產生 Blog 程式碼部署在 Netlify
 date: 2022-05-22T14:54:21+08:00
 author: Boison
 slug: Blog-Hugo-deploy-Netlify
