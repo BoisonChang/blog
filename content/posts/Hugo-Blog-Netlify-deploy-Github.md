@@ -63,7 +63,7 @@ keywords:
 3. git remote add origin URL
 4. git push -u origin master
 5. 打開 [Netlify](https://www.netlify.com/) 註冊會協助你連上 github 建立的 repo
-6. Netlify 幫你把網站部署完成（到 Github Pages）：[https://boison.netlify.app/](https://boison.netlify.app/) 確認遠端是否可以開啟
+6. Netlify 幫你把網站部署完成：[https://boison.netlify.app/](https://boison.netlify.app/) 確認遠端是否可以開啟
 
 > **注意事項**:
 
