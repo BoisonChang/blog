@@ -1,5 +1,5 @@
 ---
-title: "LeetCode: Array 類型筆記 (Easy)"
+title: "LeetCode: Array 類型筆記（Easy）"
 date: 2022-07-04T03:05:42.288Z
 author: Boison
 slug: Leetcode-array-note-easy
