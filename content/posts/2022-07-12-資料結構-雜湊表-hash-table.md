@@ -108,7 +108,7 @@ hash value 是獨一無二的，用 mod 5 來得到餘數並儲存才記憶體�
 
 > **另外一個 Hash Table 範例**
 
-![](https://miro.medium.com/max/1336/0\*0xeEq-iJDrVAU0zG.png)
+![](https://miro.medium.com/max/1336/0*0xeEq-iJDrVAU0zG.png)
 
 圖片來源: [用JavaScript學習資料結構與演算法 7：雜湊表](https://break0344.medium.com/data-structures-and-algorithms-7-hashtables-c00605cfd5e6)
 
