@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: "blog/cms" # blog 存放在 Github repo 的位置
-  branch: "main" # 分支
+  branch: "master" # 分支
   site_url: "https://boison.tw" # 你的網站網址
 
 media_folder: "static/img" # 存放多媒體的資料夾
