@@ -50,7 +50,7 @@ keywords:
 
 - 你可以選擇不使用 VS Code，只要用本機的 Terminal 介面即可
 - 此處模板選擇 PaperMod 如果想選擇其他主題至此 [Hugo Themes](https://themes.gohugo.io/) 並替換掉步驟 6 和 7
-- 若是沒有 Github 帳號需要先去註冊，repo 為專案意思 (開 repo 可以想成是在 google drive 開新資料夾)
+- 若是沒有 GitHub 帳號需要先去註冊，repo 為專案意思 (開 repo 可以想成是在 google drive 開新資料夾)
 - 此處安裝環境為 mac，預設已經安裝好 brew (若未安裝 brew 可見 [如何在 Mac 上安裝套件管理工具 Homebrew](https://redox-ccy.medium.com/%E7%AD%86%E8%A8%98-%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E5%AE%89%E8%A3%9Dhomebrew-87f127c6ebcf) 一文安裝)
 - 「本地端」的意思是網站只在你電腦上可訪問，localhost:1313 就是打開你電腦中資料夾的位置
 
