@@ -1,5 +1,5 @@
 ---
-title: "資料結構: 雜湊表 Hash Table"
+title: "資料結構: 雜湊表（Hash Table）"
 date: 2022-07-12T06:30:55.198Z
 author: Boison
 slug: ds-hashtable
