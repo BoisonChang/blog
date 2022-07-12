@@ -10,7 +10,9 @@ draft: false
 ---
 > **雜湊表很適合來存放不確定數量大小的資料，查找也很快速 (時間複雜度為 O(1))**
 
-如果我們想要讀取儲存的資料時間複雜度都在 O(1)，最適合的方式是用到 Array，把 Key 當作 array 的索引值 index，value 儲存到 array，這樣稱為 Direct Access Table，但這樣的實作有缺點，如果 key 範圍很大，但數量很少，無法讓 key 連續而浪費記憶體空間。
+如果我們想要讀取儲存的資料時間複雜度都在 O(1)，最適合的方式是用到 Array，把 Key 當作 array 的索引值 index，value 儲存到 array，這樣稱為 Direct Access Table。
+
+> 但這樣作有缺點，如果 key 範圍很大但數量很少，無法讓 key 連續是浪費記憶體空間
 
 Hash-Table 解決了浪費記憶體空間的問題，能把放資料的 table 大小壓縮至接近真正需要放進 table 資料的數量。為了達到這個目標引入了 Hash function，公式為 index\=h(Key)，可以把原本雜散的 key 對應到 hash table 的緊湊有順序的索引值 index。
 
