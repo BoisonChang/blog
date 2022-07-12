@@ -26,7 +26,7 @@ keywords:
 
 - [Hugo](https://gohugo.io/): 靜態網站生成器
 - [Homebrew](https://brew.sh/index_zh-tw): 套件管理工具
-- [Github](https://github.com/): 程式碼托管平台
+- [GitHub](https://github.com/): 程式碼托管平台
 - [Netlify](https://www.netlify.com/): 靜態網站托管平台
 - [Visual Studio Code (VS Code)](https://code.visualstudio.com/): 原始碼編輯器
 - [Terminal](https://zh.wikipedia.org/zh-tw/%E7%B5%82%E7%AB%AF): 終端機
