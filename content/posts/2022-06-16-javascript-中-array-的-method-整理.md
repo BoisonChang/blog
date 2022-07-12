@@ -270,6 +270,13 @@ list.every(item => item.number > 10)
 
 * 看 searchElement 有沒有在 array 裡，回傳 Boolean
 
+
+### 10. fill()
+
+* Array.prototype.fill(value)
+
+* 填充值進 array，很常用在設定預設值，如 const arr \= Array(6).fill(0)
+
 ```
 const character = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 
@@ -300,6 +307,9 @@ character.includes('C')
 const character2 = ['C', 'A', 'B', 'D', 'E', 'F', 'G']
 character2.sort()
 //  ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+
+character.fill('X')
+['X', 'X', 'X', 'X', 'X', 'X', 'X']
 ```
 
 > 參考資料:  [前端工程師用 javaScript 學演算法系列陣列 Array](https://ithelp.ithome.com.tw/articles/10213787)
