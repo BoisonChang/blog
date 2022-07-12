@@ -29,13 +29,17 @@ tags:
 
 5. **String.slice**
 
-   * 切下初始到結束位置的字串元素然後回傳成一個新的字串
+   * 切下初始到結束位置的字串元素然後回傳成一個新的字串6
 
-6. **String.replace**
+6. **String.split**
+
+   * 找到字串中的某元素，然後將左右兩側分開回傳
+
+7. **String.replace**
 
    * 用來將字串中的字取代為另一個字。
 
-7. **String.repeat**
+8. **String.repeat**
 
 ```
 '     5566 '.trim() 
@@ -50,8 +54,11 @@ tags:
 '012'.padEnd(10, '-') 
 // '012-------'
 
-'Hello, I am fine. How about you?' .slice(7, 16)
+'Hello, I am fine. How about you?'.slice(7, 16)
 // 'I am fine.'
+
+'Hello'.split('')
+// ['H', 'e', 'l', 'l', 'o']
 
 'a123'.repeat(3)
 // 'a123a123a123'
