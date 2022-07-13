@@ -1,5 +1,5 @@
 ---
-title: 分支限界法 （Branch and Bound）
+title: 分支限界法 （Branch-and-Bound）
 date: 2022-07-13T03:05:38.107Z
 author: Boison
 slug: algorithms-b&b
