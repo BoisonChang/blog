@@ -8,7 +8,9 @@ tags:
   - BranchAndBound
 draft: false
 ---
-我的理解是，分支限界法 （Branch and Bound）有點貪婪演算法（Greedy Algorithm）和回溯法（Backtracking）的精神。
+我的理解是，分支限界法 （Branch and Bound）有點貪婪演算法（Greedy Algorithm）和回溯法（Backtracking）的精神。(可見 [回溯法（Backtracking）](https://boison.tw/2022/07/algorithms-backtracking/)和  [貪婪演算法（Greedy Algorithm）](https://boison.tw/2022/07/algorithms-greedy/)文章)
+
+
 
 在每次做出選擇當下選擇最優解，並且將找到的最短路徑作為新的約束條件，若在遍歷過程中不符合此約束條件，就退回一步甚至是上幾步的計算重新選擇。
 
