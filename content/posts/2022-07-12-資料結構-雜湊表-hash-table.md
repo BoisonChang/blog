@@ -128,7 +128,7 @@ Separate Chaining 藉由使用陣列或連結串列，將複數的資料儲存�
 
 > **參考資料**
 >
-> 1. [【Day9】\[資料結構]-雜湊表Hash Table](https://ithelp.ithome.com.tw/articles/10268077)
+> 1. \[資料結構-雜湊表Hash Table](https://ithelp.ithome.com.tw/articles/10268077)
 > 2. [Day 12 資料結構：雜湊表 Hash Table](https://ithelp.ithome.com.tw/articles/10273568)
 > 3. [用JavaScript學習資料結構與演算法 7：雜湊表](https://break0344.medium.com/data-structures-and-algorithms-7-hashtables-c00605cfd5e6)
 > 4. [字典（Dictionary）和雜湊表（Hash Table）篇](https://blog.techbridge.cc/2017/03/10/javascript-data-structure-algorithm-dictionary-hash-table/)
