@@ -39,7 +39,11 @@ tags:
 
    * 用來將字串中的字取代為另一個字。
 
-8. **String.repeat**
+8. **String.charCodeAt()** 
+
+   * 轉換成字串的位置處字的 Unicode 編碼
+
+9. **String.repeat**
 
 ```
 '     5566 '.trim() 
@@ -67,6 +71,9 @@ tags:
 // 'Hi John ! Hello Peter!'
 'Hello John ! Hello Peter!'.replace(/Hello/g, 'Hi')
 // 'Hi John ! Hi Peter!'
+
+'Apple'.charCodeAt(0) // 65
+'apple'.charCodeAt(0) // 97
 ```
 
 本篇進一步詳細整理 Array Prototype 中的方法 Method 有以下幾種
@@ -270,12 +277,21 @@ list.every(item => item.number > 10)
 
 * 看 searchElement 有沒有在 array 裡，回傳 Boolean
 
-
 ### 10. fill()
 
 * Array.prototype.fill(value)
 
 * 填充值進 array，很常用在設定預設值，如 const arr \= Array(6).fill(0)
+
+### 11. Array.from()
+
+* Array.from()
+
+* 將以下轉換成陣列
+
+  1. 類似陣列的資料
+
+  2. 可迭代（iterable）物件
 
 ```
 const character = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
@@ -310,6 +326,11 @@ character2.sort()
 
 character.fill('X')
 ['X', 'X', 'X', 'X', 'X', 'X', 'X']
+
+Array.from([1, 2, 3], x => x + x) //  [2, 4, 6]
+Array.from(new Map([[1, 2], [2, 4], [4, 8]])) // [[1, 2], [2, 4], [4, 8]]
+Array.from({length: 4}, i => i) // [undefined,undefined,undefined,undefined] 
+Array.from({length: 4},(v, i) => i) // [0, 1, 2, 3]
 ```
 
 > 參考資料:  [前端工程師用 javaScript 學演算法系列陣列 Array](https://ithelp.ithome.com.tw/articles/10213787)
