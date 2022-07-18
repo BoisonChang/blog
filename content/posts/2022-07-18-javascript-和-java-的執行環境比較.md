@@ -16,4 +16,4 @@ draft: false
 2. **[Java 的執行環境 Runtime 是 JRE](https://boison.tw/2022/07/java-jvm-jre-jdk/)** 
    * JRE 是 Java 的 Runtime 執行環境，其包含了 JVM 
    * JVM 是 Java 的編譯器，讓 Java 能夠實現一次編譯後在不同的平台可執行的特性
-   * JDK  是 是 Java 的編譯器，其包含了 JRE & JVM
+   * JDK 是 Java 的開發環境，其包含了 JRE & JVM
