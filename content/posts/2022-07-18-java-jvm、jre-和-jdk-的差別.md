@@ -56,3 +56,4 @@ JDK（Java Development Kit）是個開發環境，編寫 Java 程序的時候需
 > 2. [什麽是JDK？什麽是JRE？JDK與JRE的區別和用途](https://www.796t.com/content/1538401203.html)
 > 3. [何謂 JVM、JRE、SDK、JDK](https://www.laird.tw/2015/03/java-jvmjresdkjdk.html)
 > 4. [《java為何這麼簡單》基礎篇-車的發動機JDK](https://www.796t.com/content/1541934811.html)
+> 5. [為什麼需要 JVM？](https://openhome.cc/Gossip/JavaEssence/WhyJVM.html)
