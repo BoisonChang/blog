@@ -36,26 +36,26 @@ draft: false
    * array 轉成 object
 
 ```javascript
-// 0. 宣告物件
+// 1. 宣告物件
 let classmates = new Object()
 classmates['11'] = 'Peter' 
 classmates['32'] = 'Paul'  
 classmates['3'] = 'John'
 // { '11' : 'Peter', '32': 'Paul', '3': 'John'}
 
-// 1. 取出 value 
+// 2. 取出 value 
 Object.values(classmates) // ['Peter', 'Paul', 'John']
 
-// 2. 取出 key
+// 3. 取出 key
 Object.keys(classmates) // ['3', '11', '32']
 
-// 3. 刪除 object 屬性（key）
+// 4. 刪除 object 屬性（key）
 delete classmates['32']  // { '11' : 'Peter' , '3': 'John'}
 
-// 4. object 轉成 array
+// 5. object 轉成 array
 Object.entries(classmates) // [['3', 'John'],['11', 'Peter'],['32', 'Paul']]
 
-// 5. array 轉成 object
+// 6. array 轉成 object
 let arrayClassmates = Object.entries(classmates) // [['3', 'John'],['11', 'Peter'],['32', 'Paul']]
 Object.fromEntries(arrayClassmates) // { '11' : 'Peter', '32': 'Paul', '3': 'John'}
 ```
