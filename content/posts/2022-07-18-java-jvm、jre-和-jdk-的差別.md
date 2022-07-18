@@ -35,7 +35,7 @@ JVM 在執行位元組碼時，把位元組碼解釋成具體平臺上的機器�
 
 ## 2. JRE 是 Java 的執行環境
 
-JRE ( Java Runtime Environment )，JRE 稱為 Java 執行環境 Runtime，是一個由 Java API 類庫中的 Java SE API 子集和 JVM 組成。
+JRE（Java Runtime Environment），JRE 稱為 Java 執行環境 Runtime，是一個由 Java API 類庫中的 Java SE API 子集和 JVM 組成。
 
 JRE 是個執行環境，JRE 只能執行不能編譯！也就是說如果你只是下載 JRE 你不能編寫 Java。
 
