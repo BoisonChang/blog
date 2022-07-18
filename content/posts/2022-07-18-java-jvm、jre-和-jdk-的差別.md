@@ -22,6 +22,10 @@ draft: false
 
 JAVA 則不同其他程式語言，為了達到他的跨平台性，他採用了上述兩種混和的模式: 取出編譯器中與機器無關的處理程序，後面交由 JVM 直譯器來執行。
 
+---
+
+## 1. **JVM 是 Java 的 直譯器**
+
 >  **JVM 是 Java 的 直譯器，支援與操作系統無關的部分實現 Java 跨平台運行的特性**
 
 JVM ( Java Virtual Machine ) 是 JRE 的一部分，JVM 就好像是一台虛構的電腦，運行在實體電腦裡，是通過在實際的計算機上仿真模擬各種計算機功能來實現的。JVM 有自己完善的硬件架構，如處理器、堆棧、寄存器等，還具有相應的指令系統。
@@ -30,13 +34,17 @@ JVM ( Java Virtual Machine ) 是 JRE 的一部分，JVM 就好像是一台虛構
 
 JVM 在執行位元組碼時，把位元組碼解釋成具體平臺上的機器指令執行。這就是 Java 能夠一次編譯，到處執行的原因。
 
-> **JRE 是 Java 的 Runtime 執行環境**
+---
+
+## 2. JRE 是 Java 的執行環境
 
 JRE ( Java Runtime Environment ) ，JRE 稱為 Java 執行環境 Runtime ，是一個由 Java API 類庫中的 Java SE API 子集和 JVM 組成。
 
 JRE 是個執行環境，JRE 只能執行不能編譯！也就是說如果你只是下載 JRE 你不能編寫 Java。
 
-> **JDK** **是 Java 的開發環境**
+---
+
+## 3. JDK 是 Java 的開發環境
 
 JDK 是整個 Java 的核心，包括了Java 執行環境 JVM（Java Runtime Envirnment），一堆Java 工具（javac/java/jdb 等）和 Java 基礎的類庫（即Java API ）。
 
