@@ -37,7 +37,7 @@ draft: false
 
 ```javascript
 // 0. 宣告物件
-let classmates = 
+let classmates = new Object()
 classmates['11'] = 'Peter' 
 classmates['32'] = 'Paul'  
 classmates['3'] = 'John'
