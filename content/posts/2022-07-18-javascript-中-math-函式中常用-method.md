@@ -82,7 +82,7 @@ Math.trunc(-7.111)  // -7
 Math.random()       // 0.0000…1 ~ 0.99999…
 
 // 7. 隨機取得範圍內整數
-Math.floor(Math.random()* X )  // 0 ~ 1
+Math.floor(Math.random()* X )  // 0 ~ X-1
 
 let array = [10,32,51,332,42]
 // 8. 取得數列中最大值 (max)
