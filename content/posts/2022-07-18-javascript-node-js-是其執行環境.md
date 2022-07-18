@@ -27,4 +27,4 @@ JIT 的方式結合解釋和編譯兩者，讓執行 JavaScript 的時候，能�
 
 ---
 
-> **參考資料:** [執行JavaScript 的V8 引擎做了什麼？ - Medium](https://medium.com/starbugs/%E5%9F%B7%E8%A1%8C-javascript-%E7%9A%84-v8-%E5%BC%95%E6%93%8E%E5%81%9A%E4%BA%86%E4%BB%80%E9%BA%BC-f97e5b4b3fbe)
+> **參考資料:** [執行JavaScript 的V8 引擎做了什麼？](https://medium.com/starbugs/%E5%9F%B7%E8%A1%8C-javascript-%E7%9A%84-v8-%E5%BC%95%E6%93%8E%E5%81%9A%E4%BA%86%E4%BB%80%E9%BA%BC-f97e5b4b3fbe)
