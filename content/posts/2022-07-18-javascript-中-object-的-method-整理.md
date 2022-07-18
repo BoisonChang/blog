@@ -8,6 +8,9 @@ tags:
   - Object
 draft: false
 ---
+本篇詳細整理 Object 中的方法 Method 有以下幾種
+
+
 1. **new Object()**
 
    * 宣告物件
