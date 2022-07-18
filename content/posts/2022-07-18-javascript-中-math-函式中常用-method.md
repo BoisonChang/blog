@@ -1,5 +1,5 @@
 ---
-title: JavaScript 中 Math 函式中常用 Method
+title: JavaScript 中 Math 函式 Method
 date: 2022-07-18T03:38:11.531Z
 author: Boison
 slug: javascript-math-method
