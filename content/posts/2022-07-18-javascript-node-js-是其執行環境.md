@@ -13,7 +13,7 @@ draft: false
 
 JavaScript 需要存在**直譯器** interpret 程式碼後再執行，因此 Node.js 使用 V8 虛擬機進行直譯（一個由 Google 開發的開源 JavaScript 引擎）
 
-※ Chrome 和 Node.js 都是用 V8 在執行 JavaScript。
+※ Chrome 和 Node.js 都是用 V8 在執行 JavaScript
 
 > **Node.js 是 JavaScript 的 Runtime 執行環境，讓其能脫離瀏覽器的環境運行程式碼**
 
