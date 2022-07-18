@@ -43,7 +43,7 @@ JRE 是個執行環境，JRE 只能執行不能編譯！也就是說如果你只
 
 ## 3. JDK 是 Java 的開發環境
 
-JDK 是整個 Java 的核心，包括了Java 執行環境 JVM（Java Runtime Envirnment），一堆Java 工具（javac/java/jdb 等）和 Java 基礎的類庫（即 Java API ）。
+JDK 是整個 Java 的核心，包括了 Java 執行環境 JVM（Java Runtime Envirnment），一堆Java 工具（javac/java/jdb 等）和 Java 基礎的類庫（即 Java API ）。
 
 JDK （Java Development Kit）是個開發環境，編寫 Java 程序的時候需要 JDK，而運行 Java 程序的時候就需要 JRE，而 JDK 裏面已經包含了 JRE，因此只要安裝了 JDK，就可以編輯 Java 程序，也可以正常運行 Java 程序。
 
