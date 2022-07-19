@@ -22,7 +22,7 @@ async/await 是 ES7 的寫法，可以讓非同步 call back 寫法看起來像�
 
      * 當 async function 回傳一個值，該 Promise 狀態會是 resolved 且帶有該回傳值
 
-       當 async function 拋出一個例外或某個值，該 Promise 狀態會是 rejected 且帶有該拋出的值
+     * 當 async function 拋出一個例外或某個值，該 Promise 狀態會是 rejected 且帶有該拋出的值
 
 2. **await**
 
