@@ -13,17 +13,17 @@ draft: false
 1. **Web Server**
 
    * 主要工作根據瀏覽器發送的請求，回傳靜態的網頁檔案（HTML pages、檔案、圖片、影片）
-   * 常見的 Web Server
+   * **常見的 Web Server**
      * 有 Apache、Ngnix
 
 2. **Application Server**
 
    * 但是當使用者需要個人化結果時，又必須使用 Application Server 中的業務邏輯，此時由 Web Server 跟 Application Server
-   * Web Server 和 Application Server 溝通的協定
+   * **Web Server 和 Application Server 溝通的協定**
      * 是採用 HTTP 協定，使用者 Client 理論上只能透過 Web Server 與 Application Server 做溝通
-   * Web Server 和 Database Server 溝通的協定
+   * **Web Server 和 Database Server 溝通的協定**
      * 例如 Common Gateway Interface、Java 的 Servlet，Python 的 WSGI 和 Ruby 的 Rack 2 等
-   * 常見的 Application Server
+   * **常見的 Application Server**
      * 透過 Node.js、Golang 這類程式語言起的 Web Server 通常會被稱為 Application Server，如 Express
 
 3. **Database Server**
