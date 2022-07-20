@@ -1,5 +1,5 @@
 ---
-title: 網頁在 Client-Server 架構下的原理
+title: 網頁在 Client-Server 架構下的設計
 date: 2022-07-20T09:27:15.206Z
 author: Boison
 slug: Client-Server
