@@ -8,7 +8,7 @@ tags:
   - Database
 draft: false
 ---
-整個網站主要會在三種 Server 交叉運作組成
+一個常見網站主要會由三種 Server 交叉運作組成
 
 1. **Web Server**
 
