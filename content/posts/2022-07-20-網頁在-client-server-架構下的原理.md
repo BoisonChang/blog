@@ -12,7 +12,7 @@ draft: false
 
 1. **Web Server**
 
-   * 主要工作根據瀏覽器發送的請求，回傳靜態的網頁檔案（HTML pages、檔案、圖片、影片）
+   * 主要工作根據瀏覽器 Client 發送的請求，回傳靜態的網頁檔案（HTML pages、檔案、圖片、影片）
    * 隨時監聽有沒有任何瀏覽器對自己發送 request，有的話該回應什麼樣的 response
    * 若在電腦(指主機)上執行 apache，它會在電腦上開一個連接埠為 80，那別人 (指 client ) 就可以透過 IP 來連接到你的電腦
    * **常見的 Web Server**
