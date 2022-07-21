@@ -31,7 +31,7 @@ draft: false
 
 3. **Database Server**
 
-   * Application Server 收到  Web Server 的請求在程式內處理後 (業務/商業邏輯) 向  Database Server 發送需求
+   * Application Server 收到  Web Server 的請求在後端撰寫的程式內處理後 (業務/商業邏輯) 向  Database Server 發送需求
 
 ※ 註：
 
