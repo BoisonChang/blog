@@ -34,6 +34,8 @@ draft: false
 
    * Application Server 收到  Web Server 的請求在後端撰寫的程式內處理後 (業務/商業邏輯) 向  Database Server 發送需求
    * 隨時監聽 Application Server 有沒有對自己發送 request，有的話該回應什麼樣的 response
+
+
 ※ 註：
 
 * Web Server、Application Server、Database Server  可能被放在同一台電腦上或者不同台，在概念上我們也把這台電腦叫做 Server
