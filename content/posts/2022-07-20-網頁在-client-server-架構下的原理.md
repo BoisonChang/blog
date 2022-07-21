@@ -21,7 +21,7 @@ draft: false
 2. **Application Server**
 
 
-   * 但是當使用者需要個人化結果時，又必須使用 Application Server 中的業務/商業邏輯，此時由 Web Server 跟 Application Server 發送請求
+   * 但是當使用者 Client 需要個人化結果時，又必須使用 Application Server 中的業務/商業邏輯，此時由 Web Server 跟 Application Server 發送請求
    * **Web Server 和 Application Server 溝通的協定**
      * 是採用 HTTP 協定，使用者 Client 理論上只能透過 Web Server 與 Application Server 做溝通
    * **Application Server 和 Database Server 溝通的協定**
