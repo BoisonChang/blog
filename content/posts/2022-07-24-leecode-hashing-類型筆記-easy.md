@@ -14,8 +14,9 @@ draft: false
 1. ES6: Map 物件，特性是有順序性
 2. Array 轉為 Map 物件/Object 物件計算出現次數
 3. Array 的值轉成可查找的物件 key
-4. 製作 ASCII 值對應的字典
-5. 將 Map 轉成 Array
+4. String 的值轉成可查找的物件 key
+5. 製作 ASCII 值對應的字典
+6. 將 Map 轉成 Array
 
 ---
 
@@ -60,6 +61,7 @@ var isAnagram = function(s, t) {
 > **[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)**
 
 ```javascript
+// BEST TC:O(N) SC:O(N)
 var topKFrequent = function(nums, k) {
     let res = [], map = new Map()
     nums.forEach(n => map.set(n, map.get(n) + 1 || 1))
@@ -75,7 +77,7 @@ var topKFrequent = function(nums, k) {
 
 ## 三、Array 的值轉成可查找的物件 key
 
-> [1. Two Sum](https://leetcode.com/problems/two-sum/)
+> **[1. Two Sum](https://leetcode.com/problems/two-sum/)**
 
 ```javascript
 // BEST TC:O(N) SC:O(N)
@@ -103,7 +105,48 @@ i=2,target=11,nums[2]=4,diff=7,lookup={3:0, 7:1} return [1,2]
 
 ---
 
-## 四、製作 a-z 的 ASCII 值對應的字典
+## 四、String 的值轉成可查找的物件 key
+
+> **[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)**[ ](https://leetcode.com/problems/group-anagrams/)
+
+```javascript
+// BEST/EASY TC:O(N) SC:O(N)
+var groupAnagrams = function(strs) {
+  let hashTable = {}, str = ''
+  for (var i = 0; i < strs.length; i++) {
+    str = strs[i].split('').sort().join('')
+    if (!hashTable[str]) hashTable[str] = []
+    hashTable[str].push(strs[i])
+  }
+  return Object.values(hashTable)
+}
+
+/*
+let strs = "Hello World"
+let hashTable = {}, str = ''
+for (var i = 0; i < strs.length; i++) {
+  str = strs[i].split('').sort().join('')
+  if (!hashTable[str]) hashTable[str] = []
+  hashTable[str].push(strs[i])
+}
+hashTable 
+console.log(hashTable)
+
+" ": [' ']
+H: ['H']
+W: ['W']
+d: ['d']
+e: ['e']
+l: (3) ['l', 'l', 'l']
+o: (2) ['o', 'o']
+r: ['r']
+
+*/
+```
+
+---
+
+## 五、製作 a-z 的 ASCII 值對應的字典
 
 > **[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)**
 
@@ -141,7 +184,7 @@ var isAnagram = function(s, t) {
 }
 ```
 
-> [49. Group Anagrams ](https://leetcode.com/problems/group-anagrams/)
+> **[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)**[ ](https://leetcode.com/problems/group-anagrams/)
 
 ```javascript
 // BEST TC:O(N) SC:O(1)
@@ -203,7 +246,7 @@ shuffle('nya')
 
 ---
 
-## 五、將 Map 轉成 Array
+## 六、將 Map 轉成 Array
 
 > **[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)**
 
