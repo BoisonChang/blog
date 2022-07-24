@@ -19,7 +19,7 @@ draft: false
 6. 取負法: 取負法可以直接對陣列本身做註記找出連續數列中缺失的數字
 7. slice: slice 可以用來對陣列做一維轉二維的內容擷取的處理
 
-- - -
+---
 
 ## 一﹑應用 Set 之問題
 
@@ -68,7 +68,61 @@ var singleNumber = function(nums) {
 }
 ```
 
-- - -
+>  [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/solution/)
+
+```javascript
+// GOOD&BEST
+var longestConsecutive = function(nums) {
+   let max = 0
+   nums = new Set(nums)
+   for (let num of nums) {
+      let big = num
+      let small = num
+      while (nums.delete(big + 1)) big++
+      while (nums.delete(small - 1)) small--
+      const diff = big - small + 1
+      if (max < diff) max = diff
+   }
+   return max
+}
+
+longestConsecutive([2, 1, 5, 0,-3, 3, -2])
+
+/*
+big 和 small 每次同時記錄起始位置
+一個往上走，一個往下走，最後紀錄兩者差距
+
+
+[-3, -2, 0, 1, 2, 3, 5]
+[0, 1, 2, 3]
+4
+
+[-3, -2, 0, 1, 2, 3, 5]
+big=-3,  small=-3,  max=0
+[-3, 0, 1, 2, 3, 5]
+big=-2,  small=-3,  max=0
+[-3, 0, 1, 2, 3, 5]
+big=-2,  small=-3,  max=0,    diff=1
+[-3, 0, 1, 2, 3, 5]
+big=-2,  small=-3,  max=1,    diff=1
+[-3, 0, 1, 3, 2, 5]
+big=0,   small=0,   max=1,    diff=1
+[-3, 0, 3, 2, 5] ←
+big=1,   small=0,   max=1,    diff=1
+[-3, 0, 3, 5] ←
+big=2,   small=0,   max=1,    diff=1
+[-3, 0, 5] ←
+big=3,   small=0,   max=1,    diff=1
+[-3, 0, 5]
+big=3,   small=0,   max=1,    diff=4
+[-3, 0, 5]
+big=3,   small=0,   max=4,    diff=4
+[-3, 0, 5]
+big=5,   small=5,   max=4,    diff=1
+*/
+```
+
+---
 
 ## 二、應用 for 代替 forEach 之問題
 
@@ -104,13 +158,13 @@ var findDisappearedNumbers = function(nums) {
 }
 ```
 
-- - -
+---
 
 ## 三、應用 XOR 之問題
 
 目前不太知道怎樣理解最正確，暫時理解為同樣的數字碰撞會消失，就像是打泡泡遊戲同樣顏色泡泡碰撞會消失最後留下單獨的數字。
 
-![](https://miro.medium.com/max/700/1*VlmrccsF58VKbyi68LbGkA.png)
+![](https://miro.medium.com/max/700/1\*VlmrccsF58VKbyi68LbGkA.png)
 圖片來源: [XOR 位元運算子](https://medium.com/@hyWang/xor-%E4%BD%8D%E5%85%83%E9%81%8B%E7%AE%97%E5%AD%90-1c25b4ae15fb)
 
 > [136.Single Number](https://leetcode.com/problems/single-number/)
@@ -126,7 +180,7 @@ var singleNumber = function(nums) {
 }
 ```
 
-- - -
+---
 
 ## 四、應用 indexOf & lastIndexOf  之問題
 
@@ -155,7 +209,7 @@ var singleNumber = function(nums) {
 }
 ```
 
-- - -
+---
 
 ## 五、應用陣列加總之問題
 
@@ -190,7 +244,7 @@ var singleNumber = function(nums) {
 }
 ```
 
-- - -
+---
 
 ## 六、應用取負法之問題
 
@@ -226,7 +280,7 @@ var findDisappearedNumbers = function(nums) {
 }
 ```
 
-- - -
+---
 
 ## 七、應用 slice 之問題
 
