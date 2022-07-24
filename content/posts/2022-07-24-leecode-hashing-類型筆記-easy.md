@@ -12,9 +12,9 @@ draft: false
 以下先將做題過程常用到的方法列出，在依序對應不同題目解法:
 
 1. ES6: Map 物件，特性是有順序性
-2. Array 轉為 Map 物件/Object 物件計算出現次數
-3. Array 的值轉成可查找的物件 key
-4. String 的值轉成可查找的物件 key
+2. Array 的值轉成可查找的物件 key
+3. String 轉為計算出現次數的物件
+4. String 轉為存放原始內容的物件
 5. 製作 ASCII 值對應的字典
 6. 將 Map 轉成 Array
 
@@ -38,7 +38,35 @@ draft: false
 
 ---
 
-## 二、Array 轉為 Map 物件/Object 物件計算出現次數
+## 二、Array 的值轉成可查找的物件 key
+
+> **[1. Two Sum](https://leetcode.com/problems/two-sum/)**
+
+```javascript
+// BEST TC:O(N) SC:O(N)
+var twoSum = function(nums, target) {
+    let lookup = {}
+    for(let i = 0; i < nums.length; i++) {
+        let diff = target - nums[i]
+        if(lookup[diff] >= 0) return [lookup[diff], i]
+        lookup[nums[i]] = i
+    }
+}
+
+/*
+twoSum([2,7,11,15], 9)
+i=0,target=9,nums[0]=2,diff=7,lookup={2:0}
+i=1,target=9,nums[0]=7,diff=2,lookup={2:0} return [0,1]
+
+
+twoSum([3,7,4,3,6], 11)
+i=0,target=11,nums[0]=3,diff=8,lookup={3:0}
+i=1,target=11,nums[1]=7,diff=4,lookup={3:0, 7:1}
+i=2,target=11,nums[2]=4,diff=7,lookup={3:0, 7:1} return [1,2]
+*/
+```
+
+## 三、String 轉為計算出現次數的物件
 
 > **[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)**
 
@@ -75,37 +103,7 @@ var topKFrequent = function(nums, k) {
 
 ---
 
-## 三、Array 的值轉成可查找的物件 key
-
-> **[1. Two Sum](https://leetcode.com/problems/two-sum/)**
-
-```javascript
-// BEST TC:O(N) SC:O(N)
-var twoSum = function(nums, target) {
-    let lookup = {}
-    for(let i = 0; i < nums.length; i++) {
-        let diff = target - nums[i]
-        if(lookup[diff] >= 0) return [lookup[diff], i]
-        lookup[nums[i]] = i
-    }
-}
-
-/*
-twoSum([2,7,11,15], 9)
-i=0,target=9,nums[0]=2,diff=7,lookup={2:0}
-i=1,target=9,nums[0]=7,diff=2,lookup={2:0} return [0,1]
-
-
-twoSum([3,7,4,3,6], 11)
-i=0,target=11,nums[0]=3,diff=8,lookup={3:0}
-i=1,target=11,nums[1]=7,diff=4,lookup={3:0, 7:1}
-i=2,target=11,nums[2]=4,diff=7,lookup={3:0, 7:1} return [1,2]
-*/
-```
-
----
-
-## 四、String 的值轉成可查找的物件 key
+## 四、String 轉為存放原始內容的物件
 
 > **[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)**[ ](https://leetcode.com/problems/group-anagrams/)
 
