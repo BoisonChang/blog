@@ -167,8 +167,8 @@ var isAnagram = function(s, t) {
 const CHARS_NUMBER = 256
 var isAnagram = function(s, t) {
     if (s.length !== t.length) return false
-    const charCount1 = new Array(CHARS_NUMBER).fill(0);
-    const charCount2 = new Array(CHARS_NUMBER).fill(0);
+    const charCount1 = new Array(CHARS_NUMBER).fill(0)
+    const charCount2 = new Array(CHARS_NUMBER).fill(0)
     for (let i = 0; i < s.length; i++) {
       const code1 = s.charCodeAt(i)
       const code2 = t.charCodeAt(i)
@@ -176,7 +176,7 @@ var isAnagram = function(s, t) {
       charCount2[code2]++
     }
     for (let i = 0; i < charCount1.length; i++) {
-    	if (charCount1[i] !== charCount2[i]) return false;
+    	if (charCount1[i] !== charCount2[i]) return false
     }
     return true
 }
