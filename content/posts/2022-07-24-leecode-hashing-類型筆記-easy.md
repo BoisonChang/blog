@@ -12,7 +12,7 @@ draft: false
 以下先將做題過程常用到的方法列出，在依序對應不同題目解法:
 
 1. ES6: Map 物件，特性是有順序性
-2. Array 的值轉成可查找的物件 key
+2. 數字轉為可查找的物件 key
 3. String 轉為計算出現次數的物件
 4. String 轉為存放原始內容的物件
 5. 製作 ASCII 值對應的字典
@@ -38,7 +38,7 @@ draft: false
 
 ---
 
-## 二、Array 的值轉成可查找的物件 key
+## 二、數字轉成可查找的物件 key
 
 > **[1. Two Sum](https://leetcode.com/problems/two-sum/)**
 
@@ -65,6 +65,8 @@ i=1,target=11,nums[1]=7,diff=4,lookup={3:0, 7:1}
 i=2,target=11,nums[2]=4,diff=7,lookup={3:0, 7:1} return [1,2]
 */
 ```
+
+---
 
 ## 三、String 轉為計算出現次數的物件
 
