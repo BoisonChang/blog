@@ -15,7 +15,7 @@ draft: false
 2. 陣列轉為可查找值儲存位置的物件
 3. String 轉為計算出現次數的物件
 4. String 轉為存放原始內容的物件
-5. 製作 ASCII 值對應的字典
+5. 製作 ASCII 值對應的物件
 6. 將 Map 轉成 Array
 
 ---
@@ -179,7 +179,7 @@ console.log(hashTable)
 
 ---
 
-## 五、製作 a-z 的 ASCII 值對應的字典
+## 五、製作 a-z 的 ASCII 值對應的物件
 
 * **法1**
 
