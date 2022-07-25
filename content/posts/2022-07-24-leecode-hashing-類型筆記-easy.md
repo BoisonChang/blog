@@ -40,6 +40,8 @@ draft: false
 
 ## 二、數字轉成可查找的物件 key
 
+直接把數字本身當作可查找的 key，把原本在陣列中的位置當作 value 存起來。
+
 > **[1. Two Sum](https://leetcode.com/problems/two-sum/)**
 
 ```javascript
@@ -70,6 +72,8 @@ i=2,target=11,nums[2]=4,diff=7,lookup={3:0, 7:1} return [1,2]
 
 ## 三、String 轉為計算出現次數的物件
 
+把字串/陣列中每個字，統計每個字出現的次數當成值做成可查找的字典。
+
 > **[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)**
 
 ```javascript
@@ -86,6 +90,21 @@ var isAnagram = function(s, t) {
     }
     return true
 }
+
+/*
+const map = new Map()
+'apple'.split('').forEach((c)=>{
+    map[c] =  map[c] + 1 || 1
+}) 
+map 
+
+Map(0) {a: 1, p: 2, l: 1, e: 1, size: 0}
+a: 1
+e: 1
+l: 1
+p: 2
+
+*/
 ```
 
 > **[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)**
@@ -101,11 +120,25 @@ var topKFrequent = function(nums, k) {
     }
     return res
 }
+
+/*
+nums = ['a', 'c', 'v']
+let res = []
+nums.forEach(n => map.set(n, map.get(n) + 1 || 1))
+map
+
+Map(3) {'a' => 2, 'c' => 2, 'v' => 2}
+0: {"a" => 2}
+1: {"c" => 2}
+2: {"v" => 2}
+*/
 ```
 
 ---
 
 ## 四、String 轉為存放原始內容的物件
+
+把字串中每個字轉成可查找的字典，並開一個陣列每出現過一次就丟進去一次。
 
 > **[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)**[ ](https://leetcode.com/problems/group-anagrams/)
 
@@ -133,13 +166,13 @@ hashTable
 console.log(hashTable)
 
 " ": [' ']
-H: ['H']
-W: ['W']
-d: ['d']
-e: ['e']
-l: (3) ['l', 'l', 'l']
-o: (2) ['o', 'o']
-r: ['r']
+ H : ['H']
+ W : ['W']
+ d : ['d']
+ e : ['e']
+ l : ['l', 'l', 'l']
+ o : ['o', 'o']
+ r : ['r']
 
 */
 ```
@@ -147,6 +180,14 @@ r: ['r']
 ---
 
 ## 五、製作 a-z 的 ASCII 值對應的字典
+
+* **法1**
+
+  * 事先開好一個長度為所有可能出現元素長度的陣列，並將字轉成 ASCII 當成 key 做成存在陣列。
+
+* **法2**
+
+  * 將出現的字用事先開好一個長度為所有可能出現元素長度的陣列並組合成一個金鑰，之後用這個金鑰去存在一個物件統計出現次數。
 
 > **[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)**
 
@@ -163,6 +204,17 @@ var isAnagram = function(s, t) {
     }
     return alpha.every(i => i === 0)
 } 
+
+/*
+let s = 'elephant'
+let alpha = new Array(26).fill(0)
+for (let i = 0; i < s.length; i++) {
+    alpha[s.charCodeAt(i) - 97]++
+}
+alpha
+(26) [1, 0, 0, 0, 2, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+*/
+
 
 // 就所有的 ASCII 
 // BEST TC:O(N) SC:O(1)
@@ -182,6 +234,18 @@ var isAnagram = function(s, t) {
     }
     return true
 }
+
+/*
+let s = 'elephant'
+const CHARS_NUMBER = 256
+const charCount1 = new Array(CHARS_NUMBER).fill(0)
+for (let i = 0; i < s.length; i++) {
+  const code1 = s.charCodeAt(i)
+  charCount1[code1]++
+}
+charCount1
+(256) [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, …]
+*/
 ```
 
 > **[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)**[ ](https://leetcode.com/problems/group-anagrams/)
@@ -248,6 +312,8 @@ shuffle('nya')
 
 ## 六、將 Map 轉成 Array
 
+將 Map 轉成二維陣列，將 key 存在 array\[0\] 將 value 存在 array\[1\]
+
 > **[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)**
 
 ```javascript
@@ -261,4 +327,17 @@ var topKFrequent = function(nums, k) {
     }
     return res
 }
+
+/*
+let res = [], nums = [1,1,1,1,1,1,1,1,12,2,3], map = new Map()
+nums.forEach(n => map.set(n, map.get(n) + 1 || 1))
+let sortedArray = [...map.entries()].sort((a, b) => b[1] - a[1])
+sortedArray
+
+[Array(2), Array(2), Array(2), Array(2)]
+0: [1, 8]
+1: [12, 1]
+2: [2, 1]
+3: [3, 1]
+*/
 ```
