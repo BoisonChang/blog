@@ -16,7 +16,7 @@ draft: false
 
 ---
 
-## 1. Two Pointer 雙指標: 兩種類型
+## 1. Two Pointer 的兩種類型
 
 1. **左右指標 (反向指標)**
 
@@ -36,7 +36,7 @@ draft: false
 
 ---
 
-## 2. Two Pointer 雙指標: 常見題目
+## 2. Two Pointer 常見題目
 
 * **Easy**
 
