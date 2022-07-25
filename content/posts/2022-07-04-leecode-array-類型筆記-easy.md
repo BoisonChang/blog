@@ -21,7 +21,7 @@ draft: false
 8. 對陣列中的數字排序
 9. 判斷是否不是數字
 
----
+- - -
 
 ## 一﹑應用 Set 之問題
 
@@ -73,7 +73,7 @@ var singleNumber = function(nums) {
 >  **[128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/solution/)**
 
 ```javascript
-// GOOD&BEST
+// GOOD&BEST TC:O(N) SC:O(N) 
 var longestConsecutive = function(nums) {
    let max = 0
    nums = new Set(nums)
@@ -124,7 +124,7 @@ big=5,   small=5,   max=4,    diff=1
 */
 ```
 
----
+- - -
 
 ## 二、應用 for 代替 forEach 之問題
 
@@ -160,13 +160,13 @@ var findDisappearedNumbers = function(nums) {
 }
 ```
 
----
+- - -
 
 ## 三、應用 XOR 之問題
 
 目前不太知道怎樣理解最正確，暫時理解為同樣的數字碰撞會消失，就像是打泡泡遊戲同樣顏色泡泡碰撞會消失最後留下單獨的數字。
 
-![](https://miro.medium.com/max/700/1\*VlmrccsF58VKbyi68LbGkA.png)
+![](https://miro.medium.com/max/700/1*VlmrccsF58VKbyi68LbGkA.png)
 圖片來源: [XOR 位元運算子](https://medium.com/@hyWang/xor-%E4%BD%8D%E5%85%83%E9%81%8B%E7%AE%97%E5%AD%90-1c25b4ae15fb)
 
 > **[136.Single Number](https://leetcode.com/problems/single-number/)**
@@ -182,7 +182,7 @@ var singleNumber = function(nums) {
 }
 ```
 
----
+- - -
 
 ## 四、應用 indexOf & lastIndexOf  之問題
 
@@ -210,7 +210,7 @@ var singleNumber = function(nums) {
 }
 ```
 
----
+- - -
 
 ## 五、應用陣列加總之問題
 
@@ -245,7 +245,7 @@ var singleNumber = function(nums) {
 }
 ```
 
----
+- - -
 
 ## 六、應用取負法之問題
 
@@ -281,7 +281,7 @@ var findDisappearedNumbers = function(nums) {
 }
 ```
 
----
+- - -
 
 ## 七、應用 slice 之問題
 
@@ -303,7 +303,7 @@ var construct2DArray = function(original, m, n) {
 }
 ```
 
----
+- - -
 
 ## 八、對陣列中的數字排序
 
@@ -322,7 +322,7 @@ var topKFrequent = function(nums, k) {
 }
 ```
 
----
+- - -
 
 ## 九、判斷是否不是數字
 
@@ -385,4 +385,4 @@ c='e',mulStack=[   ],strStack=[        ],num=0,res='aabccccbccccbcccce'
 */
 ```
 
-> 參考資料：[\[第三週\] JavaScript - 把你對 isNaN 的不滿都說出來](https://yakimhsu.com/project/project_w3_Javasciprt_NaN.html)
+> 參考資料：[\[第三週] JavaScript - 把你對 isNaN 的不滿都說出來](https://yakimhsu.com/project/project_w3_Javasciprt_NaN.html)
