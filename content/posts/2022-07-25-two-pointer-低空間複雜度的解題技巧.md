@@ -26,11 +26,11 @@ draft: false
 
    * 指標會有快慢之分，都會一起從頭/從尾向右/左移動，類似 Quick Sort 的 Lomuto
 
-![](https://miro.medium.com/max/700/1\*f6HkCSZz_JxH21iS6wmb3w.gif)
+![](https://miro.medium.com/max/700/1*f6HkCSZz_JxH21iS6wmb3w.gif)
 
 左右指標 (反向指標), 圖片來源: [Count the Number of Triplets in… ](https://ganeshpr227.medium.com/how-to-count-the-number-of-triplets-in-an-array-with-sum-within-the-given-range-a-b-ad9b853095ff)
 
-![](https://miro.medium.com/max/1200/1\*YWjJuLuXJULb-2IyYhqnXQ.gif)
+![](https://miro.medium.com/max/1200/1*YWjJuLuXJULb-2IyYhqnXQ.gif)
 
 快慢指標 (同向指標), 圖片來源: [Basics of Two Pointers Technique](https://cdragon.medium.com/basics-of-two-pointers-technique-e1a0df57ba7e)
 
