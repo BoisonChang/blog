@@ -103,7 +103,6 @@ a: 1
 e: 1
 l: 1
 p: 2
-
 */
 ```
 
@@ -173,7 +172,6 @@ console.log(hashTable)
  l : ['l', 'l', 'l']
  o : ['o', 'o']
  r : ['r']
-
 */
 ```
 
@@ -335,9 +333,9 @@ let sortedArray = [...map.entries()].sort((a, b) => b[1] - a[1])
 sortedArray
 
 [Array(2), Array(2), Array(2), Array(2)]
-0: [1, 8]
+0: [1,  8]
 1: [12, 1]
-2: [2, 1]
-3: [3, 1]
+2: [2,  1]
+3: [3,  1]
 */
 ```
