@@ -6,6 +6,7 @@ slug: ds-hashtable
 tags:
   - DataStructure
   - HashTable
+  - Hashing
 draft: false
 ---
 > **雜湊表很適合來存放不確定數量大小的資料，查找也很快速 (時間複雜度為 O(1))**
