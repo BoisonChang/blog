@@ -1,5 +1,5 @@
 ---
-title: "LeeCode: Hashing 類型筆記 (Easy)"
+title: "LeeCode: Hashing 類型筆記（Easy）"
 date: 2022-07-24T15:33:27.359Z
 author: Boison
 slug: leetcode-hashing-note-easy
