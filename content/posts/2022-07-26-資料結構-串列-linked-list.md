@@ -46,7 +46,7 @@ draft: false
 
 ## 2. Linked List 實作
 
-> **簡單用 JavaScript 實作模擬一個 Linked List**
+> **簡單用 JavaScript 實作模擬一個 Node/Linked List**
 
 ```javascript
 class ListNode {
