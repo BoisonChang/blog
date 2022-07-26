@@ -16,13 +16,13 @@ draft: false
 
 和熟悉的陣列不同的是，Linked List 在記憶體存放順序並不是連續的，所以沒有 index 的概念，如果需要查找資料，不能像陣列一樣直接用 array\[index\] 去找，而一定要從頭開始一個一個找。
 
-![](https://miro.medium.com/max/1360/0\*LpvhMAqDDjKCDMUY.png =680x353)
+![](https://static.studytonight.com/data-structures/images/array-vs-linked-list.png)
 
 圖片來源：[Difference between Array and Linked List](https://www.studytonight.com/data-structures/linked-list-vs-array)
 
 ---
 
-## 1. **Linked List v.s. Array**
+## 1. Linked List v.s. Array
 
 > **Linked List在刪除和新增資料時，比陣列時間複雜度還要低**
 
