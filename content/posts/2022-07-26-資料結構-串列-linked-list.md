@@ -48,7 +48,7 @@ draft: false
 
 ## 2. Linked List 實作
 
-> **簡單用 JavaScript 實作模擬多個 Node組合成一個Linked List**
+> **簡單用 JavaScript 實作模擬多個 Node 組合成一個 Linked List**
 
 ```javascript
 class ListNode {
