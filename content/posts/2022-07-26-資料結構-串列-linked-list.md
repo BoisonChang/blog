@@ -99,7 +99,7 @@ class LinkedList {
 }
 ```
 
-![](https://miro.medium.com/max/1400/1\*v9uMEKfoRPHe1KUlLRH0RA.gif)
+![](https://miro.medium.com/max/1400/1*v9uMEKfoRPHe1KUlLRH0RA.gif)
 
 圖片來源: [What Are Linked Lists?](https://medium.com/@avinash.sarguru/what-are-linked-lists-ccdc19694b69)
 
