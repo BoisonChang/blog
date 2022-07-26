@@ -75,7 +75,7 @@ ListNode {
 
 ## 3. Linked List 的 Method
 
-> **由於資料結構特性，適合 Linked List 操作的一些方法**
+> **由於資料結構特性， Linked List 一般會有的一些方法**
 
 以下只列出功能，有興趣看程式碼用 JavaScript 實作請見參考資料。
 
