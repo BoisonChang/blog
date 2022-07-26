@@ -23,10 +23,14 @@ draft: false
 
 ## 1. Linked List v.s. Array
 
-> **Linked List在刪除和新增資料時，比陣列時間複雜度還要低**
+> **Linked List在刪除和新增資料時，比 Array 時間複雜度還要低**
 
-* 陣列因為每次刪除/新增都需要把陣列的其他元素「往後排」或是「往前補」，所以時間複雜度是 O(n) 
-* Linked List 只要透過斷掉鏈結、重新接上的方式，便可以刪除/新增一筆資料，時間複雜度是 O(1)。
+* Array
+
+  * Array 因為每次刪除/新增都需要把陣列的其他元素「往後排」或是「往前補」，所以時間複雜度是 O(n) 
+* Linked List 
+
+  * Linked List 只要透過斷掉鏈結、重新接上的方式，便可以刪除/新增一筆資料，時間複雜度是 O(1)
 
 |         | **Linked List**                           | **Array**               |
 | ------- | ----------------------------------------- | ----------------------- |
@@ -38,7 +42,7 @@ draft: false
 |         | 2. 需要頻繁增刪資料時                              | 2. 不需要頻繁增刪資料時           |
 |         | 3. 不需要頻繁查詢並取出資料時                          | 3. 資料的數量不會有太大變更時        |
 
-資料來源: [\[資料結構] Array and Linked List](https://pjchender.dev/dsa/dsa-array-linked-list/)
+資料來源: \[[資料結構] Array and Linked List](https://pjchender.dev/dsa/dsa-array-linked-list/)
 
 - - -
 
@@ -191,6 +195,6 @@ l2.next = mt(l1, l2.next)                   // (1 -> 2) (3 -> 4)
 
 > 資料來源
 >
-> 1. [[資料結構] Array and Linked List](https://pjchender.dev/dsa/dsa-array-linked-list/)
+> 1. [\[資料結構] Array and Linked List](https://pjchender.dev/dsa/dsa-array-linked-list/)
 > 2. [來了解鏈結串列(Linked List)並實作它吧!](https://ithelp.ithome.com.tw/articles/10217020?sc=rss.iron)
 > 3. [JavaScript 學演算法（五）- 鏈結串列 Linked list](https://chupai.github.io/posts/200427_ds_linkedlist/)
