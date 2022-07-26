@@ -191,6 +191,6 @@ l2.next = mt(l1, l2.next)                   // (1 -> 2) (3 -> 4)
 
 > 資料來源
 >
-> 1. [\[資料結構] Array and Linked List](https://pjchender.dev/dsa/dsa-array-linked-list/)
+> 1. [[資料結構] Array and Linked List](https://pjchender.dev/dsa/dsa-array-linked-list/)
 > 2. [來了解鏈結串列(Linked List)並實作它吧!](https://ithelp.ithome.com.tw/articles/10217020?sc=rss.iron)
 > 3. [JavaScript 學演算法（五）- 鏈結串列 Linked list](https://chupai.github.io/posts/200427_ds_linkedlist/)
