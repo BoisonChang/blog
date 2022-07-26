@@ -129,7 +129,7 @@ class LinkedList {
 
 ## 5. 常見題目
 
-> [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+> **[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)**
 
 ```javascript
 /**
