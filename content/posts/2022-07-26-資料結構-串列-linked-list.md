@@ -38,7 +38,7 @@ draft: false
 |         | 2. 需要頻繁增刪資料時                              | 2. 不需要頻繁增刪資料時           |
 |         | 3. 不需要頻繁查詢並取出資料時                          | 3. 資料的數量不會有太大變更時        |
 
-資料來源: [\[資料結構] Array and Linked List](https://pjchender.dev/dsa/dsa-array-linked-list/)
+資料來源: [[資料結構] Array and Linked List](https://pjchender.dev/dsa/dsa-array-linked-list/)
 
 - - -
 
