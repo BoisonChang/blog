@@ -2,7 +2,7 @@
 title: "資料結構: 串列 Linked List"
 date: 2022-07-26T03:31:24.956Z
 author: Boison
-slug: ds-linked-list
+slug: dsa-linked-list
 tags:
   - DataStructure
   - LinkedList
