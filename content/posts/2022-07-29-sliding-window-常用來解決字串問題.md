@@ -28,7 +28,7 @@ Sliding Window 可以算是廣義的左右指標中的一種，但是在某些�
 
 3. 不管是搜索的範圍或最終答案，一定都是 continuous 的資料，continuous 代表資料可以被依序存取
 
-> **Sliding Window 常用來解決的問題**
+> **Sliding Window 常見題目**
 
 * [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
