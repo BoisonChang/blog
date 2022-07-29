@@ -14,7 +14,7 @@ Sliding Window 可以算是廣義的左右指標中的一種，但是在某些�
 
 一般來說若給定的資料是線性結構，例如 array, linked list 或 string 等可以循序存取 (sequential access)，而題目要求找出滿足特定條件的最長/最短的字串、陣列或一個目標值，常可以使用 Sliding Window。
 
-![](https://miro.medium.com/max/1400/1\*HN084lMD15SWjH6epVeSAg.gif)
+![](https://miro.medium.com/max/1400/1*HN084lMD15SWjH6epVeSAg.gif)
 
 圖片來源: [Interview Guide Series — Sliding Window](https://medium.com/master-the-coding-interview-lazy-edition/interview-guide-series-sliding-window-4e6670e079e6)
 
