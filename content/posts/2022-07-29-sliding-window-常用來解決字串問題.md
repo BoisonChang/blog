@@ -30,7 +30,6 @@ Sliding Window 可以算是廣義的左右指標中的一種，但是在某些�
 
 > **Sliding Window 常見題目**
 
-* [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 * [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
@@ -58,6 +57,8 @@ end=2,set=[b,s],length=2
 ```
 
 * [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+
+* [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 
 * [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)
 
