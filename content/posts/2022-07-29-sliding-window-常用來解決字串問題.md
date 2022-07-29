@@ -12,6 +12,8 @@ draft: false
 
 Sliding Window 可以算是廣義的左右指標中的一種，但是在某些情況下，Sliding Window 可以只使用一個 point 與 一個 window size 來實作，並不用真正使用到兩個指標。
 
+> **[左右指標 (反向指標) 可見 Two Pointer: 低空間複雜度的解題技巧一文](https://boison.tw/2022/07/algorithms-two-pointer/)**
+
 一般來說若給定的資料是線性結構，例如 array, linked list 或 string 等可以循序存取 (sequential access)，而題目要求找出滿足特定條件的最長/最短的字串、陣列或一個目標值，常可以使用 Sliding Window。
 
 ![](https://miro.medium.com/max/1400/1*HN084lMD15SWjH6epVeSAg.gif)
