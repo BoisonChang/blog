@@ -32,9 +32,32 @@ Sliding Window 可以算是廣義的左右指標中的一種，但是在某些�
 
 * [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
-* [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+* [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
-* [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+```javascript
+// BEST
+function lengthOfLongestSubstring(s) {
+    const set = new Set()
+    let start = 0, length = 0
+    for (let end = 0; end < s.length; end++) {
+        while (set.has(s[end])) set.delete(s[start]), start++
+        set.add(s[end])
+        length = Math.max(length, set.size)
+    }
+    return length
+}
+
+lengthOfLongestSubstring('bbs') // 2
+/*
+end=0,set=[b  ],length=1
+end=1,set=[   ],length=1
+end=1,set=[b  ],length=1
+end=2,set=[b,s],length=1
+end=2,set=[b,s],length=2
+*/
+```
+
+* [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 
 * [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)
 
