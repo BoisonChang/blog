@@ -267,7 +267,7 @@ const scheme = getScheme(HttpPort.Http)
 
 #### V. 特殊型別
 
-* any、never（TS 2.0）
+* **any、never（TS 2.0）**
 
   * any 可以兼容所有的型別
 
@@ -276,7 +276,7 @@ const scheme = getScheme(HttpPort.Http)
   * never 型別很常使用在處理函式的錯誤情況
 
     * 所有型別中都包含 never，never 是所有型別的子型別
-* unknown （TS 3.0）
+* **unknown （TS 3.0）**
 
   * 可以看成是 any 型別的安全版本
   * unknown 和 any 一樣可以接受任何型別賦值
