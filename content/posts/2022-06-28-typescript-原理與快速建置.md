@@ -57,12 +57,12 @@ function sayHello(person: string): string {
 ```javascript
 // 兩種寫法，第一種是<型別>值 (angle-bracket <>)寫法
 let code: any = 123
-let employeeCode = <number> code
+let employeeCode = <number> code // <型別>值 (angle-bracket <>)寫法
 
-// 兩種寫法，第二種則是值 as 型別 (as keyword)寫法
+// 兩種寫法，第二種則是值 as 型別 (as keyword) 寫法
 // 開發 React 專案使用 JSX 語法時只能用第二種
 let code: any = 123
-let employeeCode = code as number
+let employeeCode = code as number // as 型別 (as keyword)寫法
 
 // 例子1
 let obj = {}
