@@ -64,18 +64,18 @@ let employeeCode = <number> code // <型別>值 (angle-bracket <>)寫法
 let code: any = 123
 let employeeCode = code as number // as 型別 (as keyword)寫法
 
-// 例子1
+// 例子 1
 let obj = {}
 obj.age = 18 // error: property 'age' does not exist on `{}`
 obj.name = 'iris' // error: property 'name' does not exist on `{}`
 
-/// 使用介面（Interfaces）來定義物件的型別
+/// 例子 1 解法:使用介面（Interfaces）來定義物件的型別
 interface Foo {
   age: number
   name: string
 }
 
-/// 語法1: 值 as 型別
+/// 例子 1 語法 1: 值 as 型別
 const obj2 = {} as Foo
 obj2.age = 18
 obj2.name = "iris"
@@ -85,7 +85,7 @@ const obj3 = {
   name: "iris"
 } as Foo
 
-/// 語法2: <型別>值
+/// 例子 1 語法 2: <型別>值
 const obj4 = <Foo>{
   age: 18,
   name: "iris"
@@ -95,7 +95,7 @@ console.log("assertions-as", obj2) //{ age: 18, name: 'iris' }
 console.log("assertions-as", obj3) //{ age: 18, name: 'iris' }
 console.log("assertions-<type>", obj4) //{ age: 18, name: 'iris' }
 
-// 例子2
+// 例子 2 解法
 function getLength(something: string | number): number {
     if ((<string>something).length) {
         return (<string>something).length
