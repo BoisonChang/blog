@@ -9,7 +9,6 @@ draft: false
 ---
 本文介紹 TypeScript 基本的寫法和解決的問題，依序介紹 TypeScript 中擴充的型別，最後會分享如何快速建制專案。
 
-
 ## 一、TypeScript 是甚麼
 
 TypeScript (而後簡稱為 TS) 是一個基於 Javascript 的超集合 (superset) 開源語言，可以編譯成純 JS  且可以運行在任何瀏覽器、任何伺服器或任何系統上。
@@ -26,7 +25,6 @@ TypeScript 改善了過去 JS 弱型別語言的缺點，透過 TypeScript 擴�
 
 ## 三、TypeScript 基本用法
 
-
 ### 1. Type Inference (型別推斷)
 
 * 若是沒使用 Type Annotation (型別註記) 在宣告變數時定義型別，TS 會代勞
@@ -39,11 +37,10 @@ TypeScript 改善了過去 JS 弱型別語言的缺點，透過 TypeScript 擴�
 
 ### 3. Type Assertions (型別斷言)
 
-
 * 在賦值時根據需求覆蓋/修改一開始的型別推論 (Type Inference)
 * 型別斷言可能用在接收外部參數，中間過程需要明確指定資料型別的時候
 
-> **Type Annotation (型別註記)**
+>  **Type Annotation (型別註記)**
 
 ```javascript
 // 變數的型別註解
@@ -55,7 +52,7 @@ function sayHello(person: string): string {
 }
 ```
 
-> **Type Assertions (型別斷言)**
+>  **Type Assertions (型別斷言)**
 
 ```javascript
 // 兩種寫法，第一種是<型別>值 (angle-bracket <>)寫法
@@ -92,7 +89,7 @@ const obj3 = {
 const obj4 = <Foo>{
   age: 18,
   name: "iris"
-};
+}
 
 console.log("assertions-as", obj2) //{ age: 18, name: 'iris' }
 console.log("assertions-as", obj3) //{ age: 18, name: 'iris' }
@@ -118,16 +115,17 @@ function getLength(something: string | number): number {
 
 * number、string、boolean、undefined、null、
 * ES6: symbol
+
 #### II. 物件型別(Object Types)
 
 * Function、Array、Object
 * ES6: Class、Class 去 new 出的物件實例 instance 
+
 #### III. void
 
 * 表示不回傳任何值(等於預設回傳 undefined)
 
 ### 2. TypeScript 擴充型別
-
 
 #### I. 列舉(Enum)
 
@@ -191,6 +189,7 @@ let arr:[number, boolean, string] = [3.14, true, "hello"]
 arr[2].substring(1, 4) // ell
 arr[1].substring(1, 4) // 報錯，布林值沒有 substring 方法
 ```
+
 #### III. 介面(Interface)
 
 * 用來約束 Class 的行為，只描述屬性 (Property) 和方法 (Method)
@@ -273,27 +272,19 @@ const scheme = getScheme(HttpPort.Http)
   * any 可以兼容所有的型別
 
     * 遇到 any 型別，TS 就會跳過檢查系統不會進行型別檢查
-
     * 函式沒有回傳值或return 表達式回傳的值之型別為 never
-
   * never 型別很常使用在處理函式的錯誤情況
 
     * 所有型別中都包含 never，never 是所有型別的子型別
-
 * unknown （TS 3.0）
 
   * 可以看成是 any 型別的安全版本
-
   * unknown 和 any 一樣可以接受任何型別賦值
-
   * 但若賦值 unknown 型別給其他型別，除了 unknown 和 any 其他型別都會報錯
-
   * 最大的差異在於預設情況下`允許操作屬性或方法`變成`禁止操作屬性或方法`
-
   * unknown 型別要進行限縮才能使用屬性或方法
 
     1. 型別檢測 (type guard)
-
     2. 型別斷言 (Type Assertions) 
 
 #### VI. 複合型別
