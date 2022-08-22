@@ -27,7 +27,6 @@ tags:
 
    * 切下初始到結束位置的字串元素然後回傳成一個新的字串6
    * String.substring 功能很類似
-
 6. **String.split**
 
    * 找到字串中的某元素，然後將左右兩側分開回傳
@@ -135,6 +134,10 @@ character.concat(['D'])
 
 * Array.prototype.findIndex(item, index, array)
 * 回傳**第一個**符合條件的位置 index，若都找不到則回傳 -1
+* 與 indexOf 差別在於要寫條件式如 
+
+  * array.findIndex(item => item === target)
+  * array.indexOf(target)
 
 ### 2. find()
 
