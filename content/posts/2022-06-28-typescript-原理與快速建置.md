@@ -423,7 +423,9 @@ log2.run("2") // 2
 
 4. npm run dev
 
-> 參考資料
+---
+
+> **參考資料**
 >
 > 1. [Typescript 初心者手札](https://ithelp.ithome.com.tw/users/20120053/ironman/2273)
 > 2. [前端是該來學一下 TypeScript 了](https://ithelp.ithome.com.tw/users/20131472/ironman/4100)
