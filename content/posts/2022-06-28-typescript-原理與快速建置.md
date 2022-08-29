@@ -80,12 +80,13 @@ const obj2 = {} as Foo
 obj2.age = 18
 obj2.name = "iris"
 
+/// 例子 1 語法 2: <型別>值
 const obj3 = {
   age: 18,
   name: "iris"
 } as Foo
 
-/// 例子 1 語法 2: <型別>值
+/// 例子 1 語法 3: <型別>值
 const obj4 = <Foo>{
   age: 18,
   name: "iris"
