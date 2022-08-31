@@ -36,7 +36,7 @@ Redux 就是用來託管全域變數，好處是當你的專案有很多層的 C
 
 ```javascript
 const initState = {
-    todoList: ['第一件事情', '第二件事情'],
+    currentPage: 'WeatherCard',
 }
 
 const todoReducer = (state = initState, action) => {
@@ -57,10 +57,10 @@ export default todoReducer
 * 在 src 下建立 store 資料夾中建立 index.js 負責整合所有的 Reducer
 
 ```javascript
-import { createStore } from 'redux';
-import todoReducer from '../reducer/todolist';
+import { createStore } from 'redux'
+import weatherReducer from '@/redux/weather'
 
-const store = createStore(todoReducer);
+const store = createStore(weatherReducer)
 
 export default store
 ```
@@ -69,13 +69,13 @@ export default store
 
 ```javascript
 import { createStore, combineReducers } from 'redux';
-import todoReducer from '../reducer/todolist';
-import otherReducer from '../reducer/other';
+import waetherReducer from '@/redux/weather'
+import convertReducer from '@/redux/convert'
 
 const rootReducer = combineReducers({
-  todoReducer,
-  otherReducer,
-});
+  waetherReducer,
+  convertReducer,
+})
 
 const store = createStore(rootReducer)
 ```
@@ -167,7 +167,6 @@ export default function SpeedConverter() {
     ...
   )
 }
-
 ```
 
 > **法二：在 react-redux 7.1 的 hooks 版中使用 useSelector**
