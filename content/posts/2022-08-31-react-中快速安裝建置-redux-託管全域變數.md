@@ -140,17 +140,17 @@ root.render(
 
 * 在 Component 中取得 state 
 
-  * **在 redux-react-hook 中**
+  * **法一：在 redux-react-hook 中**
 
     * 提供了 StoreContext、useDispatch 和 useMappedState 來操作 redux 中的 store
 
-  * **在 react-redux 7.1 的 hooks 版**
+  * **法二：在 react-redux 7.1 的 hooks 版**
 
     * 提供了 useSelector()、useDispatch()、useStore() 這 3 個主要方法
 
     * useSelector 中除了能從 store 中拿到 state 以外，還支援深度比較的功能，如果相應的 state 前後沒有改變，就不會去重新的計算
 
-> **在 redux-react-hook** **中使用 useMappedState**
+> **法一：在 redux-react-hook** **中使用 useMappedState**
 
 ```javascript
 import React from "react"
@@ -170,7 +170,7 @@ export default function SpeedConverter() {
 
 ```
 
-> **在 react-redux 7.1 的 hooks 版中使用 useSelector**
+> **法二：在 react-redux 7.1 的 hooks 版中使用 useSelector**
 
 ```javascript
 import React, { useEffect } from 'react'
@@ -206,17 +206,17 @@ export default WeatherThemeSwitch
 
 * 在 Component 中修改 state 
 
-  * **在 redux-react-hook 中**
+  * **法一：在 redux-react-hook 中**
 
     * 提供了 StoreContext、useDispatch 和 useMappedState 來操作 redux 中的 store
 
-  * **在 react-redux 7.1 的 hooks 版**
+  * **法二：在 react-redux 7.1 的 hooks 版**
 
     * 提供了 useSelector()、useDispatch()、useStore() 這 3 個主要方法
 
     * useSelector 中除了能從 store 中拿到 state 以外，還支援深度比較的功能，如果相應的 state 前後沒有改變，就不會去重新的計算
 
-> **在 redux-react-hook** 
+> **法一：在 redux-react-hook** 
 
 * **redux 中新增 convert.ts (名字自訂)**
 
@@ -282,7 +282,7 @@ export default function SpeedConverter() {
 }
 ```
 
-> **在 react-redux 7.1 的 hooks 版中使用 dispatch**
+> **法二：在 react-redux 7.1 的 hooks 版中使用 dispatch**
 
 * 在 src 資料夾下建立 action 資料夾中建立 weather.ts
 
