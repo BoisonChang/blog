@@ -1,5 +1,5 @@
 ---
-title: React 中快速安裝建置 Redux 託付管全域變數
+title: React 中快速安裝建置 Redux 託管全域變數
 date: 2022-08-31T05:35:19.352Z
 author: Boison
 slug: React-Redux-101
