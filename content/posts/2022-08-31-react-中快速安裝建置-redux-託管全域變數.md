@@ -1,12 +1,12 @@
 ---
-title: React 中快速安裝建置 Redux 託管全域變數
+title: React 中快速安裝建置 Redux 託付管全域變數
 date: 2022-08-31T05:35:19.352Z
 author: Boison
 slug: React-Redux-101
 tags:
   - React
   - Redux
-draft: true
+draft: false
 ---
 Redux 就是用來託管全域變數，好處是當你的專案有很多層的 Component 時不用上下層把資料傳來傳去，即使現在簡單的專案我們會使用其他更小型簡單的套件或 hook（如 useContext）去實現這個需求，但其概念大多雷同。
 
