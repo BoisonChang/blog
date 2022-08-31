@@ -24,7 +24,7 @@ Redux 就是用來託管全域變數，好處是當你的專案有很多層的 C
 
 * npm install redux 
 
-  * npm redux-react-hook / npm react-redux
+* npm redux-react-hook / npm react-redux
 
 ---
 
