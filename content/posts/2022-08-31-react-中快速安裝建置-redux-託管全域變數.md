@@ -82,7 +82,7 @@ const store = createStore(rootReducer)
 
 ---
 
-## 3. 用 Provider 接收 reducer 託管的資料
+## 3. 用 Provider 接收 Reducer 託管的資料
 
 * 在 index.js 中用 Provider component 接收 store 資料
 
