@@ -53,6 +53,8 @@ draft: false
   * \# 快速用 mongod 指令使用 mongodb 相關指令
 
     export PATH=/usr/local/mongodb/bin:$PATH
+* source ~/.zshrc
+  * 啟用設定
 * cd /usr/local/mongodb/bin
 * xattr -dr com.apple.quarantine .
 
