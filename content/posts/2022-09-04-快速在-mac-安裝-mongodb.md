@@ -24,18 +24,18 @@ draft: false
 
 * 下載後解壓縮更名 mongodb 丟入 /usr/local
 * 開啟終端機
-* cd /usr/local/mongodb
-* mkdir data 
+* `cd /usr/local/mongodb`
+* `mkdir data` 
 
   * 創建一個用來存放數據的資料夾，到時候可以通過配置文件讓 mongodb 把數據存儲到該目錄下
-* mkdir logs 
+* `mkdir logs`
 
   * 創建一個資料夾，到時候可以通過配置文件讓 mongodb 把日誌寫到該目錄
-* mkdir etc 
+* `mkdir etc`
   * 創建一個資料夾，底下撰寫要開啟 mongodb 時的設定文件檔
-  * cd etc
-  * touch mongod.conf
-  * vim mongod.conf
+  * `cd etc`
+  * `touch mongod.conf`
+  * `vim mongod.conf`
   * 點擊 i 開啟編輯模式貼上以下
   * \# 數據庫文件存放的目錄 
 
@@ -46,20 +46,20 @@ draft: false
     \# 以後台方式運行進程 \
     \#fork=true
   * 點擊 esc 離開編輯模式，輸入 :qw 儲存並離開文件
-* cd ~
-* open ~/.zshrc
+* `cd ~`
+* `open ~/.zshrc`
 
   * 貼上在最下面並儲存離開，用全域變數讓以後不用進到 bin 文件即可呼叫 mongod 指令
   * \# 快速用 mongod 指令使用 mongodb 相關指令
 
     export PATH=/usr/local/mongodb/bin:$PATH
-* source ~/.zshrc
+* `source ~/.zshrc`
   * 啟用設定
-* cd /usr/local/mongodb/bin
-* xattr -dr com.apple.quarantine .
+* `cd /usr/local/mongodb/bin`
+* `xattr -dr com.apple.quarantine .`
 
   * 因為它是一個外部下載的文件，需要刪除隔離屬性
-* mongod \-\-config /usr/local/mongodb/etc/mongod.conf
+* `mongod \-\-config /usr/local/mongodb/etc/mongod.conf`
 
 - - -
 
