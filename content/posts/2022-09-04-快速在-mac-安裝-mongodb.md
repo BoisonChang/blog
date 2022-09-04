@@ -42,7 +42,8 @@ draft: false
     dbpath=/usr/local/mongodb/data \
     \# 數據庫日誌存放目錄 \
     logpath=/usr/local/mongodb/logs/mongodb.log \
-    \# 以追加的方式記錄日誌 logappend = true \
+    \# 以追加的方式記錄日誌 
+    logappend = true \
     \# 以後台方式運行進程 \
     \#fork=true
   * 點擊 esc 離開編輯模式，輸入 :qw 儲存並離開文件
