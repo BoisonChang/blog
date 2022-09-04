@@ -18,7 +18,7 @@ draft: false
 
 - - -
 
-* 去 [mongodb 官網](https://link.juejin.cn/?target=https%3A%2F%2Fwww.mongodb.com%2Ftry%2Fdownload "https\://www.mongodb.com/try/download") 下载對應版本的 **`mongodb`**
+* 去 [mongodb 官網](https://link.juejin.cn/?target=https%3A%2F%2Fwww.mongodb.com%2Ftry%2Fdownload "https\://www.mongodb.com/try/download") 下载對應版本的 mongodb
 
 ![](https://media.heptabase.com/v1/images/fc9c5ccc-1901-4cb2-bb69-b6fcd717ac4f/7d69f250-09bb-467e-9366-a18a01cfd0a2/Screen%20Shot%202022-09-04%20at%202.27.47%20PM.png)
 
