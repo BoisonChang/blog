@@ -27,12 +27,12 @@ draft: false
 * cd /usr/local/mongodb
 * mkdir data 
 
-  * 用來存放數據，到時候可以通過配置文件讓 mongodb 把數據存儲到該目錄下
+  * 創建一個用來存放數據的資料夾，到時候可以通過配置文件讓 mongodb 把數據存儲到該目錄下
 * mkdir logs 
 
-  * 創建一個 mongodb.log 文件用來存放數據，到時候可以通過配置文件讓 mongodb 把日誌寫到該目錄
+  * 創建一個資料夾，到時候可以通過配置文件讓 mongodb 把日誌寫到該目錄
 * mkdir etc 
-
+  * 創建一個資料夾，底下撰寫要開啟 mongodb 時的設定文件檔
   * cd etc
   * touch mongod.conf
   * vim mongod.conf
