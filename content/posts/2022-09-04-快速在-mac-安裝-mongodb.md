@@ -60,7 +60,7 @@ draft: false
 * `xattr -dr com.apple.quarantine .`
 
   * 因為它是一個外部下載的文件，需要刪除隔離屬性
-* `mongod \-\-config /usr/local/mongodb/etc/mongod.conf`
+* `mongod -\-config /usr/local/mongodb/etc/mongod.conf`
 
 - - -
 
