@@ -62,6 +62,13 @@ draft: false
   * 因為它是一個外部下載的文件，需要刪除隔離屬性
 * `mongod -\-config /usr/local/mongodb/etc/mongod.conf`
 
+
+※ 如果要在終端機操作資料庫，需要安裝 mongosh (會有權限問題要解決)
+
+1. `brew install mongosh`
+
+
+
 - - -
 
 > **參考資料**
