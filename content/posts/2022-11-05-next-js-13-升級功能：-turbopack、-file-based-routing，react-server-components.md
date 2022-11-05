@@ -25,11 +25,11 @@ draft: false
 
    * 在 page 資料夾下要寫 React Server Components，只要使用非同步處理，則不須去撰寫語法傳遞 client side 和 server side 的變數
 
-※ 註：其他更新還有 next/font、next/image，和 next/link 不用手動增加 <a> 為子項的優化，詳情請見[官方文件](https://nextjs.org/blog/next-13#server-components)
+※ 註：其他更新還有 next/font、next/image，和 next/link 不用手動增加 `<a>` 為子項的優化，詳情請見[官方文件](https://nextjs.org/blog/next-13#server-components)
 
 ---
 
-##  一、打包工具採用 Turbopack
+## 一、打包工具採用 Turbopack
 
 Turbopack 是打包工具 Webpack 外新推出的次世代打包工具，比之前新推出的 Vite 還要快，是由 Rust 語言編寫而成，即使 Vite 已經非常快，但採用 Turbopack 對於非常大的軟體開發上仍可能帶來非常有感的打包速度提升。
 
@@ -75,7 +75,7 @@ Turbopack 是打包工具 Webpack 外新推出的次世代打包工具，比之�
 
 * cold starts 速度比 Webpack 快 4 倍
 
-![](https://oscimg.oschina.net/oscnet/up-d5c360f539c002174dc3553b85d08a4fbdb.png)
+![](https://oscimg.oschina.net/oscnet/up-d5c360f539c002174dc3553b85d08a4fbdb.png =500x165)
 
 圖片來源：[Turbopack vs Vite ](https://turbo.build/pack/docs/comparisons/turbopack-vs-vite)
 
@@ -126,7 +126,7 @@ export async function getServerSideProps {
   const getData = await fetch('...api...');
   return {
     props: {
-      data: getData?
+      data: getData
     },
   };
 };
@@ -146,7 +146,7 @@ import { use } from 'react';
 
 async function getData() {
   const res = await await fetch('...api...');
-  return res?.category;
+  return res;
 }
 
 export default function CategoryPage(category) {
