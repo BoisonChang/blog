@@ -1,5 +1,5 @@
 ---
-title: Next.js 13 升級功能：**Turbopack、 file-based routing，React Server Components
+title: Next.js 13 升級功能：Turbopack、 file-based routing，React Server Components
 date: 2022-11-05T08:15:31.739Z
 author: Boison
 slug: next-13-release
