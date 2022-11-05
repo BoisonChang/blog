@@ -75,7 +75,7 @@ Turbopack 是打包工具 Webpack 外新推出的次世代打包工具，比之�
 
 * cold starts 速度比 Webpack 快 4 倍
 
-![](https://oscimg.oschina.net/oscnet/up-d5c360f539c002174dc3553b85d08a4fbdb.png =500x165)
+![](https://oscimg.oschina.net/oscnet/up-d5c360f539c002174dc3553b85d08a4fbdb.png)
 
 圖片來源：[Turbopack vs Vite ](https://turbo.build/pack/docs/comparisons/turbopack-vs-vite)
 
