@@ -183,7 +183,7 @@ import { use } from 'react';
 
 async function getData() {
   const res = await await fetch('...api...');
-  return res?.category;
+  return res;
 }
 
 export default function CategoryPage(category) {
