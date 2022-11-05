@@ -164,7 +164,7 @@ export default function CategoryPage(category) {
 ```javascript
 // 需要在外層包 suspend
 // Next.js 13  
-// app/categorypage/page.js
+// page/categorypage/index.js
 import { Suspense } from 'react';
 import CategoryPage from './app/category/page.js';
 
@@ -178,7 +178,7 @@ export default function Posts() {
   );
 }
 
-// app/categorypage/category.js
+// public/category/category.js
 import { use } from 'react';
 
 async function getData() {
@@ -210,7 +210,7 @@ fetch(URL, { cache: 'no-store' });
 fetch(URL, { next: { revalidate: 10 } });
 ```
 
-> **4. Next.js 13 的 app 資料夾中的檔案加上 ‘’use client，使用只在 client-side 執行的組件**
+> **4. Next.js 13 的 app 資料夾中的檔案加上 ‘use client’，使用只在 client-side 執行的組件**
 
 ```javascript
 'use client';
