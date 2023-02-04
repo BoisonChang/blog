@@ -5,7 +5,7 @@ author: Boison
 slug: git-gitlab-github
 tags:
   - Git
-  - GiHub
+  - GitHub
   - GitLab
 draft: false
 ---
