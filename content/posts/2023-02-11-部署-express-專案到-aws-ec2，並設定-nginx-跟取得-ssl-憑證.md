@@ -12,7 +12,7 @@ draft: false
 ## 1. AWS 基礎知識
 
 * Key pair type 中 RSA 和 ED25519 有什麼差別
-collapsed:: true
+
 
   1. 金鑰大小：RSA 金鑰的大小可以從 1024 到 4096 位不等，而 ED25519 金鑰固定為 256 位。
 
@@ -25,7 +25,7 @@ collapsed:: true
   5. 實現：RSA 在各種編程語言中更加廣泛地支持和實現，而 ED25519 的支持仍在增長，尽管它在流行的密碼學庫（如libsodium和OpenSSL）中是可用的。
 
 * Private key file format 中 .pem 和 .ppk 有什麼差別
-collapsed:: true
+
 
   1. 格式不同：.pem 格式是 OpenSSH 的預設格式，而 .ppk 是 PuTTY 的預設格式。
 
@@ -38,7 +38,7 @@ collapsed:: true
   5. 使用的軟件不同：.pem 文件主要用於 OpenSSH，而 .ppk 文件主要用於 PuTTY 和其他 Windows 系統下的 SSH 客戶端軟件。因此，如果您正在使用 OpenSSH，則應使用 .pem 格式，如果您正在使用 PuTTY 或其他 Windows 客戶端軟件，則應使用 .ppk 格式。
 
 * AWS 中的 security group 有什麼功能
-collapsed:: true
+
 
   1. 防火牆功能：AWS 安全組可以防止不受信任的網絡流量進入您的 AWS 環境。它通過允許或拒絕網絡流量來完成此操作。
 
@@ -51,7 +51,7 @@ collapsed:: true
   5. 可管理性：安全組是一種可管理的防火牆，您可以隨時通過 AWS 管理控制台或 API 修改防火牆規則，以應對您的應用程序需求的變化。
 
 * AWS 中的 security group 中 Inbound rules 和 Outbound rules 有什麼差別
-collapsed:: true
+
 
   1. Inbound Rules：
 
@@ -74,7 +74,6 @@ collapsed:: true
      * 配置 Inbound Rules 和 Outbound Rules 時，必須指定源 IP 地址、目標 IP 地址、協定和端口範圍，以控制網絡流量的進出和進入。
 
 * Amazon Machine Image (AMI)
-collapsed:: true
 
   1. 定義：
 
@@ -97,7 +96,6 @@ collapsed:: true
      * AMI 可以用於快速在 EC2 上創建虛擬機器，也可以作為 EC2 的镜像來進行自動化部署和管理。
 
 * AWS 的 Instance type
-collapsed:: true
 
   1. AWS Instance Type 
 
@@ -139,7 +137,6 @@ nohup node dist/index.js & exit
 ## 3. 透過 Route 53 (DNS) 去綁定域名跟 IP
 
 * 连接 AWS EC2 实例到 GoDaddy 域名的流程
-collapsed:: true
 
   1. 在 GoDaddy 上购买域名：首先，您需要在 GoDaddy 上购买域名。 您可以通过 GoDaddy 的网站完成此操作。
 
@@ -152,7 +149,6 @@ collapsed:: true
   现在，当用户访问您的域名时，Route 53 将解析域名并将其重定向到您的 EC2 实例。 用户将可以通过您的域名访问您的网站，并与您的 EC2 实例进行通信。
 
 * 当用户在浏览器中输入您的域名时，发生以下交互
-collapsed:: true
 
   1. 浏览器向域名系统 (DNS) 发送请求：浏览器使用可靠的传输协议 (TCP) 向域名系统发送请求，以确定该域名对应的 IP 地址。
 
@@ -254,10 +250,8 @@ collapsed:: true
   ```
 
 * 解釋
-collapsed:: true
 
   * These two lines include external configuration files. The **`ssl-boison.online.conf`** file contains the SSL certificate and private key for the **`boison.online`** domain. The **`ssl-params.conf`** file contains SSL configuration parameters.
-collapsed:: true
 
     ```javascript
       include snippets/ssl-boison.online.conf;
@@ -265,7 +259,6 @@ collapsed:: true
     ```
 
   * This **`location`** block defines the configuration for requests to the root **`/`** path. The **`proxy_pass`** directive specifies that incoming requests should be forwarded to the specified URL. In this case, the URL is **`http://localhost:3000`**, which is the local address and port of the web application. The **`proxy_http_version`** directive sets the HTTP version to use for the proxy connection to the backend. The **`proxy_set_header`** directives set various headers for the proxy request. The **`proxy_cache_bypass`** directive sets a variable to bypass any caching that may be performed by a proxy server.
-collapsed:: true
 
     ```javascript
     location / {
@@ -279,7 +272,6 @@ collapsed:: true
     ```
 
   * This **`server`** block listens on port 80 for incoming requests to the **`boison.online`** domain. The **`return`** directive sends a **`301 Moved Permanently`** HTTP response, redirecting the client to the secure **`https://`** version of the same URL.
-collapsed:: true
 
     ```javascript
     server {
@@ -307,7 +299,6 @@ git push --set-upstream origin main
 ## 6. 安裝 Certbot 取得 SSL 憑證
 
 * SSL憑證(Secure Socket Layer certificate)
-collapsed:: true
 
   * 定義
 
@@ -320,7 +311,6 @@ collapsed:: true
     * 將client端及server端之間的資料進行加密，保護敏感資料。
 
 * 安裝 Certbot
-collapsed:: true
 
   ```javascript
   sudo add-apt-repository ppa:certbot/certbot
@@ -329,7 +319,6 @@ collapsed:: true
   ```
 
 * 修改 Nginx 設定
-collapsed:: true
 
   ```javascript
   sudo vim /etc/nginx/sites-available/default
@@ -347,10 +336,8 @@ collapsed:: true
   ```
 
 * 申請憑證
-collapsed:: true
 
   * 使用 certbot 這個工具來通過 webroot 驗證方式獲取 SSL 憑證\
-    collapsed:: true
     這個步驟的目的是為了獲取 SSL 憑證，以提供加密的 HTTPS 網站連接。要達到的功能是使用 certbot 這個工具來通過 webroot 驗證方式獲取 SSL 憑證，以保證您的網站連接是安全的。
 
     ```javascript
@@ -375,7 +362,6 @@ collapsed:: true
   * 憑證放的位置為 /etc/letsencrypt/live/www.domain.com/fullchain.pem
 
   * 為了增加安全性 我們要產生一個 2048-bit Diffie-Hellman 的密碼組合，會產生在/etc/ssl/certs/dhparam.pem
-collapsed:: true
 
     ```javascript
     sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
