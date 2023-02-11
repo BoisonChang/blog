@@ -80,7 +80,7 @@ draft: false
 * 安裝並設定 ReactDOMServer 以及必要的依賴包
 
   ```javascript
-  npm install react react-dom react-dom/server
+  npm install react react-dom
   ```
 
   ```javascript
