@@ -428,7 +428,7 @@ git push --set-upstream origin main
 
     &nbsp;
 
-> 實作專案：[Github Repo](https://github.com/BoisonChang/typescript-express-aws)｜[Demo](https://www.boison.online/)
+> **實作專案**：[Github Repo](https://github.com/BoisonChang/typescript-express-aws)｜[Demo](https://www.boison.online/)
 
 ---
 
