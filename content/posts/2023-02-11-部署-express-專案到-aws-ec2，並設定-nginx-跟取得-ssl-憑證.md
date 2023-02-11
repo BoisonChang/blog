@@ -127,6 +127,7 @@ ssh ubuntu@13.231.222.121 -i /Users/baisongzhang/Desktop/demo.pem
 mkdir Code
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
+步驟之前要先把專案傳到這個位置（可以直接整包丟，或者用 git 同步過來）
 npm install
 npm run build
 nohup node dist/index.js & exit
