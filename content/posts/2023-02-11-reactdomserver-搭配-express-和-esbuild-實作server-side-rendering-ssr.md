@@ -1,5 +1,5 @@
 ---
-title: ReactDOMServer 搭配 Express 和 Esbuild 實作Server Side Rendering (SSR)
+title: ReactDOMServer 搭配 Express 和 Esbuild 實作 Server Side Rendering (SSR)
 date: 2023-02-11T04:42:51.064Z
 author: Boison
 slug: ReactDOMServer-SSR-101
