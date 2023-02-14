@@ -8,7 +8,7 @@ tags:
   - Express
   - SSR
   - ""
-draft: false
+draft: true
 ---
 
 ## 1. Server Side Rendering (SSR) 簡介
