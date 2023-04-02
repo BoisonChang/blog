@@ -154,7 +154,7 @@ The course of the global economy over the past two years has been shaped by COVI
 
 ## 二、進階
 
-## 1. 加上 `Let‘s think step by step`
+### 1. 加上 `Let‘s think step by step`
 
 原本是錯誤的，但在問題最後加入 `Let‘s think step by step` 這句話之後，模型就生成了正確的答案，原因如下：
 
@@ -162,7 +162,7 @@ The course of the global economy over the past two years has been shaped by COVI
 
 &nbsp;
 
-## 2. openai 的 Playground 設定
+### 2. openai 的 Playground 設定
 
 1. **Mode**
 
