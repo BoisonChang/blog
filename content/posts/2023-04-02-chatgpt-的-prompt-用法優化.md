@@ -31,8 +31,6 @@ draft: false
 資料來源：[Learning Prompt](https://learningprompt.wiki/)
 
 
-資料來源：[Learning Prompt](https://learningprompt.wiki/)
-
 - - -
 
 ### 2. 給 AI 參考用的答案，請他自己學習造樣造句
