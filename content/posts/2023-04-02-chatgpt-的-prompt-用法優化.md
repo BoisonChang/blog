@@ -10,26 +10,21 @@ draft: false
 ---
 ## 一、基礎
 
-### 1\. 問答用法：精確，正向定義
+### 1. 問答用法：精確，正向定義
 
 * 使用精確量詞
-
 * 與其用否定限定，用正向限定對其可能更直接
 
   * 否定
 
     1. Please suggest me some essential words for IELTS
-
     2. Please recommend me some places to visit in Hong Kong. Do not recommend museums.
-
   * 正向
 
     1. Please suggest me 10 essential words for IELTS
-
     2. Please recommend me some places to visit in Hong Kong including amusement parks.
 
 資料來源：[Learning Prompt](https://learningprompt.wiki/)
-
 
 - - -
 
@@ -40,8 +35,10 @@ Suggest three names for an animal that is a superhero.
 
 Animal: Cat
 Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
+
 Animal: Dog
 Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
+
 Animal: Horse
 Names: ...
 ```
@@ -50,6 +47,7 @@ Names: ...
 Product description: A home milkshake maker
 Seed words: fast, healthy, compact.
 Product names: HomeShaker, Fit Shaker, QuickShake, Shake Maker
+
 Product description: A pair of shoes that can fit any foot size.
 Seed words: adaptable, fit, omni-fit.
 Product names: ...
@@ -57,6 +55,7 @@ Product names: ...
 
 ```javascript
 Convert movie titles into emoji.
+
 Back to the Future: 👨👴🚗🕒
 Batman: 🤵🦇
 Transformers: 🚗🤖
