@@ -13,16 +13,17 @@ draft: false
 ### 1. 問答：精確，正向定義
 
 * 使用精確量詞
+
+  * X﻿ \
+    Please suggest me some essential words for IELTS
+  * O﻿ \
+    Please suggest me 10 essential words for IELTS
 * 與其用否定限定，用正向限定對其可能更直接
 
-  * 否定
-
-    1. Please suggest me some essential words for IELTS
-    2. Please recommend me some places to visit in Hong Kong. Do not recommend museums.
-  * 正向
-
-    1. Please suggest me 10 essential words for IELTS
-    2. Please recommend me some places to visit in Hong Kong including amusement parks.
+  * X﻿\
+    Please recommend me some places to visit in Hong Kong. Do not recommend museums.
+  * O﻿\
+    Please recommend me some places to visit in Hong Kong including amusement parks.
 
 資料來源：[Learning Prompt](https://learningprompt.wiki/)
 
