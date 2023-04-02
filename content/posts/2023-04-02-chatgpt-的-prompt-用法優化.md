@@ -20,7 +20,7 @@ draft: false
 
     1. Please suggest me some essential words for IELTS
 
-    2. Please suggest me 10 essential words for IELTS
+    2. Please recommend me some places to visit in Hong Kong. Do not recommend museums.
 
   * 正向
 
