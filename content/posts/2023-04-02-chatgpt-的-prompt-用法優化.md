@@ -28,7 +28,7 @@ draft: false
 
 - - -
 
-### 2. 給 AI 參考用的答案，請他自己學習造樣造句
+### 2. 造句：給 AI 參考用的答案，請他自己學習造樣造句
 
 ```javascript
 Suggest three names for an animal that is a superhero.
@@ -64,7 +64,7 @@ Star Wars: ...
 
 - - -
 
-### 3. 請 AI 總結時把給 AI 的文本用符號標示
+### 3. 總結：請 AI 總結時把給 AI 的文本用符號標示
 
 ```javascript
 Please summarize the following sentences to make them easier to understand.
@@ -76,7 +76,7 @@ OpenAI is an American artificial intelligence (AI) research laboratory consistin
 
 - - -
 
-### 4. 請 AI 總結時把要 AI 輸出的格式標示清楚
+### 4. 總結：請 AI 總結時把要 AI 輸出的格式標示清楚
 
 ```javascript
 Extract the important entities mentioned in the article below. First extract all company names, then extract all people names, then extract specific topics which fit the content and finally extract general overarching themes
