@@ -34,21 +34,26 @@ draft: false
 ```javascript
 Suggest three names for an animal that is a superhero.
 
+1.
 Animal: Cat
 Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
 
+2.
 Animal: Dog
 Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
 
+3.
 Animal: Horse
 Names: ...
 ```
 
 ```javascript
+1.
 Product description: A home milkshake maker
 Seed words: fast, healthy, compact.
 Product names: HomeShaker, Fit Shaker, QuickShake, Shake Maker
 
+2.
 Product description: A pair of shoes that can fit any foot size.
 Seed words: adaptable, fit, omni-fit.
 Product names: ...
@@ -57,10 +62,10 @@ Product names: ...
 ```javascript
 Convert movie titles into emoji.
 
-Back to the Future: 👨👴🚗🕒
-Batman: 🤵🦇
-Transformers: 🚗🤖
-Star Wars: ...
+1. Back to the Future: 👨👴🚗🕒
+2. Batman: 🤵🦇
+3. Transformers: 🚗🤖
+4. Star Wars: ...
 ```
 
 - - -
